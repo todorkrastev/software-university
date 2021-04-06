@@ -1,2 +1,2 @@
 # SoftUni-Software-Engineering
-Course exercises I Software University I Todor Krastev
+Course exercises | Software University | Todor Krastev
