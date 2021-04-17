@@ -13,8 +13,7 @@ public class LifeHacking {
         boolean stillAlive = true;
 
         while (stillAlive) {
-            Shanecé();
-            code();
+            loveShanecéInfinity();
             repeat();
         }
     }
