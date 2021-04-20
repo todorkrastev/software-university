@@ -11,27 +11,27 @@ public class E01BrowserHistory {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
-
-        ArrayDeque<String> stack = new ArrayDeque<>();
+        ArrayDeque<String> browserHistoryBack = new ArrayDeque<>();
 
         String input;
-        String currPage = "";
+        String currentURL = "";
         while (!"Home".equals(input = reader.readLine())) {
-
             if ("back".equals(input)) {
-                if (stack.isEmpty()) {
+                if (1 < browserHistoryBack.size()) {
+                    browserHistoryBack.pop();
+                } else {
                     System.out.println("no previous URLs");
                     continue;
-                } else {
-                    currPage = stack.pop();
                 }
             } else {
-                if (!currPage.isEmpty()) {
-                    stack.push(currPage);
-                }
-                currPage = input;
+                currentURL = input;
+                browserHistoryBack.push(input);
             }
-            System.out.println(currPage);
+            if (browserHistoryBack.isEmpty()) {
+                System.out.println(currentURL);
+            } else {
+                System.out.println(browserHistoryBack.peek());
+            }
         }
     }
 }
