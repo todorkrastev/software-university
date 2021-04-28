@@ -7,7 +7,8 @@ import java.nio.charset.StandardCharsets;
 
 public class E03IntersectionOfTwoMatrices {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
         int rows = Integer.parseInt(reader.readLine());
         int cols = Integer.parseInt(reader.readLine());
