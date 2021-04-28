@@ -24,7 +24,7 @@ public class E06PrintDiagonalsOfSquareMatrix {
         int row = intMatrix.length - 1;
         int col = 0;
 
-        while (col != intMatrix.length) {
+        while (0 <= row && col < intMatrix.length) {
             System.out.print(intMatrix[row][col] + " ");
             row--;
             col++;
@@ -35,7 +35,7 @@ public class E06PrintDiagonalsOfSquareMatrix {
         int row = 0;
         int col = 0;
 
-        while (row != intMatrix.length) {
+        while (row < intMatrix.length && col < intMatrix.length) {
             System.out.print(intMatrix[row][col] + " ");
             row++;
             col++;
