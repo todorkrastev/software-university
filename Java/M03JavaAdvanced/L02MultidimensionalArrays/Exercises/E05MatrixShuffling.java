@@ -5,32 +5,46 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class E05MatrixShuffling {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
-        String[][] matrix = readMatrix(reader);
-        String pattern = "^swap (\\d+) (\\d+) (\\d+) (\\d+)$";
-        Pattern patternCompile = Pattern.compile(pattern);
-        String input;
+        int[] rowsAndCols = Arrays.stream(reader.readLine().trim().split("\\s+"))
+                .mapToInt(Integer::parseInt)
+                .toArray();
 
+        int rows = rowsAndCols[0];
+        int cols = rowsAndCols[1];
+
+        String[][] intMatrix = readMatrix(reader, rows, cols);
+
+        String input;
         while (!"END".equals(input = reader.readLine())) {
             boolean isValid = true;
-            Matcher matcher = patternCompile.matcher(input);
-            if (matcher.matches()) {
-                int row1 = Integer.parseInt(matcher.group(1)), col1 = Integer.parseInt(matcher.group(2)),
-                        row2 = Integer.parseInt(matcher.group(3)), col2 = Integer.parseInt(matcher.group(4));
-                boolean isInMatrix = row1 >= 0 && row1 < matrix.length && row2 >= 0 && row2 < matrix.length
-                        && col1 >= 0 && col1 < matrix[0].length && col2 >= 0 && col2 < matrix[0].length;
+            String[] split = input.trim().split("\\s+");
+            String command = split[0];
+
+            if (split.length != 5) {
+                System.out.println("Invalid input!");
+                continue;
+            }
+
+            if ("swap".equals(command)) {
+                int rowFirstEl = Integer.parseInt(split[1]);
+                int colFirstEl = Integer.parseInt(split[2]);
+                int rowSecondEl = Integer.parseInt(split[3]);
+                int colSecondEl = Integer.parseInt(split[4]);
+
+                boolean isInMatrix = 0 <= rowFirstEl && rowFirstEl < intMatrix.length && 0 <= colFirstEl && colFirstEl < intMatrix[0].length && 0 <= rowSecondEl && rowSecondEl < intMatrix.length && 0 <= colSecondEl && colSecondEl < intMatrix[0].length;
+
                 if (isInMatrix) {
-                    String temp = matrix[row1][col1];
-                    matrix[row1][col1] = matrix[row2][col2];
-                    matrix[row2][col2] = temp;
-                    printMatrix(matrix);
+                    String temp = intMatrix[rowFirstEl][colFirstEl];
+                    intMatrix[rowFirstEl][colFirstEl] = intMatrix[rowSecondEl][colSecondEl];
+                    intMatrix[rowSecondEl][colSecondEl] = temp;
+
+                    printMatrix(intMatrix);
                 } else {
                     isValid = false;
                 }
@@ -43,19 +57,20 @@ public class E05MatrixShuffling {
         }
     }
 
-    private static void printMatrix(String[][] matrix) {
-        Arrays.stream(matrix).forEach(row -> {
-            Arrays.stream(row).forEach(element -> System.out.printf("%s ", element));
+    private static void printMatrix(String[][] intMatrix) {
+        for (String[] matrix : intMatrix) {
+            for (String element : matrix) {
+                System.out.print(element + " ");
+            }
             System.out.println();
-        });
+        }
     }
 
-    private static String[][] readMatrix(BufferedReader reader) throws IOException {
-        int[] size = Arrays.stream(reader.readLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
-        String[][] matrix = new String[size[0]][size[1]];
-        for (int i = 0; i < size[0]; i++) {
-            matrix[i] = reader.readLine().split("\\s+");
+    private static String[][] readMatrix(BufferedReader reader, int rows, int cols) throws IOException {
+        String[][] intMatrix = new String[rows][cols];
+        for (int row = 0; row < intMatrix.length; row++) {
+            intMatrix[row] = reader.readLine().trim().split("\\s+");
         }
-        return matrix;
+        return intMatrix;
     }
 }
