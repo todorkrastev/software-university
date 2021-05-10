@@ -14,10 +14,12 @@ public class E03WarNumberGame {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
-        Set<Integer> firstDeck = Arrays.stream(reader.readLine().split("\\s+"))
-                .map(Integer::parseInt).collect(Collectors.toCollection(LinkedHashSet::new));
-        Set<Integer> secondDeck = Arrays.stream(reader.readLine().split("\\s+"))
-                .map(Integer::parseInt).collect(Collectors.toCollection(LinkedHashSet::new));
+        Set<Integer> firstDeck = Arrays.stream(reader.readLine().trim().split("\\s+"))
+                .map(Integer::parseInt)
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+        Set<Integer> secondDeck = Arrays.stream(reader.readLine().trim().split("\\s+"))
+                .map(Integer::parseInt)
+                .collect(Collectors.toCollection(LinkedHashSet::new));
 
         int round = 50;
 
@@ -28,17 +30,17 @@ public class E03WarNumberGame {
             firstDeck.remove(firstPlayer);
             secondDeck.remove(secondPlayer);
 
-            if (firstPlayer > secondPlayer) {
+            if (secondPlayer < firstPlayer) {
                 firstDeck.add(firstPlayer);
                 firstDeck.add(secondPlayer);
-            } else if (secondPlayer > firstPlayer) {
+            } else if (firstPlayer < secondPlayer) {
                 secondDeck.add(firstPlayer);
                 secondDeck.add(secondPlayer);
             }
         }
         if (firstDeck.size() == secondDeck.size()) {
             System.out.println("Draw!");
-        } else if (firstDeck.size() > secondDeck.size()) {
+        } else if (secondDeck.size() < firstDeck.size()) {
             System.out.println("First player win!");
         } else {
             System.out.println("Second player win!");
