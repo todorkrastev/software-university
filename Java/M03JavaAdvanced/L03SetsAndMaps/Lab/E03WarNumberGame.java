@@ -15,34 +15,33 @@ public class E03WarNumberGame {
                 new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
         Set<Integer> firstDeck = Arrays.stream(reader.readLine().split("\\s+"))
-                .map(Integer::parseInt)
-                .collect(Collectors.toCollection(LinkedHashSet::new));
-
+                .map(Integer::parseInt).collect(Collectors.toCollection(LinkedHashSet::new));
         Set<Integer> secondDeck = Arrays.stream(reader.readLine().split("\\s+"))
-                .map(Integer::parseInt)
-                .collect(Collectors.toCollection(LinkedHashSet::new));
+                .map(Integer::parseInt).collect(Collectors.toCollection(LinkedHashSet::new));
 
-        int rounds = 50;
-        while (rounds-- != 0 && (!firstDeck.isEmpty() && !secondDeck.isEmpty())) {
-            Integer firstCard = firstDeck.iterator().next();
-            firstDeck.remove(firstCard);
-            Integer secondCard = secondDeck.iterator().next();
-            secondDeck.remove(secondCard);
+        int round = 50;
 
-            if (firstCard > secondCard) {
-                firstDeck.add(firstCard);
-                firstDeck.add(secondCard);
-            } else {
-                secondDeck.add(secondCard);
-                secondDeck.add(firstCard);
+        while (round-- != 0 && (!firstDeck.isEmpty() && !secondDeck.isEmpty())) {
+            int firstPlayer = firstDeck.iterator().next();
+            int secondPlayer = secondDeck.iterator().next();
+
+            firstDeck.remove(firstPlayer);
+            secondDeck.remove(secondPlayer);
+
+            if (firstPlayer > secondPlayer) {
+                firstDeck.add(firstPlayer);
+                firstDeck.add(secondPlayer);
+            } else if (secondPlayer > firstPlayer) {
+                secondDeck.add(firstPlayer);
+                secondDeck.add(secondPlayer);
             }
         }
-        if (firstDeck.size() < secondDeck.size()) {
-            System.out.println("Second player win!");
-        } else if (secondDeck.size() < firstDeck.size()) {
+        if (firstDeck.size() == secondDeck.size()) {
+            System.out.println("Draw!");
+        } else if (firstDeck.size() > secondDeck.size()) {
             System.out.println("First player win!");
         } else {
-            System.out.println("Draw!");
+            System.out.println("Second player win!");
         }
     }
 }
