@@ -19,7 +19,7 @@ public class E05ReverseAndExcludeSecondOption {
 
         int divisor = Integer.parseInt(reader.readLine());
 
-        Predicate<Integer> isDivisible = getDivisible(divisor);
+        Predicate<Integer> isDivisible = number -> number % divisor == 0;
 
         List<Integer> numbers = getList(input);
 
@@ -27,7 +27,7 @@ public class E05ReverseAndExcludeSecondOption {
 
         Collections.reverse(numbers);
 
-        Consumer<List<Integer>> printer = getPrinter();
+        Consumer<List<Integer>> printer = list -> list.forEach(e -> System.out.println(e + " "));
 
         printer.accept(numbers);
     }
@@ -36,17 +36,5 @@ public class E05ReverseAndExcludeSecondOption {
         return Arrays.stream(input.trim().split("\\s+"))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
-    }
-
-    private static Predicate<Integer> getDivisible(int divisor) {
-        return number -> number % divisor == 0;
-    }
-
-    private static Consumer<List<Integer>> getPrinter() {
-        return list -> {
-            for (Integer integer : list) {
-                System.out.print(integer + " ");
-            }
-        };
     }
 }
