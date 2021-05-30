@@ -19,9 +19,9 @@ public class E05ReverseAndExclude {
 
         int divisor = Integer.parseInt(reader.readLine());
 
-        Predicate<Integer> isDivisibleBy2 = getDivisible(divisor);
+        Predicate<Integer> isDivisible = number -> number % divisor != 0;
 
-        List<Integer> numbers = getList(input, isDivisibleBy2);
+        List<Integer> numbers = getList(input, isDivisible);
 
         Collections.reverse(numbers);
 
@@ -35,10 +35,6 @@ public class E05ReverseAndExclude {
                 .map(Integer::parseInt)
                 .filter(isDivisibleBy2)
                 .collect(Collectors.toList());
-    }
-
-    private static Predicate<Integer> getDivisible(int divisor) {
-        return number -> number % divisor != 0;
     }
 
     private static Consumer<List<Integer>> getPrinter() {
