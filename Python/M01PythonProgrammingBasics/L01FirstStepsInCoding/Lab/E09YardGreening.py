@@ -1,4 +1,4 @@
-square_meters = int(input())
+square_meters = float(input())
 price_per_square_meter = 7.61
 
 price_greening = square_meters * price_per_square_meter
