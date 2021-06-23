@@ -1,8 +1,10 @@
-package P02_Collection;
+package bg.softuni.java_advanced.iterators_and_comparators.exercises.P02_Collection;
 
+import java.util.Iterator;
 import java.util.List;
 
-public class ListyIterator {
+public class ListyIterator implements Iterable<String> {
+
     private int index;
     private final List<String> data;
 
@@ -53,4 +55,3 @@ public class ListyIterator {
         };
     }
 }
-
