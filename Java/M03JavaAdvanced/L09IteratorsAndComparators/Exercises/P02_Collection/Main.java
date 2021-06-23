@@ -1,17 +1,21 @@
-package P02_Collection;
+package bg.softuni.java_advanced.iterators_and_comparators.exercises.P02_Collection;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        List<String> data = Arrays.stream(scan.nextLine().split("\\s+")).skip(1).collect(Collectors.toList());
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
+
+        List<String> data = Arrays.stream(reader.readLine().trim().split("\\s+")).skip(1).collect(Collectors.toList());
         ListyIterator listyIterator = new ListyIterator(data);
         String command;
-        while (!"END".equals(command = scan.nextLine())) {
+        while (!"END".equals(command = reader.readLine())) {
             switch (command) {
                 case "HasNext":
                     System.out.println(listyIterator.iterator().hasNext());
