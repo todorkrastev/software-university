@@ -29,21 +29,21 @@ public class Person {
         return this.salary;
     }
 
-    private void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         if (firstName.length() < 3) {
             throw new IllegalArgumentException("First name cannot be less than 3 symbols");
         }
         this.firstName = firstName;
     }
 
-    private void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         if (lastName.length() < 3) {
             throw new IllegalArgumentException("Last name cannot be less than 3 symbols");
         }
         this.lastName = lastName;
     }
 
-    private void setAge(int age) {
+    public void setAge(int age) {
         if (age < 1) {
             throw new IllegalArgumentException("Age cannot be zero or negative integer");
         }
