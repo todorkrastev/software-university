@@ -1,6 +1,5 @@
 package bg.softuni.java_oop.encapsulation.lab.P03_ValidationData;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
