@@ -47,7 +47,6 @@ public class Main {
     }
 
     private static Bus createBus(String[] tokens) {
-        String vehicle = tokens[0];
         double fuelQuantity = Double.parseDouble(tokens[1]);
         double fuelConsumption = Double.parseDouble(tokens[2]);
         double tankCapacity = Double.parseDouble(tokens[3]);
