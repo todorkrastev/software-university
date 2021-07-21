@@ -1,9 +1,9 @@
-package solidLab.p01_SingleResponsibility.p01_DrawingShape;
+package solidLab.p01_SingleResponsibility.P01_DrawingShape;
 
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.DrawingManager;
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.DrawingRepository;
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Rengerer;
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Shape;
+import solidLab.p01_SingleResponsibility.P01_DrawingShape.interfaces.DrawingManager;
+import solidLab.p01_SingleResponsibility.P01_DrawingShape.interfaces.DrawingRepository;
+import solidLab.p01_SingleResponsibility.P01_DrawingShape.interfaces.Rengerer;
+import solidLab.p01_SingleResponsibility.P01_DrawingShape.interfaces.Shape;
 
 
 public class DrawingManagerImpl implements DrawingManager {
