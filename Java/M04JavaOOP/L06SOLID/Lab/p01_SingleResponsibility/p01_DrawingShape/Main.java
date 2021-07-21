@@ -1,4 +1,4 @@
-package solidLab.p01_SingleResponsibility.p01_DrawingShape;
+package solidLab.p01_SingleResponsibility.P01_DrawingShape;
 
 public class Main {
     public static void main(String[] args) {
