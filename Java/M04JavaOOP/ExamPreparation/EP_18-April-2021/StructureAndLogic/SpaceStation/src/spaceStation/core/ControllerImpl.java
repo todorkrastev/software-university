@@ -66,7 +66,6 @@ public class ControllerImpl implements Controller {
 
     @Override
     public String retireAstronaut(String astronautName) {
-        //TODO: DOUBLE CHECK!
         if (this.astronautRepository.getModels().stream().noneMatch(astronaut -> astronaut.getName().equals(astronautName))) {
             throw new IllegalArgumentException(String.format(ExceptionMessages.ASTRONAUT_DOES_NOT_EXIST, astronautName));
         }
@@ -107,11 +106,11 @@ public class ControllerImpl implements Controller {
                     .append(System.lineSeparator());
             if (astronaut.getBag().getItems().isEmpty()) {
                 output
-                        .append("Bag items: none")
+                        .append(String.format(ConstantMessages.REPORT_ASTRONAUT_BAG_ITEMS, "none"))
                         .append(System.lineSeparator());
             } else {
                 output
-                        .append(String.format(ConstantMessages.REPORT_ASTRONAUT_BAG_ITEMS, String.join(", ", astronaut.getBag().getItems()).toString().replace("[", "").replace("]", "")))
+                        .append(String.format(ConstantMessages.REPORT_ASTRONAUT_BAG_ITEMS, String.join(ConstantMessages.REPORT_ASTRONAUT_BAG_ITEMS_DELIMITER, astronaut.getBag().getItems()).replace("[", "").replace("]", "")))
                         .append(System.lineSeparator());
             }
         });
