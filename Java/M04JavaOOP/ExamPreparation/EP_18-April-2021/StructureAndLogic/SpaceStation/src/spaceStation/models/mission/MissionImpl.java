@@ -8,7 +8,6 @@ import java.util.List;
 public class MissionImpl implements Mission{
     @Override
     public void explore(Planet planet, List<Astronaut> astronauts) {
-        //TODO: DOUBLE CHECK!
         for (int astronaut = 0; astronaut < astronauts.size(); astronaut++) {
             Astronaut currAstronaut = astronauts.get(astronaut);
             for (int item = 0; item < planet.getItems().size(); item++) {
