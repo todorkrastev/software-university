@@ -46,7 +46,6 @@ public abstract class BaseAstronaut implements Astronaut {
 
     @Override
     public boolean canBreath() {
-        //TODO: check 0 <= || < this.getOxygen();
         return 0 < this.getOxygen();
     }
 
