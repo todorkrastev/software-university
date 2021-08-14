@@ -80,8 +80,8 @@ public class EngineImpl implements Engine {
     }
 
     private String addPlanet(String[] data) {
-        String astronautName = String.valueOf(Arrays.asList(data).subList(1, data.length));
-        return this.controller.addPlanet(data[0], astronautName);
+        List<String> list = Arrays.asList(data).subList(1, data.length);
+        return controller.addPlanet(data[0], list.toArray(new String[0]));
     }
 
     private String addAstronaut(String[] data) {
