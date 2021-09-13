@@ -1,11 +1,25 @@
-function lastKNumbersSequence(n, k) {
-    let result = [1];
+function printLastKNumbersSequence(n, k) {
+    let printArr = [];
+    printArr[0] = 1;
 
-    for (let i = 1; i < n; i++) {
-        let startIndex = Math.max(0, i - k);
-        let currentElement = result.slice(startIndex, startIndex + k).reduce((a, b) => a + b, 0);
-        result.push(currentElement);
+    let num = Number(n);
+    let sequence = Number(k);
+
+    for (let index = 1; index < num; index++) {
+        let currNum = 0;
+        let i = index;
+        if (index < sequence) {
+            for (let j = i; j > 0; j--) {
+                i--;
+                currNum += printArr[i];
+            }
+        } else {
+            for (let j = sequence; j > 0; j--) {
+                i--;
+                currNum += printArr[i];
+            }
+        }
+        printArr[index] = currNum;
     }
-
-    console.log(result.join(" "));
+    return printArr;
 }
