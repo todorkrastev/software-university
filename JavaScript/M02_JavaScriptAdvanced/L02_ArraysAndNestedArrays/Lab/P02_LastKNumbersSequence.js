@@ -1,5 +1,5 @@
 function printLastKNumbersSequence(n, k) {
-    let printArr = [];
+    const printArr = [];
     printArr[0] = 1;
 
     let num = Number(n);
