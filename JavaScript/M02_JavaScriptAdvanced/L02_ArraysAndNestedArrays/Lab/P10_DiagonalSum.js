@@ -23,7 +23,7 @@ function printSumOfDiagonals(array2d) {
         while (0 <= row && col < colsLen) {
             result += array2d[row][col];
             row--;
-            col++
+            col++;
         }
         return result;
     }
