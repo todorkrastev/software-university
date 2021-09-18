@@ -11,7 +11,3 @@ function printArray(arr) {
         ? print(mapToSum(resultMatrix, getDiagSum(resultMatrix)))
         : print(resultMatrix);
 }
-console.log(printArray(['1 1 1',
-    '1 1 1',
-    '1 1 0']
-));
