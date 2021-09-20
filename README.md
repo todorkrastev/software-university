@@ -4,8 +4,7 @@
     </a>
 </p>
 
-<h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies at
-    SoftUni.</h2>
+<h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies @SoftUni</h2>
     <br/>
     <h3 >Certifications</h3>
         <ul>
