@@ -1,5 +1,5 @@
   <p align="center">
-        <a href="http://https://softuni.bg/curriculum" target="_blank">
+        <a href="https://softuni.bg/curriculum" target="_blank">
         <img src="https://softuni.bg/content/images/svg-logos/software-university-logo.svg?sanitize=true" alt="Software University Logo">
     </a>
 </p>
