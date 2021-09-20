@@ -1,5 +1,5 @@
   <p align="center">
-        <a href="https://softuni.bg/curriculum" target="_blank">
+        <a href="http://https://softuni.bg/curriculum" target="_blank">
         <img src="https://softuni.bg/content/images/svg-logos/software-university-logo.svg?sanitize=true" alt="Software University Logo">
     </a>
 </p>
@@ -18,6 +18,6 @@
         3. <a href="https://softuni.bg/trainings/3345/java-advanced-may-2021" target="_blank">Java Advanced</a> - <a href="https://softuni.bg/certificates/details/108488/cb2a5bef" target="_blank">See credential</a>
         <br>
         4. <a href="https://softuni.bg/trainings/3346/java-oop-june-2021" target="_blank">Java OOP</a> - <a href="https://softuni.bg/certificates/details/110654/2770fb56" target="_blank">See credential</a>
+        <br>
+        5. I am currently learning <a href="https://softuni.bg/trainings/3487/js-advanced-september-2021/internal" target="_blank">JS Advanced</a> & <a href="https://softuni.bg/trainings/3488/js-applications-october-2021/internal" target="_blank">JS Applications</a>
     </p>
-      
-   
