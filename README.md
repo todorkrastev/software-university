@@ -7,8 +7,7 @@
 <h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies <a href="https://softuni.bg/curriculum" target="_blank">@SoftUni</a></h2>
     <br/>
     <br/>
-    <h3 >Certifications</h3>
-    <br/>
+    <h3>Certifications</h3>
         <ul>
             <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M01JavaProgrammingBasics" target="_blank">Programming Basics with Java</a> - <a href="https://softuni.bg/certificates/details/91471/9d2877c7" target="_blank">See credential</a></li>
             <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals" target="_blank">Programming Fundamentals with Java</a> - <a href="https://softuni.bg/certificates/details/103283/66ce3762" target="_blank">See credential</a></li>
