@@ -14,5 +14,5 @@
             <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals" target="_blank">Programming Fundamentals with Java</a> - <a href="https://softuni.bg/certificates/details/103283/66ce3762" target="_blank">See credential</a></li>
             <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M03JavaAdvanced" target="_blank">Java Advanced</a> - <a href="https://softuni.bg/certificates/details/108488/cb2a5bef" target="_blank">See credential</a></li>
             <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M04JavaOOP" target="_blank">Java OOP</a> - <a href="https://softuni.bg/certificates/details/110654/2770fb56" target="_blank">See credential</a></li>
-            <li>I am currently learning <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptAdvanced" target="_blank">JavaScript</a></li> 
+            <li>I am currently learning <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript" target="_blank">JavaScript</a></li> 
         </ul>
