@@ -4,9 +4,10 @@
     </a>
 </p>
 
-<h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies @SoftUni</h2>
+<h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies <a href="https://softuni.bg/curriculum" target="_blank">@SoftUni</a></h2>
     <br/>
-    <h3 >Certifications</h3>
+    <h3 >Certificates</h3>
+    <br/>
         <ul>
             <li><a href="https://softuni.bg/trainings/3067/programming-basics-with-java-october-2020" target="_blank">Programming Basics with Java</a> - <a href="https://softuni.bg/certificates/details/91471/9d2877c7" target="_blank">See credential</a></li>
             <li><a href="https://softuni.bg/trainings/3212/java-fundamentals-january-2021" target="_blank">Programming Fundamentals with Java</a> - <a href="https://softuni.bg/certificates/details/103283/66ce3762" target="_blank">See credential</a></li>
