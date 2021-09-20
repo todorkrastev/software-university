@@ -6,6 +6,7 @@
 
 <h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies <a href="https://softuni.bg/curriculum" target="_blank">@SoftUni</a></h2>
     <br/>
+    <br/>
     <h3 >Certificates</h3>
     <br/>
         <ul>
