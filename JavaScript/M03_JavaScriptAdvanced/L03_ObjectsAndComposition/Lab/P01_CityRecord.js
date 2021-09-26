@@ -5,4 +5,10 @@ function printCity(name, population, treasury) {
     cityRecord.treasury = treasury;
 
     return cityRecord;
+
+  /*  return {
+        name,
+        population,
+        treasury,
+    } */
 }
