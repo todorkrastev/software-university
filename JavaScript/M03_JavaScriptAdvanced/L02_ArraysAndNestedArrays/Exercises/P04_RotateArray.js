@@ -13,4 +13,10 @@ function rotateArray(arrayStr, nth) {
         arr.unshift(last);
         return arr;
     }
+
+   /* for (let i = 0; i < n; i++) {
+        arr.unshift(arr.pop())
+    }
+
+    return arr.join(" ") */
 }
