@@ -19,4 +19,6 @@ function printBiggestElement(array2d) {
     }
     let typeOfElement = array2d.every(row => row.every(element => typeof element === 'number'));
     return typeOfElement === true ? biggestElement : String.fromCharCode(biggestElement);
+
+  //  return array2d.reduce((a, v) => (a = Math.max(...v) > a ? Math.max(...v) : a), -Infinity)
 }
