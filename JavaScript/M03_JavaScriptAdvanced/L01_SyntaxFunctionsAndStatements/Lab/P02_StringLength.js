@@ -3,4 +3,8 @@ function strLen(firstString, secondString, thirdString) {
     let avgLen = Math.floor(sumOfStrLen / 3);
     console.log(sumOfStrLen);
     console.log(avgLen);
+
+  /*  const length = args.reduce((a, v) => a + v.length, 0)
+    return `${length}
+${Math.round(length / args.length)}` */
 }
