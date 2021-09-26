@@ -27,4 +27,8 @@ function printSumOfDiagonals(array2d) {
         }
         return result;
     }
+
+    /*  const calcDiagonal = array2d => array2d.reduce((a, v, i) => a + v[i], 0)
+   
+       return `${calcDiagonal(array2d)} ${calcDiagonal(array2d.reverse())}` */
 }
