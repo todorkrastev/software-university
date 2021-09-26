@@ -7,4 +7,7 @@ function printEvenNum(inputArr) {
     return evenNumArr
         .filter(e => e != null)
         .join(' ');
+
+    /*    arr = arr.filter((_, i) => i % 2 === 0)
+        console.log(arr.join(" ")) */
 }
