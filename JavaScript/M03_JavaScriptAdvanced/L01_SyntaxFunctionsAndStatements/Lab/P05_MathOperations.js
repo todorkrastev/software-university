@@ -23,4 +23,15 @@ function getResult(firstNum, secondNum, operator) {
             break;
     }
     console.log(result);
+
+ /*   const operators = {
+        "+": (x, y) => x + y,
+        "-": (x, y) => x - y,
+        "*": (x, y) => x * y,
+        "/": (x, y) => x / y,
+        "%": (x, y) => x % y,
+        "**": (x, y) => x ** y,
+    }
+
+    return operators[a](x, y) */
 }
