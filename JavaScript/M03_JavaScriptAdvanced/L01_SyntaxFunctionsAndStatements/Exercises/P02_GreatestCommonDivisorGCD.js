@@ -9,4 +9,11 @@ function gcd_two_numbers(x, y) {
         x = t;
     }
     console.log(x);
+
+    /*  let result = 1
+      for (let i = 2; i < 9; i++) {
+          result = args.every(x => x % i === 0) ? i : result
+      }
+  
+      return result */
 }
