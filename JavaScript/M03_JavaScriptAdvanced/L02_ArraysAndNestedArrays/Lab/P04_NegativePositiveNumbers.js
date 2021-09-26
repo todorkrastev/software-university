@@ -9,4 +9,9 @@ function orderNumbers(inputArr) {
         }
     }
     return arr.join('\r\n');
+
+    /* return inputArr.reduce((a, v) => {
+         v < 0 ? a.unshift(v) : a.push(v)
+         return a
+     }, []) */
 }
