@@ -7,4 +7,6 @@ function pieceOfPie(strArr, firstStr, secondStr) {
     }
     let arrToPrint = strArr.slice(startIndex, endIndex + 1);
     return arrToPrint;
+
+  //  return strArr.slice(strArr.indexOf(firstStr), arr.indexOf(secondStr) + 1)
 }
