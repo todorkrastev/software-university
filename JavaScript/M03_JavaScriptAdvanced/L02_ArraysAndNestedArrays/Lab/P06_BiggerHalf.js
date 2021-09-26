@@ -5,4 +5,6 @@ function printBiggerHalf(strArr) {
     const half = Math.ceil(arrToNum.length / 2);
     const secondHalf = arrToNum.splice(-half);
     return secondHalf;
+
+    // return strArr.sort((x, y) => x - y).slice(-Math.ceil(arr.length / 2))
 }
