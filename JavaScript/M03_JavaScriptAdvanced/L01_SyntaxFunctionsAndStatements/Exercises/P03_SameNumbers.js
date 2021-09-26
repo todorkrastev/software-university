@@ -14,6 +14,8 @@ function validateEqualityOfNumbers(input) {
     }
     isEqual ? console.log('true') : console.log('false');
     console.log(sumOfDigits);
+
+    /*   const arr = `${n}`.split("")
+       return `${arr.every((x, i, arr1) => arr1.slice(i).every(y => x === y))}
+   ${arr.map(Number).reduce((a, v) => a + v, 0)}` */
 }
-validateEqualityOfNumbers(2222222);
-validateEqualityOfNumbers(1234);
