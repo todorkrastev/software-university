@@ -63,65 +63,65 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">DOM Introduction</a>
+                    <a>DOM Introduction</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">DOM Manipulations and Events</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Advanced Functions</a>
+                    <a>DOM Manipulations and Events</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Unit Testing and Error Handling</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Classes</a>
+                    <a>Advanced Functions</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Prototypes and Inheritance</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Workshop</a>
+                    <a>Unit Testing and Error Handling</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="" target="_blank">Lab</a> |
-                    <a href="" target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Classes</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Lab</a> |
+                    <a>Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Prototypes and Inheritance</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Lab</a> |
+                    <a>Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Workshop</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
 </body>
