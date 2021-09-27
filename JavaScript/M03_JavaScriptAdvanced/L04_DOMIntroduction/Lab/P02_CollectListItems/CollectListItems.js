@@ -1,7 +1,5 @@
 function extractText() {
     const items = document.getElementById('items').children;
-    // second option
-    // const items = document.querySelectorAll('#items li');
 
     const result = [];
 
@@ -9,6 +7,11 @@ function extractText() {
         result.push(item.textContent);
     }
     document.getElementById('result').textContent = result.join('\n');
+
+    // second option
+    /* const items = document.querySelectorAll('#items li');
+    const result = [...items].map(e => e.textContent).join('\n');
+    document.getElementById('result').value = result; */
 
     // third option
     /* const html = {
