@@ -14,8 +14,19 @@ function deleteByEmail() {
         result.innerHTML = 'Not found.';
     }
 
-    // second option 
+    // optimization of the first option 
     
+    // const input = document.querySelector('input[name="email"]');
+    // const rows = Array
+    //     .from(document.querySelector('tbody').children)
+    //     .filter(row => row.children[1].textContent == input.value);
+    // rows.forEach(row => row.remove());
+
+    // document.getElementById('result').textContent = rows.length > 0 ? 'Deleted' : 'Not found.';
+
+
+    // second option 
+
     // const input = document.getElementsByName('email')[0];
     // let tableInfo = Array.from(document.querySelectorAll('tbody tr td'));
     // let result = document.getElementById('result');
