@@ -63,11 +63,14 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>DOM Introduction</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Presentation"
+                        target="_blank">DOM Introduction</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
