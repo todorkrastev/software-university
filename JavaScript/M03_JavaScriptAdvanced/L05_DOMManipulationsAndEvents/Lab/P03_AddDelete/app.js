@@ -27,6 +27,35 @@ function addItem() {
         //   }
     }
 
+    // using DOM Event Delegation
+
+    // document.getElementById('items').addEventListener('click', removeElement);
+
+    // function removeElement(ev) {
+    //     if (ev.target.tagName == 'A') {
+    //         const parent = ev.target.parentNode;
+    //         parent.remove();
+    //     }
+    // }
+
+    // function addItem() {
+    //     const input = document.getElementById('newItemText');
+
+    //     const liElement = document.createElement('li');
+    //     liElement.textContent = input.value;
+
+    //     const button = document.createElement('a');
+    //     button.href = '#';
+    //     button.textContent = '[Delete]';
+
+    //     liElement.appendChild(button);
+
+    //     document.getElementById('items').appendChild(liElement);
+
+
+    //     input.value = '';
+    // }
+
     // second option
 
     // let input = document.getElementById('newItemText');
