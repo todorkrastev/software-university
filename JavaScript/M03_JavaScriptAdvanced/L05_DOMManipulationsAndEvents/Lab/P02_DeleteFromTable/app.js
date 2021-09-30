@@ -15,7 +15,7 @@ function deleteByEmail() {
     }
 
     // optimization of the first option 
-    
+
     // const input = document.querySelector('input[name="email"]');
     // const rows = Array
     //     .from(document.querySelector('tbody').children)
@@ -62,23 +62,22 @@ function deleteByEmail() {
     // fourth option
 
     // const data = {
-    //     valueToAdd: document.getElementById("newText").value,
-    //     list: document.getElementById("items"),
+    //     emails: Array.from(
+    //         document.querySelectorAll("tbody tr td:nth-child(2)")
+    //     ),
+    //     inputValue: document.querySelector("body > label > input[type=text]")
+    //         .value,
+    //     outputField: document.getElementById("result"),
     // }
+    // let removed = false
 
-    // function eFactory(tag, content) {
-    //     const temp = document.createElement(tag)
-    //     temp.innerHTML = content
+    // data.emails.forEach(x => {
+    //     if (x.innerHTML.includes(data.inputValue)) {
+    //         x.parentNode.remove()
+    //         data.outputField.innerHTML = "Deleted."
+    //         removed = true
+    //     }
+    // })
 
-    //     return temp
-    // }
-
-    // const item = eFactory("li", data.valueToAdd)
-    // const deleteLink = eFactory("a", "[Delete]")
-    // deleteLink.href = "#"
-    // deleteLink.addEventListener("click", e => e.target.parentNode.remove())
-
-    // item.appendChild(deleteLink)
-
-    // data.list.appendChild(item)
+    // if (removed === false) data.outputField.innerHTML = "Not found."
 }
