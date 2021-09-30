@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+
+<body>
+    <button id="counter">0</button>
+
+    <script>
+        document.getElementById('counter').addEventListener('click', increment);
+
+        function increment(ev) {
+            let value = Number(ev.target.textContent);
+            value++;
+            ev.target.textContent = value;
+        }
+    </script>
+</body>
+
+</html>
