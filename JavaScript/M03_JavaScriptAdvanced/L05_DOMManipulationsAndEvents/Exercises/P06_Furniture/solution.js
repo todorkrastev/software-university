@@ -76,7 +76,7 @@ Average decoration factor: ${decFactor / furniture.length}`;
 
 
 
-  // modification of the first option
+  // using CLOSURE -> modification of the first option
 
 
   //   const table = document.querySelector('table.table tbody');
