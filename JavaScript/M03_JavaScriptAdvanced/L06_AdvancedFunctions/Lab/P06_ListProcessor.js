@@ -7,9 +7,9 @@ function solve(input) {
         print: () => console.log(arr.join(",")),
     };
 
-    input.forEach(x => {
-        const [command, value] = x.split(" ");
+    input.forEach(line => {
+        const [command, str] = line.split(" ");
 
-        obj[command](value);
+        obj[command](str);
     });
 }
