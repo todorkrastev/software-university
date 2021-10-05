@@ -17,7 +17,10 @@ function create(words) {
       }
    }
 
+
+
    // a modification of the first option -> using DOM Event Delegation
+
 
    // const content = document.getElementById('content');
    // content.addEventListener('click', reveal);
@@ -38,7 +41,10 @@ function create(words) {
    //    }
    // }
 
+
+
    // second option
+
 
    // const elements = []
    // const output = document.getElementById("content")
@@ -61,4 +67,51 @@ function create(words) {
    // })
 
    // elements.forEach(x => output.appendChild(x))
+
+
+
+   // using CLOSURE -> first option
+
+
+   // const content = document.getElementById('content');
+
+   // for (const word of words) {
+   //    const div = document.createElement('div');
+   //    const p = document.createElement('p');
+   //    p.textContent = word;
+   //    p.style.display = 'none';
+   //    div.appendChild(p);
+
+   //    div.addEventListener('click', reveal.bind(null, p));
+
+   //    content.appendChild(div);
+
+   // }
+   // function reveal(p) {
+   //    p.style.display = ''; // instead of -> ev.currentTarget.children[0].style.display = '';
+   // }
+
+
+
+   // using CLOSURE -> second option
+
+
+
+   // const content = document.getElementById('content');
+
+   // for (const word of words) {
+   //    const div = document.createElement('div');
+   //    const p = document.createElement('p');
+   //    p.textContent = word;
+   //    p.style.display = 'none';
+   //    div.appendChild(p);
+
+   //    div.addEventListener('click', reveal.bind(p));
+
+   //    content.appendChild(div);
+
+   // }
+   // function reveal() {
+   //    this.style.display = ''; // instead of -> ev.currentTarget.children[0].style.display = '';
+   // }
 }
