@@ -1,4 +1,4 @@
-const sum = require('./sumOfNumbers');
+const sum = require('./SumOfNumbers');
 const { assert } = require('chai');
 
 describe('Testing summing function', () => {
