@@ -87,20 +87,26 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Advanced Functions</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Presentation"
+                        target="_blank">Advanced Functions</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Unit Testing and Error Handling</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Presentation"
+                        target="_blank">Unit Testing and Error Handling</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
