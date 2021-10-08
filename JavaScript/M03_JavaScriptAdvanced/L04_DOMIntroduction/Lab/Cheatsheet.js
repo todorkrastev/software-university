@@ -24,3 +24,7 @@ para.remove();
 element.addEventListener('click', e => {
     console.log(e.target);
 });
+
+// Hide or show elements in HTML using display property
+document.getElementById("element").style.display = "none"; // hide
+document.getElementById("element").style.display = "block";  // show
