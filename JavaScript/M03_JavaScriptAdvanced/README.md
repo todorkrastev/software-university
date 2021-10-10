@@ -111,11 +111,14 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Classes</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Presentation"
+                        target="_blank">Classes</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
