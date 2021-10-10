@@ -15,14 +15,14 @@ class List {
             this.size--;
             return;
         } else {
-            throw new Error('Invalid!')
+            throw new Error('Invalid!');
         }
     }
     get(index) {
         if (index >= 0 && index < this.list.length) {
             return this.list[index];
         } else {
-            throw new Error('Invalid!')
+            throw new Error('Invalid!');
         }
     }
 
