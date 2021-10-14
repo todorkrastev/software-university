@@ -1,6 +1,7 @@
 // Selecting DOM elements
 const element = document.getElementById('content');
 document.querySelector('#content');
+document.querySelectorAll('#content li');
 document.querySelectorAll('ul li');
 
 // Get/Set content
@@ -24,6 +25,9 @@ para.remove();
 element.addEventListener('click', e => {
     console.log(e.target);
 });
+
+// maybe
+e.preventDefault(); // Buttons in Forms send the form when clicked, reloading the page
 
 // Hide or show elements in HTML using display property
 document.getElementById("element").style.display = "none"; // hide
