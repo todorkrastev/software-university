@@ -123,11 +123,14 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Prototypes and Inheritance</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Presentation"
+                        target="_blank">Prototypes and Inheritance</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
