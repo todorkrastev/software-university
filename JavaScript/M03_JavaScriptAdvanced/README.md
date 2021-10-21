@@ -133,15 +133,6 @@
                         target="_blank">Exercises</a>
                 </td>
             </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Workshop</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
-                </td>
-            </tr>
 </body>
 
 </html>
