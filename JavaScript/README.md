@@ -37,6 +37,12 @@
                         target="_blank">JavaScript Advanced</a>
                 </td>
             </tr>
+             <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
+                        target="_blank">JavaScript Applications</a>
+                </td>
+            </tr>
         </table>
     </div>
 
