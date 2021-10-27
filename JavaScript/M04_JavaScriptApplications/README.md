@@ -61,6 +61,66 @@
                         target="_blank">Exercises</a>
                 </td>
             </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Single Page Applications</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Architecture and Testing</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Client Side Rendering</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Routing</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Modular Applications</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
 </body>
 
 </html>
