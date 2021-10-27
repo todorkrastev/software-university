@@ -112,7 +112,7 @@
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
                     <a href=""
-                        target="_blank">Modular Applications</a>
+                        target="_blank">Modula Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
                     <a href=""
