@@ -39,86 +39,65 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Asynchronous Programming</a>
+                    <a>Asynchronous Programming</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Remote Data and Authentication</a>
+                    <a>Remote Data and Authentication</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Single Page Applications</a>
+                    <a>Single Page Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Architecture and Testing</a>
+                    <a>Architecture and Testing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Client Side Rendering</a>
+                    <a>Client Side Rendering</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Routing</a>
+                    <a>Routing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Modular Applications</a>
+                    <a>Modular Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
-                        target="_blank">Lab</a> |
-                    <a href=""
-                        target="_blank">Exercises</a>
+                    <a>Lab</a> |
+                    <a>Exercises</a>
                 </td>
             </tr>
 </body>
