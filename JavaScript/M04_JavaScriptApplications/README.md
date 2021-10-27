@@ -49,6 +49,18 @@
                         target="_blank">Exercises</a>
                 </td>
             </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Remote Data and Authentication</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href=""
+                        target="_blank">Lab</a> |
+                    <a href=""
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
 </body>
 
 </html>
