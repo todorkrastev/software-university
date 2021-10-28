@@ -31,7 +31,7 @@
                         target="_blank">HTTP and REST Services</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href=""
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Lab"
                         target="_blank">Lab</a> |
                     <a href=""
                         target="_blank">Exercises</a>
