@@ -113,6 +113,18 @@
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
+          <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals/L09RegularExpressions/Presentation"
+            target="_blank">Regular Expressions </a>
+        </td>
+        <td style="text-align:center; vertical-align: middle;">
+          <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals/L09RegularExpressions/Lab"
+            target="_blank">Lab</a> |
+          <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals/L09RegularExpressions/Exercises"
+            target="_blank">Exercises</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center; vertical-align: middle;">
           <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M02JavaFundamentals/L10BitsAndBitwiseOperations/Presentation"
             target="_blank">BitsAndBitwiseOperations</a>
         </td>
