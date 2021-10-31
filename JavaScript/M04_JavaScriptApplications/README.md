@@ -39,11 +39,14 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Asynchronous Programming</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Presentation"
+                        target="_blank">Asynchronous Programming</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
