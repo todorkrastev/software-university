@@ -43,8 +43,69 @@ elem1.classList.remove('test');
 
 // Styling <=> CSS
 elem1.style.setProperty('font-weight', 'bold');
-elem1.style.getPropertyValue('font-weight')
+elem1.style.getPropertyValue('font-weight');
 
+// function for creating elements
+function e(type, attributes, ...content) {
+    const result = document.createElement(type);
+
+    for (let [attr, value] of Object.entries(attributes || {})) {
+        if (attr.substring(0, 2) == 'on') {
+            result.addEventListener(attr.substring(2).toLocaleLowerCase(), value);
+        } else {
+            result[attr] = value;
+        }
+    }
+
+    content = content.reduce((a, c) => a.concat(Array.isArray(c) ? c : [c]), []);
+
+    content.forEach(e => {
+        if (typeof e == 'string' || typeof e == 'number') {
+            const node = document.createTextNode(e);
+            result.appendChild(node);
+        } else {
+            result.appendChild(e);
+        }
+    });
+
+    return result;
+}
+
+// function for creating elements
+// -> it gives the opportuinuty to set data attribute 
+// -> example -> e('button', { 'setData-id': id }, 'Button Name');
+function e(type, attributes, ...content) {
+    const result = document.createElement(type);
+
+    for (let [attr, value] of Object.entries(attributes || {})) {
+        if (attr.substring(0, 2) == 'on') {
+            result.addEventListener(attr.substring(2).toLocaleLowerCase(), value);
+        } else if (attr.substring(0, 3) == 'set') {
+            result.setAttribute(attr.substring(3).toLocaleLowerCase(), value);
+        } else {
+            if (typeof value == 'object') {
+                for (let [subAttr, subValue] of Object.entries(value)) {
+                    result[attr][subAttr] = subValue;
+                }
+            } else {
+                result[attr] = value;
+            }
+        }
+    }
+
+    content = content.reduce((a, c) => a.concat(Array.isArray(c) ? c : [c]), []);
+
+    content.forEach(e => {
+        if (typeof e == 'string' || typeof e == 'number') {
+            const node = document.createTextNode(e);
+            result.appendChild(node);
+        } else {
+            result.appendChild(e);
+        }
+    });
+
+    return result;
+}
 
 
 // 0.1 Отделете повече време да си прочетете условието, целта е не само да се прочете
