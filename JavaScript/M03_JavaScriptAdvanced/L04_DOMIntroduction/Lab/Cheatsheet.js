@@ -71,7 +71,7 @@ function e(type, attributes, ...content) {
     return result;
 }
 
-// function for creating elements
+// modification of the function for creating elements
 // -> it gives the opportuinuty to set data attribute 
 // -> example -> e('button', { 'setData-id': id }, 'Button Name');
 function e(type, attributes, ...content) {
