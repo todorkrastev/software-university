@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+#container {
+    max-width: 980px;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+header, footer {
+    background-color: #b7b8b6;
+    padding: 8px 16px;
+}
+
+header::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.user, .guest {
+    display: none;
+}
+
+nav {
+    float: right;
+}
+
+.nav-link {
+    background-color: #34675C;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    background-color: #b3c100;;
+}
+
+.home {
+    display: inline-block;
+}
+
+nav a {
+    float: left;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    margin: 16px 0;
+    display: inline-block;
+}
+
+h2 {
+    margin: 8px 0;
+}
+
+.drop {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.splash {
+    padding: 32px 64px;
+    margin: 64px;
+}
+
+article.preview, article.comment {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    margin: 16px 32px;
+}
+
+article.preview div {
+    font-size: 80%;
+    color: #b7b8b6;
+    padding: 8px 16px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    text-align: right;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+label input {
+    width: 200px;
+}
+
+label textarea {
+    width: 300px;
+    height: 200px;
+}
+
+.narrow {
+    width: 400px;
+    margin: 64px auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.main {
+    margin: 32px;
+}
+
+.action {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #34675C;
+    border: none;
+    color: white;
+    margin: 16px;
+}
+
+.action:hover {
+    cursor: pointer;
+    background-color: #b3c100;
+}
+
+.action:disabled {
+    background-color: #b7b8b6;
+    cursor: not-allowed;
+}
+
+form {
+    margin: 16px 32px;
+}
+
+.error input, .error textarea {
+    border: 1px solid red;
+}
+
+.error-msg {
+    color: red;
+}
+
+.topic-content {
+    padding: 32px;
+}
+
+.controls {
+    float: right;
+}
