@@ -91,6 +91,101 @@ function solve() {
 }
 
 
+// refactoring
+
+
+// function solve() {
+//     const container = document.querySelectorAll('.container-text input');
+//     const addBtn = document.querySelector('#add-btn');
+//     const songsCollection = document.querySelector('.all-hits-container');
+//     const totalLikes = document.querySelector('.likes p');
+//     const savedSongs = document.querySelector('.saved-container');
+
+//     addBtn.addEventListener('click', onClick);
+
+//     const input = {
+//         genre: container[0],
+//         name: container[1],
+//         author: container[2],
+//         date: container[3]
+//     }
+
+//     function onClick(event) {
+//         event.preventDefault();
+
+//         const genre = input.genre.value.trim();
+//         const name = input.name.value.trim();
+//         const author = input.author.value.trim();
+//         const date = input.date.value.trim();
+
+//         if (genre != '' && name != '' && author != '' && date != '') {
+//             const saveBtn = e('button', {className: 'save-btn'}, 'Save song');
+//             const likeBtn = e('button', {className: 'like-btn'}, 'Like song');
+//             const deleteBtn = e('button', {className: 'delete-btn'}, 'Delete');
+
+//             const div = e('div', {className: 'hits-info'},
+//                 e('img', {src: './static/img/img.png'}),
+//                 e('h2', {}, `Genre: ${genre}`),
+//                 e('h2', {}, `Name: ${name}`),
+//                 e('h2', {}, `Author: ${author}`),
+//                 e('h3', {}, `Date: ${date}`),
+//                 saveBtn,
+//                 likeBtn,
+//                 deleteBtn
+//             );
+
+//             songsCollection.appendChild(div);
+
+//             likeBtn.addEventListener('click', () => {
+//                 let [text, number] = totalLikes.textContent.split(': ');
+//                 number = Number(number);
+//                 number += 1;
+//                 totalLikes.textContent = `Total Likes: ${number}`;
+//                 likeBtn.disabled = true;
+//             });
+
+//             saveBtn.addEventListener('click', () => {
+//                 savedSongs.appendChild(div);
+//                 saveBtn.remove();
+//                 likeBtn.remove();
+//             })
+
+//             deleteBtn.addEventListener('click', () => {
+//                 div.remove();
+//             })
+//         }
+//         input.genre.value = ''
+//         input.name.value = '';
+//         input.author.value = '';
+//         input.date.value = '';
+//     }
+
+//     function e(type, attributes, ...content) {
+//         const result = document.createElement(type);
+
+//         for (let [attr, value] of Object.entries(attributes || {})) {
+//             if (attr.substring(0, 2) == 'on') {
+//                 result.addEventListener(attr.substring(2).toLocaleLowerCase(), value);
+//             } else {
+//                 result[attr] = value;
+//             }
+//         }
+
+//         content = content.reduce((a, c) => a.concat(Array.isArray(c) ? c : [c]), []);
+
+//         content.forEach(e => {
+//             if (typeof e == 'string' || typeof e == 'number') {
+//                 const node = document.createTextNode(e);
+//                 result.appendChild(node);
+//             } else {
+//                 result.appendChild(e);
+//             }
+//         });
+
+//         return result;
+//     }
+// }
+
 
 // second option
 
@@ -193,7 +288,6 @@ function solve() {
 // }
 
 
-
 // third option
 
 
@@ -285,7 +379,6 @@ function solve() {
 //         return result;
 //     }
 // }
-
 
 
 // fourth option
