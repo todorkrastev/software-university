@@ -2,13 +2,13 @@ class SummerCamp {
     constructor(organizer, location) {
         this.organizer = organizer;
         this.location = location;
-        this.priceForTheCamp = { "child": 150, "student": 300, "collegian": 500 };
+        this.priceForTheCamp = { child: 150, student: 300, collegian: 500 };
         this.listOfParticipants = [];
     }
 
     registerParticipant(name, condition, money) {
         if (!this.priceForTheCamp.hasOwnProperty(condition)) {
-            throw new Error("Unsuccessful registration at the camp.");
+            throw new Error('Unsuccessful registration at the camp.');
         }
         if (this.listOfParticipants.some(x => x.name === name)) {
             return `The ${name} is already registered at the camp.`;
@@ -59,13 +59,15 @@ class SummerCamp {
     }
 
     toString() {
-        let result = [];
-        result.push(`${this.organizer} will take ${this.listOfParticipants.length} participants on camping to ${this.location}`);
-        let sorted = this.listOfParticipants.sort((a, b) => b.wins - a.wins);
-        for (let el of sorted) {
-            result.push(`${el.name} - ${el.condition} - ${el.power} - ${el.wins}`);
-        }
-        return result.join('\n');
+        const output = [];
+        const numberOfParticipants = this.listOfParticipants.length;
+        output.push(`${this.organizer} will take ${numberOfParticipants} participants on camping to ${this.location}`);
+
+        this.listOfParticipants
+            .sort((a, b) => b.wins - a.wins)
+            .forEach(p => output.push(`${p.name} - ${p.condition} - ${p.power} - ${p.wins}`))
+
+        return output.join('\n');
     }
 }
 
