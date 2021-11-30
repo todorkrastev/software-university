@@ -1,6 +1,6 @@
-// const testNumbers = require('./testNumbers');
-// const { numberChecker } = require('./testNumbers');
-// const { expect } = require('chai');
+const testNumbers = require('./testNumbers');
+const { numberChecker } = require('./testNumbers');
+const { expect } = require('chai');
 
 
 describe('Testing Numbers Functionality', () => {
@@ -173,3 +173,69 @@ describe('Testing Numbers Functionality', () => {
         })
     })
 })
+
+
+
+// refactoring
+
+/*
+describe('Test Numbers', () => {
+
+    describe('Sum Numbers', () => {
+        it('If one of the numbers is not a number returs undefined', () => {
+            expect(testNumbers.sumNumbers('a', 2)).to.be.undefined;
+            expect(testNumbers.sumNumbers(1, 'str')).to.be.undefined;
+            expect(testNumbers.sumNumbers('str', 'str')).to.be.undefined;
+            expect(testNumbers.sumNumbers(null, 1)).to.be.undefined;
+            expect(testNumbers.sumNumbers(1, null)).to.be.undefined;
+            expect(testNumbers.sumNumbers(null, null)).to.be.undefined;
+            expect(testNumbers.sumNumbers(1, undefined)).to.be.undefined;
+            expect(testNumbers.sumNumbers(undefined, 1)).to.be.undefined;
+            expect(testNumbers.sumNumbers(undefined, undefined)).to.be.undefined;
+            expect(testNumbers.sumNumbers(1)).to.be.undefined;
+            expect(testNumbers.sumNumbers()).to.be.undefined;
+        });
+
+        it('Returns the sum of the numbers as a string', () => {
+            expect(testNumbers.sumNumbers(-1, 2)).to.equal('1.00');
+            expect(testNumbers.sumNumbers(1, -2)).to.equal('-1.00');
+            expect(testNumbers.sumNumbers(1, 0)).to.equal('1.00');
+            expect(testNumbers.sumNumbers(0, 1)).to.equal('1.00');
+            expect(testNumbers.sumNumbers(1.5, -2.5)).to.equal('-1.00');
+            expect(testNumbers.sumNumbers(-2,5, 1.5)).to.equal('3.00');
+        });
+    });
+
+    describe('Number checker', () => {
+        it('Throws an error if input is not a number', () => {
+            expect(() => testNumbers.numberChecker()).to.throw('The input is not a number!');
+            expect(() => testNumbers.numberChecker(undefined)).to.throw('The input is not a number!');
+            expect(() => testNumbers.numberChecker('str')).to.throw('The input is not a number!');
+            expect(() => testNumbers.numberChecker({})).to.throw('The input is not a number!');
+            expect(() => testNumbers.numberChecker(NaN)).to.throw('The input is not a number!');
+        });
+        it('Returns a message "The number is even"', () => {
+            expect(testNumbers.numberChecker(2)).to.equal('The number is even!');
+            expect(testNumbers.numberChecker(-2)).to.equal('The number is even!');
+            expect(testNumbers.numberChecker(0)).to.equal('The number is even!');
+            expect(testNumbers.numberChecker('0')).to.equal('The number is even!');
+        });
+        it('Returns a message "The number is odd"', () => {
+            expect(testNumbers.numberChecker(1)).to.equal('The number is odd!');
+            expect(testNumbers.numberChecker(-1)).to.equal('The number is odd!');
+            expect(testNumbers.numberChecker('2.2')).to.equal('The number is odd!');
+        });
+    });
+
+    describe('Average Sum Array', () => {
+        it('Returns the average sum of an array', () => {
+            expect(testNumbers.averageSumArray([1, 2, 3, 4])).to.equal(2.5);
+            expect(testNumbers.averageSumArray([-1, -2, -3, -4])).to.equal(-2.5);
+            expect(testNumbers.averageSumArray([-1.1, -2.2, -3.3, -4.4])).to.equal(-2.75);
+            expect(testNumbers.averageSumArray([1.1, 2.2, 3.3, 4.4])).to.equal(2.75);
+            expect(testNumbers.averageSumArray([0])).to.equal(0);
+        });
+    });
+
+});
+*/
