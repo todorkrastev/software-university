@@ -1,5 +1,5 @@
 const numberOperations = require('./NumberOperations');
-const { expect } = require('chai');
+const {expect} = require('chai');
 
 describe('Testing Number Operations', () => {
     describe('Testing Power Number Functionality', () => {
@@ -80,3 +80,50 @@ describe('Testing Number Operations', () => {
         })
     });
 });
+
+
+// refactoring
+
+/*
+describe('Test Number Operations', () => {
+
+    describe('Test Pow Number Func', () => {
+        it('Returns the power of the input', () => {
+            expect(numberOperations.powNumber(-5)).to.equal(25);
+            expect(numberOperations.powNumber(5)).to.equal(25);
+            expect(numberOperations.powNumber(5.5)).to.equal(30.25);
+            expect(numberOperations.powNumber(-5.5)).to.equal(30.25);
+            expect(numberOperations.powNumber(0)).to.equal(0);
+        });
+    });
+
+    describe('Test Number Checker Func', () => {
+
+        it('Throws an error if the input is NaN', () => {
+            expect(() => numberOperations.numberChecker('str')).to.throw('The input is not a number!');
+            expect(() => numberOperations.numberChecker(undefined)).to.throw('The input is not a number!');
+            expect(() => numberOperations.numberChecker()).to.throw('The input is not a number!');
+            expect(() => numberOperations.numberChecker({})).to.throw('The input is not a number!');
+            expect(() => numberOperations.numberChecker(NaN)).to.throw('The input is not a number!');
+        });
+
+        it('Returns a message "The number is lower than 100!"', () => {
+            expect(numberOperations.numberChecker(99)).to.equal('The number is lower than 100!');
+            expect(numberOperations.numberChecker(99.9)).to.equal('The number is lower than 100!');
+        });
+
+        it('Returns a message "The number is greater or equal to 100!"', () => {
+            expect(numberOperations.numberChecker(100)).to.equal('The number is greater or equal to 100!');
+            expect(numberOperations.numberChecker(100.1)).to.equal('The number is greater or equal to 100!');
+        });
+    });
+
+    describe('Test Sum Array Func', () => {
+
+        it('Returns the sum of 2 arrays', () => {
+            expect(numberOperations.sumArrays([1], [])).to.deep.equal([1]);
+            expect(numberOperations.sumArrays([1], [1, 2])).to.deep.equal([2, 2]);
+        });
+    });
+});
+ */
