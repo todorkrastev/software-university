@@ -24,8 +24,3 @@ export async function deleteAlbum(id) {
     return api.del('/data/albums/' + id);
 }
 
-// delete it later, if it is not in the description
-
-// export async function getMyAlbums(userId) {
-//     return api.get(``);
-// }
