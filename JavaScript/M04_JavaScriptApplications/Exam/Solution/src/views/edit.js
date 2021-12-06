@@ -44,8 +44,6 @@ export async function editPage(ctx) {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        // console.log(...formData.entries());
-
         const name = formData.get('name').trim();
         const imgUrl = formData.get('imgUrl').trim();
         const price = formData.get('price').trim(); // Number(formData.get('price')); ??
