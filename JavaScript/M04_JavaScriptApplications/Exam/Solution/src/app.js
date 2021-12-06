@@ -2,21 +2,19 @@ import { logout } from './api/data.js';
 import { page, render } from './lib.js';
 import { getUserData } from './util.js';
 
-// import { detailsPage } from './views/details.js';
-// import { editPage } from './views/edit.js';
-// import { myCarsPage } from './views/my-cars.js';
-
-
-
-import * as api from './api/api.js';
-import { loginPage } from './views/login.js';
 import { homePage } from './views/home.js';
+import { loginPage } from './views/login.js';
 import { registerPage } from './views/register.js';
 import { catalogPage } from './views/catalog.js';
 import { createPage } from './views/create.js';
 import { detailsPage } from './views/details.js';
 import { editPage } from './views/edit.js';
+
+/*
+DEBUG
+import * as api from './api/api.js';
 window.api = api;
+ */
 
 
 const root = document.getElementById('main-content');
@@ -30,7 +28,6 @@ page('/catalog', catalogPage);
 page('/create', createPage);
 page('/details/:id', detailsPage);
 page('/edit/:id', editPage);
-// page('/my-cars', myCarsPage);
 
 updateUserNav();
 page.start();
