@@ -31,24 +31,6 @@ const albumPreview = (album) => html`
 `;
 
 export async function catalogPage(ctx) {
-    // first idea
-
-    // const userData = getUserData;
-    // const isOwner = userData && albums.map(a => a._ownerId == a.id);
-    // console.log(isOwner);
-
-    // second idea
-
-    // const userData = getUserData();
-    // if (userData) {
-    //     document.getElementById('profile').style.display = 'inline';
-    //     document.getElementById('guest').style.display = 'none';
-    // } else {
-    //     document.getElementById('profile').style.display = 'none';
-    //     document.getElementById('guest').style.display = 'inline';
-    // }
-
-    // original
     const albums = await getAllAlbums();
     ctx.render(catalogTemplate(albums));
 }
