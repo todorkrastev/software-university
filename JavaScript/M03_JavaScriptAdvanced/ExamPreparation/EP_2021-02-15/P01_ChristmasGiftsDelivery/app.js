@@ -56,6 +56,84 @@ function solution() {
 
 // second option
 
+/*
+function solution() {
+    let input = document.querySelector('.card input');
+    let cards = document.querySelectorAll('.card ul');
+    let listOfGifts = cards[0];
+    let sentGifts = cards[1];
+    let discardedGifts = cards[2];
+
+    let addBtn = document.querySelector('button');
+    addBtn.addEventListener('click', onClick);
+
+    function onClick(event) {
+        event.preventDefault();
+
+        let sendBtn = e('button', { id: 'sendButton' }, 'Send');
+        let discardBtn = e('button', { id: 'discardButton' }, 'Discard');
+
+        let li = e('li', { className: 'gift' },
+            `${input.value.trim()}`,
+            sendBtn,
+            discardBtn);
+        listOfGifts.appendChild(li);
+        let sortedList = Array.from(listOfGifts.querySelectorAll('li'));
+        sortedList
+            .sort((a, b) => a.textContent.localeCompare(b.textContent))
+            .forEach(li => listOfGifts.appendChild(li));
+
+        sendBtn.addEventListener('click', sendHandler);
+        discardBtn.addEventListener('click', discardHandler);
+
+        input.value = '';
+    }
+
+    function discardHandler() {
+        let item = this.parentElement.textContent.replace('SendDiscard', '')
+        discardedGifts.appendChild(e('li', { className: 'gift'}, `${item}`));
+        this.parentElement.remove();
+    }
+
+    function sendHandler() {
+        let item = this.parentElement.textContent.replace('SendDiscard', '');
+
+        sentGifts.appendChild(e('li', { className: 'gift' }, `${item}`));
+        this.parentElement.remove();
+
+    }
+
+    function e(type, attributes, ...content) {
+        const result = document.createElement(type);
+
+        for (let [attr, value] of Object.entries(attributes || {})) {
+            if (attr.substring(0, 2) == 'on') {
+                result.addEventListener(attr.substring(2).toLocaleLowerCase(), value);
+            } else {
+                result[attr] = value;
+            }
+        }
+
+        content = content.reduce((a, c) => a.concat(Array.isArray(c) ? c : [c]), []);
+
+        content.forEach(e => {
+            if (typeof e == 'string' || typeof e == 'number') {
+                const node = document.createTextNode(e);
+                result.appendChild(node);
+            } else {
+                result.appendChild(e);
+            }
+        });
+
+        return result;
+    }
+}
+ */
+
+
+
+// third option
+
 
 // function solution() {
 //     const cardLists = document.querySelectorAll(`.container section ul`);
