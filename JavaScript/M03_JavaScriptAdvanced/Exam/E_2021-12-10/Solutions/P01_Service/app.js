@@ -16,12 +16,10 @@ function solve() {
         let name = document.querySelector('#client-name');
         let phone = document.querySelector('#client-phone');
 
-        // could be description.value !== '' or productType.value != '' / !== ''
         if (description.value != '' && name.value != '' && phone.value != '') {
             let startBtn = e('button', { className: 'start-btn' }, 'Start repair');
             let finishBtn = e('button', { className: 'finish-btn', disabled: true }, 'Finish repair');
 
-            // with or without trim() ???
             let device = e('div', { className: 'container' },
                 e('h2', {}, `Product type for repair: ${productType.value}`),
                 e('h3', {}, `Client information: ${name.value.trim()}, ${phone.value.trim()}`),
@@ -43,15 +41,11 @@ function solve() {
     }
 
     function startBtnHandler() {
-        //preventDefault() ?
-
         this.disabled = true;
         this.nextElementSibling.disabled = false
     }
 
     function finishBtnHandler() {
-        //preventDefault() ?
-
         let device = e('div', { className: 'container' },
             e('h2', {}, `${this.parentElement.children[0].textContent}`),
             e('h3', {}, `${this.parentElement.children[1].textContent}`),
@@ -64,7 +58,6 @@ function solve() {
     }
 
     function clearBtnHandler() {
-
         Array.from(this.parentElement.querySelectorAll('.container'))
             .forEach(d => d.remove());
         console.log(completedOrders);
