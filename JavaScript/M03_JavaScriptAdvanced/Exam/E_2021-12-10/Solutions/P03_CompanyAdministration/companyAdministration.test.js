@@ -87,6 +87,12 @@ describe('Testing companyAdministration Func', () => {
     });
 });
 
+/*
+
+module.exports = name of an object
+
+const name of an object = require('./name of a file');
+const { expect } = require('chai');
 
 describe('', () => {
 
@@ -96,8 +102,11 @@ it('', () => {
 
 });
 
+ */
 
-// module.exports = name of an object
 
-// const name of an object = require('./name of a file');
-// const { expect } = require('chai');
+
+
+
+
+
