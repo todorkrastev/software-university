@@ -33,7 +33,7 @@
                 <td style="text-align:center; vertical-align: middle;">
                     <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Lab"
                         target="_blank">Lab</a> |
-                    <a href=""
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
@@ -49,58 +49,76 @@
                         target="_blank">Exercises</a>
                 </td>
             </tr>
-            <tr>
+        <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Remote Data and Authentication</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Presentation"
+                        target="_blank">Remote Data and Authentication</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Single Page Applications</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Architecture and Testing</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Presentation"
+                        target="_blank">Single Page Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Client Side Rendering</a>
-                </td>
-                <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Routing</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Presentation"
+                        target="_blank">Architecture and Testing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Modular Applications</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Presentation"
+                        target="_blank">Client Side Rendering</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a>Lab</a> |
-                    <a>Exercises</a>
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Exercises"
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Presentation"
+                        target="_blank">Routing</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Exercises"
+                        target="_blank">Exercises</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Presentation"
+                        target="_blank">Modular Applications</a>
+                </td>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Lab"
+                        target="_blank">Lab</a> |
+                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Exercises"
+                        target="_blank">Exercises</a>
                 </td>
             </tr>
 </body>
