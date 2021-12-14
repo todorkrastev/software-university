@@ -1,0 +1,37 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#modal {
+    background-color: #cccccc;
+    width: 300px;
+    margin: auto;
+    margin-top: 15vh;
+    border-radius: 16px;
+    padding: 16px 32px;
+    text-align: center;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#modal p {
+    margin: 32px;
+}
+
+#modal button {
+    border: none;
+    margin: auto;
+    background-color: salmon;
+    padding: 8px 16px;
+    color: black;
+}
+
+#modal button:hover {
+    background-color: #6c8b47;
+    color: white;
+    cursor: pointer;
+}
