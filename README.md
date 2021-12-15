@@ -5,8 +5,6 @@
 </p>
 
 <h2 align="center">This repository contains my projects, homework, exercises and other materials created during my studies <a href="https://softuni.bg/curriculum" target="_blank">@SoftUni</a></h2>
-    <br>
-    <br>
    <h1 align="center">Certifications</h1>
     <br>
     <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Java" target="_blank">Java</a>
