@@ -49,7 +49,7 @@
     <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms"
             target="_blank">Data Structures & Algorithms</a></h2>
     <ul>
-        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23"
+        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms"
                 target="_blank">Fundamentals in Mathematics</a> - <a
                 href="https://softuni.bg/certificates/details/118885/f561b4c7" target="_blank">See credential</a></li>
     </ul>
