@@ -27,9 +27,9 @@
     <h2>JavaScript</h2>
     <ul>
         <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M01_JavaScriptProgrammingBasics"
-                target="_blank">Programming Basics with JavaScript</a> - <a>Self education</a></li>
+                target="_blank">Programming Basics with JavaScript</a> - <a>Self-education</a></li>
         <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M02_JavaScriptFundamentals"
-                target="_blank">Programming Fundamentals with JavaScript</a> - <a>Self education</a></li>
+                target="_blank">Programming Fundamentals with JavaScript</a> - <a>Self-education</a></li>
         <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
                 target="_blank">JavaScript Advanced</a> - <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
                 target="_blank">See credential</a></li>
