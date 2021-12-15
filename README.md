@@ -37,6 +37,12 @@
                 target="_blank">JavaScript Applications</a> - <a href="https://softuni.bg/certificates/details/120840/2416d36d"
                 target="_blank">See credential</a></li>
     </ul>
+    <h2>C#</h2>
+    <ul>
+        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23"
+                target="_blank">Programming Basics with C#</a> - <a
+                href="https://softuni.bg/certificates/details/91471/9d2877c7" target="_blank">See credential</a></li>
+    </ul>
     <h2>C++</h2>
     <ul>
         <li>I am currently learning
