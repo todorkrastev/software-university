@@ -1,7 +1,7 @@
  <div align="center">
     <h1 style="color:white">
-      <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M01JavaProgrammingBasics/CourseIntroduction"
-        target="_blank">Programming Basics with Java</a>
+      <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/CourseIntroduction"
+        target="_blank">Programming Basics with C#</a>
     </h1>
     <a href="https://softuni.bg/curriculum" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Logo_Software_University_%28SoftUni%29_-_blue.png"
