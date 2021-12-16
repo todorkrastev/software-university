@@ -53,20 +53,20 @@
     <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B" target="_blank">C++</a>
     </h2>
     <ul>
-        <li>I am currently studying
+        <li>
             <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B"
-                target="_blank">C++</a>
+                target="_blank">C++</a> - Studying now
         </li>
     </ul>
     <h2>RDBMS</h2>
     <ul>
-        <li>I am currently studying
-            <a>MySQL</a>
+        <li>
+            <a>MySQL</a> - Studying now
         </li>
     </ul>
     <h2>HTML & CSS</h2>
     <ul>
-        <li>I am currently studying
-            <a>HTML & CSS Advanced</a>
+        <li>
+            <a>HTML & CSS Advanced</a> - Studying now
         </li>
     </ul>
