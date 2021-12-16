@@ -1,0 +1,20 @@
+nav {
+    background-color: darkblue;
+    text-align: center;
+
+}
+
+ul, body {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
