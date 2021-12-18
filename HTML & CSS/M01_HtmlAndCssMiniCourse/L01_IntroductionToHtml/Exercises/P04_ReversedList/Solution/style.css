@@ -1,0 +1,15 @@
+div {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+ol, li {
+    text-decoration: underline;
+}
