@@ -1,0 +1,49 @@
+nav {
+    background-color: darkblue;
+    text-align: center;
+}
+
+ul, body {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h1 {
+    text-align: center;
+}
+
+article {
+    text-align: left;
+    margin: 0 20%;
+}
+
+article header p {
+    font-style: italic;
+}
+
+footer {
+    background-color: darkblue;
+    margin: 15%;
+    text-align: center;
+    padding: 0.5px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
