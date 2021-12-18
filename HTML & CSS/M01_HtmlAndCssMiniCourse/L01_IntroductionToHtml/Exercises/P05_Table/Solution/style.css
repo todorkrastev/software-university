@@ -1,0 +1,19 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200;
+}
+
+th {
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2%;
+}
+
+table, td {
+    text-align: right;
+    border: 1px solid black;
+    padding: 1%;
+}
