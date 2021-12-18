@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F1F5;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 24px;
+    width: 1180px;
+    font-size: 16px;
+}
+
+nav {
+    color: #00D3D4;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 180px;
+    margin: 10px 0;
+    padding: 15px 0;
+    border-right: 3px solid white;
+
+}
+
+nav ul li:hover {
+    background-color: #F9690E;
+    color: #F9690E;
+    cursor: pointer;
+}
+
+nav ul li:first-child {
+    border-left: 3px solid white;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #00D3D4;
+}
+
+nav ul li i {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #00D3D4;
+}
+
+
+
+main section:nth-child(1) {
+    width: 400px;
+    display: inline-block;
+    background-color: #555c6f;
+    color: #b2b6c0;
+    padding: 36px;
+    padding-bottom: 10px;
+}
+
+main section:nth-child(1) h2 {
+    padding-bottom: 30px;
+}
+
+main section:nth-child(1) p {
+    margin: 10px;
+}
+
+main section:nth-child(1) ul {
+    padding: 30px 0 102px 0;
+}
+
+main section:nth-child(1) ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+main section:nth-child(1) ul li a i {
+    color: #b2b6c0;
+}
+
+main section:nth-child(1) ul li:hover {
+    background-color: #F9690E;
+    color: while;
+    cursor: pointer;
+}
+
+main section:nth-child(2) h2 {
+    margin-left: 15px;
+    width: 2px;
+}
+
+main section:nth-child(2) p {
+    margin-left: 15px;
+}
+
+main section:nth-child(2) {
+    width: 692px;
+    display: inline-block;
+    float: right;
+    background-color: #01BDBE;
+    color: white;
+    padding: 44px 8px;
+}
+
+main section:nth-child(2) article:nth-child(1) {
+    width: 243px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+main section:nth-child(2) article:nth-child(2) {
+    width: 250px;
+    display: inline-block;
+    float: left;
+}
+
+main section:nth-child(2) article:nth-child(1) {
+    font-size: 18px;
+}
+
+img {
+    width: 220px;
+    display: inline-block;
+    border: 10px solid white;
+    float: right;
+    margin-right: 25px;
+    margin: -112px 25px;
+}
