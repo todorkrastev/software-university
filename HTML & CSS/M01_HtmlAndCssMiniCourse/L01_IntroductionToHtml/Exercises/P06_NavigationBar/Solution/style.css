@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: cadetblue;
+    padding: 5px;
+    text-align: center;
+}
+
+li, a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: darkred;
+}
+
+li:hover {
+    color: rgb(27, 27, 27);
+    background-color: greenyellow;
+    padding-right: 10px;
+    border-radius: 7px;
+}
+
+a:hover {
+    color: black;
+}
