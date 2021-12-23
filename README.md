@@ -58,7 +58,7 @@
                 target="_blank">C++</a> - Studying now
         </li>
     </ul>
-    <h2>RDBMS</h2>
+    <h2>DBMS</h2>
     <ul>
         <li>
             <a>MySQL</a> - Studying now
