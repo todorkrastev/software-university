@@ -67,6 +67,6 @@
     <h2>HTML & CSS</h2>
     <ul>
         <li>
-            <a>HTML & CSS Advanced</a> - Studying now
+            <a>HTML & CSS</a> - Studying now
         </li>
     </ul>
