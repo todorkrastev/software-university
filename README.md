@@ -61,12 +61,14 @@
     <h2>DBMS</h2>
     <ul>
         <li>
-            <a>MySQL</a> - Studying now
+            <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/DBMS/M01_MySQL"
+                target="_blank">MySQL</a> - Studying now
         </li>
     </ul>
     <h2>HTML & CSS</h2>
     <ul>
         <li>
-            <a>HTML & CSS</a> - Studying now
+            <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/HTML%20%26%20CSS/M02_HtmlAndCss"
+                target="_blank">HTML & CSS</a> - Studying now
         </li>
     </ul>
