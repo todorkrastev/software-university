@@ -7,4 +7,3 @@ FROM
 WHERE
     `first_name` LIKE 'sa%'
 ORDER BY `employee_id` ASC;
-
