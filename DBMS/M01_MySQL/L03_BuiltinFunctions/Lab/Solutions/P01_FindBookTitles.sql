@@ -6,4 +6,4 @@ FROM
     `books`
 WHERE
     `title` LIKE 'The%'
-ORDER BY `id`;
+ORDER BY `id` ASC;
