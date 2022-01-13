@@ -1,6 +1,5 @@
 USE `book_library`;
 
-
 SELECT 
     REPLACE(`title`, 'The', '***')
 FROM
