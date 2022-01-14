@@ -8,5 +8,5 @@ FROM
     `peaks`,
     `rivers`
 WHERE
-    RIGHT(LOWER(`peak_name`), 1) = LEFT(LOWER(`river_name`), 1)
+    RIGHT(`peak_name`, 1) = LEFT(`river_name`, 1)
 ORDER BY `mix` ASC;
