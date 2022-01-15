@@ -4,19 +4,22 @@ body {
     background-color: #CCCCCC;
 }
 
-ul {
-    background-color: #444;
+nav {
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+    background-color: #444;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 li {
     font-size: 24px;
-    line-height: 40px;
     height: 40px;
     padding: 20px;
+    line-height: 40px;
     display: inline-block;
 }
 
@@ -26,26 +29,27 @@ a {
 }
 
 section {
-    /* margin-left: 20px; */
-    margin: 91px 0px 0px 20px;
+    margin-left: 20px;
 }
 
-h1 {
+p {
+    font-size: 24px;
+}
+
+header h1 {
     font-size: 28px;
 }
 
-header>p {
+header p {
     font-style: italic;
-}
-
-article>p {
-    font-size: 24px;
 }
 
 footer {
     background-color: #444;
-    text-align: center;
+}
+
+footer p {
     color: #fff;
+    text-align: center;
     padding: 10px;
-    margin: 117px 0px 0px 0px;
 }
