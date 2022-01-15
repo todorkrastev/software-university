@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+@import url(//db.onlinewebfonts.com/c/2aa5f6db10ab7b69465c95555c235503?family=Graphik+Semibold);
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sentinel A', 'Sentinel B', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #747474;
+    text-transform: uppercase;
+}
+
+span {
+    font-family: 'Graphik Semibold Web', 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.46;
+    color: #5c5a5a;
+}
+
+p {
+    font-family: 'Graphik Regular Web', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.46;
+    color: #5c5a5a;
+
+}
