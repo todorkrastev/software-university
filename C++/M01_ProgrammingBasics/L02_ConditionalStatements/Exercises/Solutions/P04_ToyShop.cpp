@@ -36,7 +36,7 @@ int main() {
 	cout.precision(2);
 
 	double output = abs(profit - tripPrice);
-	if (tripPrice < profit) {
+	if (tripPrice <= profit) {
 		cout << "Yes! " << output << " lv left.";
 	} else {
 		cout << "Not enough money! " << output << " lv needed.";
