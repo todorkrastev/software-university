@@ -5,6 +5,6 @@ SELECT
 FROM
     `wizzard_deposits` AS wd
 WHERE
-    `magic_wand_creator` = 'Ollivander family'
+    wd.`magic_wand_creator` = 'Ollivander family'
 GROUP BY wd.`deposit_group`
 ORDER BY wd.`deposit_group`;
