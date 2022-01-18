@@ -54,6 +54,13 @@
                 target="_blank">C++</a> - Studying now
         </li>
     </ul>
+    <h2>C++</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Python/M01_ProgrammingBasics"
+                target="_blank">Python</a> - Studying now
+        </li>
+    </ul>
     <h2>DBMS</h2>
     <ul>
         <li>
