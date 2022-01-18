@@ -6,8 +6,7 @@
 
 <h2 align="center">This repository contains my projects, homework, exercises and educational materials created during my studies <a href="https://softuni.bg/curriculum" target="_blank">@SoftUni</a></h2>
    <h1>Certifications</h1>
-    <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Java" target="_blank">Java</a>
-    </h2>
+    <h2>Java</h2>
     <ul>
         <li><a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/Java/M01JavaProgrammingBasics"
                 target="_blank">Programming Basics with Java</a> - <a
@@ -22,8 +21,7 @@
                 target="_blank">Java OOP</a> - <a href="https://softuni.bg/certificates/details/110654/2770fb56"
                 target="_blank">See credential</a></li>
     </ul>
-    <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript"
-            target="_blank">JavaScript</a></h2>
+    <h2>JavaScript</h2>
     <ul>
         <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M01_JavaScriptProgrammingBasics"
                 target="_blank">Programming Basics with JavaScript</a></li>
@@ -36,22 +34,20 @@
                 target="_blank">JavaScript Applications</a> - <a
                 href="https://softuni.bg/certificates/details/120840/2416d36d" target="_blank">See credential</a></li>
     </ul>
-    <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23" target="_blank">C#</a></h2>
+    <h2>C#</h2>
     <ul>
         <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23"
                 target="_blank">Programming Basics with C#</a> - <a
                 href="https://softuni.bg/certificates/details/91471/9d2877c7" target="_blank">See credential</a></li>
     </ul>
     </ul>
-    <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms"
-            target="_blank">Data Structures & Algorithms</a></h2>
+    <h2>Data Structures & Algorithms</h2>
     <ul>
-        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms"
+        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics"
                 target="_blank">Fundamentals in Mathematics</a> - <a
                 href="https://softuni.bg/certificates/details/118885/f561b4c7" target="_blank">See credential</a></li>
     </ul>
-    <h2><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B" target="_blank">C++</a>
-    </h2>
+    <h2>C++</h2>
     <ul>
         <li>
             <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B/M01_ProgrammingBasics"
