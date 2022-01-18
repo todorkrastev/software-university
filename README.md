@@ -54,7 +54,7 @@
     </h2>
     <ul>
         <li>
-            <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B"
+            <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%2B%2B/M01_ProgrammingBasics"
                 target="_blank">C++</a> - Studying now
         </li>
     </ul>
