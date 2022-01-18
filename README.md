@@ -36,7 +36,7 @@
     </ul>
     <h2>C#</h2>
     <ul>
-        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23"
+        <li><a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics"
                 target="_blank">Programming Basics with C#</a> - <a
                 href="https://softuni.bg/certificates/details/91471/9d2877c7" target="_blank">See credential</a></li>
     </ul>
