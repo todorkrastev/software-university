@@ -1,4 +1,5 @@
-USE `geography`;
+CREATE SCHEMA `regional_police_department`;
+USE `regional_police_department`;
 
 CREATE TABLE `passports` (
     `passport_id` INT PRIMARY KEY AUTO_INCREMENT,
@@ -14,15 +15,17 @@ CREATE TABLE `people` (
         REFERENCES `passports` (`passport_id`)
 );
 
-INSERT INTO `passports` (`passport_id`, `passport_number`) VALUES
-(101, 'N34FG21B'),
-(102, 'K65LO4R7'),
-(103, 'ZE657QP2');
+ALTER TABLE `passports` AUTO_INCREMENT = 101;
+INSERT INTO `passports` (`passport_number`) VALUES
+('N34FG21B'),
+('K65LO4R7'),
+('ZE657QP2');
 
-INSERT INTO `people` (`person_id`, `first_name`, `salary`, `passport_id`) VALUES
-(1, 'Roberto', 43300.00, 102),
-(2, 'Tom', 56100.00, 103),
-(3, 'Yana', 60200.00, 101);
+ALTER TABLE `people` AUTO_INCREMENT = 1;
+INSERT INTO `people` (`first_name`, `salary`, `passport_id`) VALUES
+('Roberto', 43300.00, 102),
+('Tom', 56100.00, 103),
+('Yana', 60200.00, 101);
 
 
 SELECT 
