@@ -1,0 +1,27 @@
+body, * {
+    font-family: Helvetica, sans-serif;
+    max-width: 1400px;
+}
+
+body {
+    margin: 0 Auto;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 12px;
+}
+
+nav li a {
+    color: green;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 3px solid black;
+}
