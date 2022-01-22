@@ -1,0 +1,69 @@
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 60px;
+
+}
+
+body .square {
+    list-style-type: square;
+}
+
+body .disc {
+    list-style-type: disc;
+}
+
+body .circle {
+    list-style-type: circle;
+}
+
+body table {
+    width: 100%;
+}
+
+hr {
+    border: 0.5px solid #9A9A9A;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+article th {
+    background-color: #CCCCCC;
+    width: 144px;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+
+article td {
+    width: 144px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    padding-left: 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: #F1F1F1;
+}
+
+body blockquote {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 4px solid #DDDDDD;
+}
+
+blockquote :last-of-type {
+    font-style: oblique;
+    text-align: right;
+}
