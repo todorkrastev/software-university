@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body section {
+    border: 8px solid #e6e6e6;
+    padding: 16px;
+    width: 451px;
+    height: 540px;
+}
+
+section h2 {
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    margin: 1.2rem 0rem;
+    text-transform: capitalize;
+}
+
+section div {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body section button {
+    width: 250px;
+    font-family: Work Sans, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #d5384d;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+section div p {
+    font-family: Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 18px;
+    line-height: 30px;
+}
