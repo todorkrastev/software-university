@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 0.4rem solid black;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 300px;
+}
