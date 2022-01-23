@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    padding: 20px;
+    margin: 1% 10%;
+}
+
+ul {
+    list-style: square;
+}
+
+.left-part {
+    float: left;
+    width: 70%;
+}
+
+img {
+    width: 60%;
+}
+
+aside {
+    float: right;
+    vertical-align: top;
+    width: 30%;
+}
