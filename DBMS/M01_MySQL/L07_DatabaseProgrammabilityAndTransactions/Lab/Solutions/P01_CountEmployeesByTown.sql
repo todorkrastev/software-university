@@ -1,3 +1,4 @@
+DROP FUNCTION IF EXISTS ufn_count_employees_by_town;
 DELIMITER $$$
 CREATE FUNCTION `ufn_count_employees_by_town`(`town_name` VARCHAR(45))
 RETURNS INT
