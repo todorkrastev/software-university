@@ -8,7 +8,7 @@ FROM
 WHERE
     `salary` >= `decimal_num`
 ORDER BY `first_name` , `last_name` , `employee_id`;
-END $$$
+END; $$$
 DELIMITER ;
 
 CALL `usp_get_employees_salary_above`(45000);
