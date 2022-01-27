@@ -1,4 +1,4 @@
-DROP FUNCTION IF EXISTS ufn_count_employees_by_town;
+DROP FUNCTION IF EXISTS `ufn_count_employees_by_town`;
 DELIMITER $$$
 CREATE FUNCTION `ufn_count_employees_by_town`(`town_name` VARCHAR(45))
 RETURNS INT
@@ -19,15 +19,15 @@ RETURN `employees_counter`;
 END $$$
 DELIMITER ;
 
-SELECT UFN_COUNT_EMPLOYEES_BY_TOWN('Sofia');
+SELECT `ufn_count_employees_by_town`('Sofia');
 
 SELECT 
-    employee_id, first_name, last_name, t.`name`
+    `employee_id`, `first_name`, `last_name`, t.`name`
 FROM
-    employees
+    `employees`
         NATURAL JOIN
-    addresses
+    `addresses`
         NATURAL JOIN
-    towns t
+    `towns` AS `t`
 WHERE
     t.`name` = 'Carnation';
