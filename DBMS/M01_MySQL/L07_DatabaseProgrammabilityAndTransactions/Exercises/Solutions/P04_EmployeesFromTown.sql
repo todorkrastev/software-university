@@ -12,7 +12,7 @@ FROM
 WHERE
     t.`name` = `town_name`
 ORDER BY `first_name` , `last_name` , `employee_id`;
-END $$$
+END; $$$
 DELIMITER ;
 
 CALL `usp_get_employees_from_town`('Sofia');
