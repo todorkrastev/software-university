@@ -8,5 +8,6 @@ ORDER BY `first_name`,
 `last_name`,
 `employee_id`;
 END $$$
+DELIMITER ;
 
 CALL `usp_get_employees_salary_above_35000`();
