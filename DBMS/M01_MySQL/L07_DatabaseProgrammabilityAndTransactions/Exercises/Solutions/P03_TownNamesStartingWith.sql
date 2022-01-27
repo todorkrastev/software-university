@@ -8,7 +8,7 @@ FROM
 WHERE
     `name` LIKE CONCAT(`input`, '%')
     ORDER BY `name`;
-END $$$
+END; $$$
 DELIMITER ;
 
 CALL `usp_get_towns_starting_with`('b');
