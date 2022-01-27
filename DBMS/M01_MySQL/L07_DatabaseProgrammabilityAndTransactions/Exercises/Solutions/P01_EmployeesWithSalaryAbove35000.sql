@@ -8,7 +8,7 @@ FROM
 WHERE
     `salary` > 35000
 ORDER BY `first_name` , `last_name` , `employee_id`;
-END $$$
+END; $$$
 DELIMITER ;
 
 CALL `usp_get_employees_salary_above_35000`();
