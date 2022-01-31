@@ -9,7 +9,7 @@ RETURN (SELECT `word` REGEXP(CONCAT('(?i)^[', `set_of_letters`, ']+$')));
 END; $$$
 DELIMITER ;
 
-SELECT UFN_IS_WORD_COMPRISED('oistmiahf', 'b');
+SELECT `ufn_is_word_comprised`('oistmiahf', 'b');
 -- returns 0
-SELECT UFN_IS_WORD_COMPRISED('oistmiahf', 'SOfiA');
+SELECT `ufn_is_word_comprised`('oistmiahf', 'SOfiA');
 -- returns 1
