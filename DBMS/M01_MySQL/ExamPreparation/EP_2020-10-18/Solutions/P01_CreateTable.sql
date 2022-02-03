@@ -18,7 +18,7 @@ CREATE TABLE `stores` (
     `id` INT PRIMARY KEY AUTO_INCREMENT,
     `name` VARCHAR(20) NOT NULL UNIQUE,
     `rating` FLOAT NOT NULL,
-    `has_parking` TINYINT DEFAULT FALSE,
+    `has_parking` TINYINT(1) DEFAULT FALSE,
     `address_id` INT NOT NULL,
     CONSTRAINT `fk_stores_addresses` FOREIGN KEY (`address_id`)
         REFERENCES `addresses` (`id`)
