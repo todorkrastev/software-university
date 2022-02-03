@@ -12,4 +12,4 @@ BEGIN
 END; $$$
 DELIMITER ;
 
-SELECT udf_courses_by_client ('(803) 6386812') as `count`; 
+SELECT UDF_COURSES_BY_CLIENT('(803) 6386812') AS `count`; 
