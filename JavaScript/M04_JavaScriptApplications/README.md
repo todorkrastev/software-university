@@ -10,7 +10,7 @@
 <body>
     <div align="center">
         <h1 style="color:white">
-            <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L00_CourseIntroduction"
+            <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L00_CourseIntroduction"
                 target="_blank">JavaScript Advanced</a>
         </h1>
         <a href="https://softuni.bg/curriculum" target="_blank">
@@ -27,97 +27,97 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Presentation"
                         target="_blank">HTTP and REST Services</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L01_HTTPAndRESTServices/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Presentation"
                         target="_blank">Asynchronous Programming</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications/L02_AsynchronousProgramming/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
         <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Presentation"
                         target="_blank">Remote Data and Authentication</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L03_RemoteDataAndAuthentication/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Presentation"
                         target="_blank">Single Page Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L04_SinglePageApplications/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Presentation"
                         target="_blank">Architecture and Testing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L05_ArchitectureAndTesting/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Presentation"
                         target="_blank">Client Side Rendering</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L06_ClientSideRendering/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Presentation"
                         target="_blank">Routing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L07_Routing/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Presentation"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Presentation"
                         target="_blank">Modular Applications</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Lab"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Exercises"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M04_JavaScriptApplications/L08_ModularApplications/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
