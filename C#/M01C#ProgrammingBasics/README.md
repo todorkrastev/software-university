@@ -1,6 +1,6 @@
  <div align="center">
     <h1 style="color:white">
-      <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/CourseIntroduction"
+      <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/CourseIntroduction"
         target="_blank">Programming Basics with C#</a>
     </h1>
     <a href="https://softuni.bg/curriculum" target="_blank">
@@ -17,73 +17,73 @@
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Presentation"
             target="_blank">First Steps in Coding</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L01FirstStepsInCoding/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Presentation"
             target="_blank">Conditional Statements</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L02ConditionalStatements/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Presentation"
             target="_blank">Conditional Statements Advanced</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Exercise"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L03ConditionalStatementsAdvanced/Exercise"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Presentation"
             target="_blank">For Loop</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L04ForLoop/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Presentation"
             target="_blank">While Loop</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L05WhileLoop/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Presentation"
             target="_blank">Nested Loops</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics/L06NestedLoops/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
