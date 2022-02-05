@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics"
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics"
                         target="_blank">Programming Basics with C#</a>
                 </td>
             </tr>
