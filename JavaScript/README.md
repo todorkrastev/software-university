@@ -22,24 +22,24 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M01_JavaScriptProgrammingBasics"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M01_JavaScriptProgrammingBasics"
                         target="_blank">Programming Basics with JavaScript</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals"
                         target="_blank">Programming Fundamentals with JavaScript</a>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
                         target="_blank">JavaScript Advanced</a>
                 </td>
             </tr>
              <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
                         target="_blank">JavaScript Applications</a>
                 </td>
             </tr>
