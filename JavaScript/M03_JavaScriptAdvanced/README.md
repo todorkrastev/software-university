@@ -10,7 +10,7 @@
 <body>
     <div align="center">
         <h1 style="color:white">
-            <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L00_CourseIntroduction"
+            <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L00_CourseIntroduction"
                 target="_blank">JavaScript Advanced</a>
         </h1>
         <a href="https://softuni.bg/curriculum" target="_blank">
@@ -27,109 +27,109 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Presentation"
                         target="_blank">Syntax, Functions and Statements</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L01_SyntaxFunctionsAndStatements/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Presentation"
                         target="_blank">Arrays and Nested Arrays</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L02_ArraysAndNestedArrays/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Presentation"
                         target="_blank">Objects and Composition</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L03_ObjectsAndComposition/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Presentation"
                         target="_blank">DOM Introduction</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L04_DOMIntroduction/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Presentation"
                         target="_blank">DOM Manipulations and Events</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L05_DOMManipulationsAndEvents/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Presentation"
                         target="_blank">Advanced Functions</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L06_AdvancedFunctions/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Presentation"
                         target="_blank">Unit Testing and Error Handling</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L07_UnitTestingAndErrorHandling/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Presentation"
                         target="_blank">Classes</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L08_Classes/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Presentation"
                         target="_blank">Prototypes and Inheritance</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced/L09_PrototypesAndInheritance/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
