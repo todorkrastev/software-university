@@ -10,7 +10,7 @@
 <body>
     <div align="center">
         <h1 style="color:white">
-            <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L00_CourseIntroduction"
+            <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L00_CourseIntroduction"
                 target="_blank">Programming Fundamentals with JavaScript</a>
         </h1>
         <a href="https://softuni.bg/curriculum" target="_blank">
@@ -27,109 +27,109 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Presentation"
                         target="_blank">Basic Syntax, Conditional Statements and Loops</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L01_BasicSyntaxConditionalStatementsAndLoops/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Presentation"
                         target="_blank">Data Types and Variables</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L02_DataTypesAndVariables/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Presentation"
                         target="_blank">Arrays</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L03_Arrays/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Presentation"
                         target="_blank">Functions</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L04_Functions/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Presentation"
                         target="_blank">Arrays Advanced</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L05_ArraysAdvanced/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Presentation"
                         target="_blank">Objects and Classes</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L06_ObjectsAndClasses/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Presentation"
                         target="_blank">Associative Arrays</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L07_AssociativeArrays/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Presentation"
                         target="_blank">Text Processing</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L08_TextProcessing/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Presentation"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Presentation"
                         target="_blank">Regular Expressions</a>
                 </td>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Lab"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Lab"
                         target="_blank">Lab</a> |
-                    <a href="https://github.com/beinsaduno/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Exercises"
+                    <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M02_JavaScriptFundamentals/L09_RegularExpressions/Exercises"
                         target="_blank">Exercises</a>
                 </td>
             </tr>
