@@ -17,61 +17,61 @@
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Presentation"
             target="_blank">Basics Mathematics</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Lab"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Lab"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Exercises"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L01_BasicsMathematics/Exercises"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics/Presentation"
             target="_blank">Discrete Mathematics Logics</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L02_DiscreteMathematicsLogics"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs/Presentation"
             target="_blank">Discrete Mathematics Graphs</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L03_DiscreteMathematicsGraphs"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics/Presentation"
             target="_blank">Probability Statistics And Combinatorics</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L04_ProbabilityStatisticsAndCombinatorics"
             target="_blank">Exercises</a>
         </td>
       </tr>
       <tr>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra/Presentation"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra/Presentation"
             target="_blank">Basics Algebra</a>
         </td>
         <td style="text-align:center; vertical-align: middle;">
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra"
             target="_blank">Lab</a> |
-          <a href="https://github.com/beinsaduno/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra"
+          <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics/L05_BasicsAlgebra"
             target="_blank">Exercises</a>
         </td>
       </tr>
