@@ -4,17 +4,16 @@ using namespace std;
 
 int main() {
 
-	string input;
-	cin >> input;
+	int initNum, currNum;
+	cin >> initNum >> currNum;
 
 	int sum = 0;
-	while (input != "Stop") {
-		int currNum = stoi(input);
+	while (sum < initNum) {
 		sum += currNum;
-		cin >> input;
+		if (initNum <= sum) {
+			cout << sum << endl;
+			return 0;
+		}
+		cin >> currNum;
 	}
-
-	cout << sum << endl;
-
-	return 0;
 }
