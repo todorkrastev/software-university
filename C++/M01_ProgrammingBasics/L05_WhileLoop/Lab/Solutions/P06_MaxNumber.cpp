@@ -1,16 +1,19 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
 using namespace std;
 
 int main() {
 
-	int n;
-	cin >> n;
+	string command;
+	cin >> command;
+	int n = stoi(command);
 	int maxNum = INT16_MIN;
-	int input;
-	for (int i = 0; i < n; i++) {
-		cin >> input;
-		maxNum = max(maxNum, input);
+
+	while (command != "Stop") {
+		int currNum = stoi(command);
+		maxNum = max(maxNum, currNum);
+		cin >> command;
 	}
 
 	cout << maxNum << endl;
