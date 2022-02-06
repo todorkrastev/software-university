@@ -1,16 +1,19 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
 using namespace std;
 
 int main() {
 
-	int n;
-	cin >> n;
+	string command;
+	cin >> command;
+	int n = stoi(command);
 	int minNum = INT16_MAX;
-	int input;
-	for (int i = 0; i < n; i++) {
-		cin >> input;
-		minNum = min(minNum, input);
+
+	while (command != "Stop") {
+		int currNum = stoi(command);
+		minNum = min(minNum, currNum);
+		cin >> command;
 	}
 
 	cout << minNum << endl;
