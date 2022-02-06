@@ -1,27 +1,30 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
+	string command;
+	cin >> command;
 
 	cout.setf(ios::fixed);
 	cout.precision(2);
 
-	int n;
-	cin >> n;
 	double sum = 0.0;
-	double input = 0.0;
-	for (int i = 0; i < n; i++) {
-		cin >> input;
-		if (input <= 0) {
+	while (command != "NoMoreMoney") {
+		double currValue = stod(command);
+
+		if (currValue < 0) {
 			cout << "Invalid operation!" << endl;
 			break;
 		}
 
-		cout << "Increase: " << input << endl;
-		sum += input;
+		sum += currValue;
+		cout << "Increase: " << currValue << endl;
+
+		cin >> command;
 	}
 
 	cout << "Total: " << sum << endl;
-
+	
 	return 0;
 }
