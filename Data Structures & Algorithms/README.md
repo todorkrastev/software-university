@@ -22,8 +22,13 @@
             </tr>
             <tr>
                 <td style="text-align:center; vertical-align: middle;">
-                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics"
-                        target="_blank">Fundamentals in Mathematics</a>
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures"
+                        target="_blank">Data Structures</a>
+                </td>
+            </tr>
+              <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a>Algorithms</a>
                 </td>
             </tr>
         </table>
