@@ -26,6 +26,12 @@
                         target="_blank">Fundamentals in Mathematics</a>
                 </td>
             </tr>
+               <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C02_DataStructuresFundamentals"
+                        target="_blank">Data Structures Fundamentals</a>
+                </td>
+            </tr>
         </table>
     </div>
 
