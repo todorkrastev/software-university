@@ -23,10 +23,6 @@
     </ul>
     <h2>JavaScript</h2>
     <ul>
-        <li><a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M01_JavaScriptProgrammingBasics"
-                target="_blank">Programming Basics with JavaScript</a></li>
-        <li><a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/JavaScript/M02_JavaScriptFundamentals"
-                target="_blank">Programming Fundamentals with JavaScript</a></li>
         <li><a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
                 target="_blank">JavaScript Advanced</a> - <a
                 href="https://softuni.bg/certificates/details/114737/7fbf7427" target="_blank">See credential</a></li>
@@ -45,7 +41,11 @@
     <ul>
         <li><a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics"
                 target="_blank">Fundamentals in Mathematics</a> - <a
-                href="https://softuni.bg/certificates/details/118885/f561b4c7" target="_blank">See credential</a></li>
+                href="https://softuni.bg/certificates/details/118885/f561b4c7" target="_blank">See credential</a>
+        </li>
+        <li><a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C02_DataStructuresFundamentals"
+                target="_blank">Data Structures Fundamentals</a> - Studying now
+        </li>
     </ul>
     <h2>C++</h2>
     <ul>
