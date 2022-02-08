@@ -42,7 +42,6 @@ CREATE TABLE `likes` (
 CREATE TABLE `users_photos` (
     `user_id` INT NOT NULL,
     `photo_id` INT NOT NULL,
-    CONSTRAINT `pk_users_photos` PRIMARY KEY (`user_id` , `photo_id`),
     CONSTRAINT `fk_users_photos_users` FOREIGN KEY (`user_id`)
         REFERENCES `users` (`id`),
     CONSTRAINT `fk_users_photos_photos` FOREIGN KEY (`photo_id`)
