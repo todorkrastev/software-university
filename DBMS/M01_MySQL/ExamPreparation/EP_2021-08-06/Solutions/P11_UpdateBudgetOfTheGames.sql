@@ -1,16 +1,14 @@
 USE `sgd`;
 
 DELIMITER $$$
-CREATE PROCEDURE `udp_update_budget`(`min_game_rating` FLOAT)
+CREATE PROCEDURE `udp_update_budget` (`min_game_rating` FLOAT(19, 2))
 BEGIN
-	UPDATE `games` AS g
-	LEFT JOIN `games_categories` AS gc
-	ON g.`id` = gc.`game_id`
-	SET g.`budget` = g.`budget` + 100000,
-	g.`release_date` = DATE_ADD(g.`release_date`, INTERVAL 1 YEAR)
-	WHERE g.`id` NOT IN (SELECT `game_id` FROM `games_categories`)
-	AND g.`rating` > min_game_rating
-	AND g.`release_date` IS NOT NULL;
+		UPDATE `games`
+		SET `budget` = `budget` + 100000, 
+		`release_date` = DATE_ADD(`release_date`, INTERVAL 1 YEAR)
+		WHERE `id` NOT IN (SELECT `game_id` FROM `games_categories`)
+		AND `rating` > min_game_rating
+		AND `release_date` IS NOT NULL; 
 END; $$$
 DELIMITER ;
 
