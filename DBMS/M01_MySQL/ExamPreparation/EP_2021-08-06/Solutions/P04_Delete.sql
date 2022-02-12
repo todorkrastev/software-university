@@ -9,3 +9,13 @@ WHERE
     FROM
         `games_categories`)
     AND g.`release_date` IS NULL;
+    
+-- Second option
+
+DELETE FROM `games` 
+WHERE
+    `id` NOT IN (SELECT 
+        `game_id`
+    FROM
+        `games_categories`)
+    AND `release_date` IS NULL;
