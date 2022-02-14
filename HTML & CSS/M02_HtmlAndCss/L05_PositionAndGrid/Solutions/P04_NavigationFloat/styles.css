@@ -1,0 +1,112 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 60px 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 17px;
+    border: 5px solid;
+}
+
+blockquote {
+    font-family: Gerogia, serif;
+}
+
+h2, h3 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+section li {
+    list-style: square;
+}
+
+header nav {
+    float: right;
+}
+
+header p {
+    display: inline-block;
+}
+
+header nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+header nav ul {
+    text-align: right;
+    margin: 0px;
+}
+
+header {
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0px;
+    font-weight: bold;
+}
+
+main, aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+main {
+    width: 78%;
+    padding-right: 30px;
+}
+
+aside {
+    width: 20%;
+}
+
+.right-image {
+    float: right;
+    margin: 0 0 7px 30px;
+}
+
+.left-image {
+    float: left;
+    margin-right: 30px;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Georgia, serif;
+    color: #999EA8;
+    border-left: 3px solid lightgray;
+    padding-left: 40px;
+    width: 40%;
+    float: right;
+    line-height: 1.5;
+}
+
+blockquote p {
+    text-align: right;
+}
