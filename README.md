@@ -47,6 +47,13 @@
                 target="_blank">Data Structures Fundamentals</a> - Studying now
         </li>
     </ul>
+       <h2>DBMS</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/DBMS/M01_MySQL"
+                target="_blank">MySQL</a> - Completed
+        </li>
+    </ul>
     <h2>C++</h2>
     <ul>
         <li>
@@ -59,13 +66,6 @@
         <li>
             <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Python/M01_ProgrammingBasics"
                 target="_blank">Python</a> - Studying now
-        </li>
-    </ul>
-    <h2>DBMS</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/DBMS/M01_MySQL"
-                target="_blank">MySQL</a> - Studying now
         </li>
     </ul>
     <h2>HTML & CSS</h2>
