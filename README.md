@@ -68,6 +68,13 @@
                 target="_blank">Python</a> - Studying now
         </li>
     </ul>
+      <h2>Spring</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData"
+                target="_blank">Spring Data</a> - Studying now
+        </li>
+    </ul>
     <h2>HTML & CSS</h2>
     <ul>
         <li>
@@ -75,3 +82,4 @@
                 target="_blank">HTML & CSS</a> - Studying now
         </li>
     </ul>
+    
