@@ -51,7 +51,8 @@
     <ul>
         <li>
             <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/DBMS/M01_MySQL"
-                target="_blank">MySQL</a> - Completed
+                target="_blank">MySQL</a> - <a
+                href="https://softuni.bg/certificates/details/123238/740e3269" target="_blank">See credential</a>
         </li>
     </ul>
     <h2>C++</h2>
