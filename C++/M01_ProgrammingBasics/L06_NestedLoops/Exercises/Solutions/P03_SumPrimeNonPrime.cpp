@@ -14,22 +14,20 @@ int main() {
 
 		if (number < 0) {
 			cout << "Number is negative." << endl;
-		}
-		else {
+		} else {
 			int count = 0;
 			for (int diff = 1; diff <= number; diff++) {
 				if (number % diff == 0) {
 					count++;
 				}
 			}
-
 			if (count == 2) {
 				sumPrime += number;
-			}
-			else {
+			} else {
 				sumNonPrime += number;
 			}
 		}
+		
 		cin >> input;
 	}
 

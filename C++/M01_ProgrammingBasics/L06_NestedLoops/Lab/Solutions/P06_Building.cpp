@@ -12,15 +12,13 @@ int main() {
         for (int apartment = 0; apartment < apartments; apartment++) {
             if (floor == floors) {
                 cout << "L" << floor << apartment << " ";
-            }
-            else if (floor % 2 == 0) {
+            } else if (floor % 2 == 0) {
                 cout << "O" << floor << apartment << " ";
-            }
-            else {
+            } else {
                 cout << "A" << floor << apartment << " ";
             }
-
         }
+        
         cout << endl;
     }
 }

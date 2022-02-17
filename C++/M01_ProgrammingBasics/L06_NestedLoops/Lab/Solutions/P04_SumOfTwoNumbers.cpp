@@ -27,6 +27,7 @@ int main() {
     if (!isFound) {
         cout << count << " combinations - neither equals " << magicNumber;
     }
+    
     return 0;
 }
 

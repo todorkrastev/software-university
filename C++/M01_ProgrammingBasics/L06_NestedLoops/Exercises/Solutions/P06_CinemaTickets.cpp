@@ -33,11 +33,9 @@ int main() {
 
             if (ticketType == "student") {
                 student++;
-            }
-            else if (ticketType == "standard") {
+            } else if (ticketType == "standard") {
                 standard++;
-            }
-            else if (ticketType == "kid") {
+            } else if (ticketType == "kid") {
                 kid++;
             }
         }

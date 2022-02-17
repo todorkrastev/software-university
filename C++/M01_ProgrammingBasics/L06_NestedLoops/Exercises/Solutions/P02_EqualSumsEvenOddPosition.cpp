@@ -21,5 +21,6 @@ int main() {
 			cout << number << " ";
 		}
 	}
+	
 	return 0;
 }
