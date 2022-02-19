@@ -16,5 +16,3 @@ for first in range(start, end + 1):
 
 if not is_found:
     print(f"{combinations} combinations - neither equals {magic_number}")
-
-
