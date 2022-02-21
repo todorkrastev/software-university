@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 80px;
+}
+
+body header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    padding: 15px;
+}
+
+li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+main p {
+    line-height: 1.6;
+}
