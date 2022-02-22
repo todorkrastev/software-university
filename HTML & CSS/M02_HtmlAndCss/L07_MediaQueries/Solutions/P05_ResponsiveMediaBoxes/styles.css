@@ -1,0 +1,29 @@
+html {
+    background-color: rgb(238, 238, 238);
+    font-family: Helvetica, sans-serif;
+}
+
+section {
+    background-color: rgb(238, 238, 238);
+    width: 400px;
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: rgb(0, 153, 0);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: rgb(238, 238, 238);
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 1em/1.2;
+}
+
+img {
+    width: 100;
+}

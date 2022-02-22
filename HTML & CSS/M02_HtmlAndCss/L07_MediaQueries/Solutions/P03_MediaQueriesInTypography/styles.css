@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+article {
+    width: 65%;
+}
+
+aside {
+    width: 25%;
+    margin-left: 5%;
+}
+
+
+img {
+    border: 0.2rem solid black;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0, 25);
+    margin: 15px;
+}
+
+/* Header */
+
+#siteTitle p {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#siteTitle nav {
+    display: inline-block;
+    margin-left: 700px;
+}
+
+#siteTitle nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+#siteTitle nav ul li {
+    display: inline-block;
+}
+
+#siteTitle nav ul li a {
+    margin: 10px;
+}
+
+#firstImg {
+    float: right;
+}
+
+#secondImg {
+    float: left;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    border-left: 1px solid grey;
+    display: inline-block;
+    width: 300px;
+    padding-left: 50px;
+    text-align: right;
+    font-style: italic;
+    color: grey;
+    vertical-align: top;
+}
+
+#firstSection p:nth-child(3) {
+    display: inline-block;
+    width: 400px;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-size: 1em 1.2;
+}
+
+@media (max-width:500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:800px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1300px) {
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (min-width:1800px) {
+    body {
+        font-size: 23px;
+    }
+}

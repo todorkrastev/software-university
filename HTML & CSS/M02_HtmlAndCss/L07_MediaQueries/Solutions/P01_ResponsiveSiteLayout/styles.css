@@ -1,0 +1,52 @@
+@media (max-width: 500px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "aside aside"
+            "main main"
+            "footer footer";
+    }
+}
+
+body {
+    display: grid;
+}
+
+header h1 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.header {
+    background-color: rgb(181, 216, 255);
+    width: 300px;
+    height: 80px;
+    position: absolute;
+}
+
+.navigation {
+    background-color: rgb(181, 216, 255);
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    height: 90px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.main {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    background-color: rgb(181, 216, 255);
+    grid-area: main;
+}
+
+footer p {
+    position: absolute;
+    top: 350px;
+    width: 300px;
+    background-color: rgb(181, 216, 255);
+}
