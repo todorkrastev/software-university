@@ -1,0 +1,188 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+body {
+    height: 100vh;
+}
+
+.container {
+    background-color: #DACC96;
+    opacity: 0.8;
+    color: #632626;
+    background-size: 10px 10px;
+
+}
+
+header {
+    margin: 10px 30px 30px 20px;
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+}
+
+.title {
+    flex-basis: 60%;
+
+}
+
+.title .site-name {
+    color: #BF8B67;
+    font-size: 2.4rem;
+}
+
+.title .motto {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.navigation {
+    font-family: Helvetica, sans-serif;
+
+}
+
+.navigation ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #632626
+}
+
+.need-a-website-section {
+    font-family: Merriweather, serif;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.need-a-website-section .description {
+
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+
+}
+
+.need-a-website-section .text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.need-a-website-section i {
+    font-size: 5rem;
+    float: right;
+    padding: 10px;
+}
+
+span {
+    font-size: 0.6rem;
+    border: 1px solid #632626;
+    border-radius: 4px;
+    padding: 5px 10px;
+
+}
+
+.our-team-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-team-section .team {
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    flex-basis: 95%;
+    text-align: center;
+
+}
+
+
+
+.employee {
+    width: 30%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+.employee img {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee .name {
+    margin-bottom: 10px;
+}
+
+.employee .position {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    width: 50%;
+    font-style: italic;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.newsletter-section {
+    background: #9D5353;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.newsletter-section h1 {
+    font-family: Merriweather, serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.newsletter-section form {
+    padding: 20px 20px;
+}
+
+.newsletter-section input {
+    padding: 5px 10px;
+}
+
+.newsletter-section .btn {
+    background-color: #DACC96;
+    color: #632626;
+    padding: 5px 10px;
+}
+
+.testimonials-section {
+    background-color: white;
+    opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #d9dbfd 0, #d9dbfd 1px, #e5e5f7 0, #e5e5f7 50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials-section .testimonials {
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    flex-basis: 95%;
+    text-align: center;
+}
