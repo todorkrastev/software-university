@@ -1,0 +1,208 @@
+@import 'https://use.fontawesome.com/releases/v6.0.0/css/all.css';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.wire__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.wire__header__nav {
+    min-width: 804.24px;
+}
+
+.wire__header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    color: #2c383b;
+}
+
+.wire__header__logo__name {
+    border-right: 1.5px solid #cdcdcd;
+    padding-right: 10px;
+    color: #554960;
+}
+
+.wire__header__logo__moto>span {
+    color: #cdcdcd;
+}
+
+.wire__header__nav__list__items {
+    display: flex;
+    font-size: 16px;
+    gap: 1px;
+    text-align: center;
+    align-items: center;
+}
+
+.wire__header__nav__list_item {
+    list-style-type: none;
+    padding: 15px 30px;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.wire__header__nav__list_item:hover {
+    background-color: #e24e2a;
+}
+
+.wire__header__nav__list__item__link {
+    text-decoration: none;
+    color: #2c383b;
+}
+
+.wire__header__nav__list__item__link:hover {
+    color: #ffffff;
+}
+
+
+
+.hero__img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.hero__img__banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+.hero__content {
+    background-color: #e24e2a;
+    padding: 80px 160px;
+}
+
+.here__content__description {
+    color: #ffffff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 24px;
+}
+
+.here__content__description a {
+    color: #ffffff;
+}
+
+.benefits__services {
+    background-color: #3e3e3e;
+}
+
+
+.benefits__services__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.benefits__services__list__item {
+    padding: 0 10px;
+}
+
+.benefits__services__list__item i {
+    background-color: #e24e2a;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.benefits__services__list__item__title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #66686b;
+}
+
+.benefits__services__list__item__description {
+    color: #66686b;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.news {
+    background-color: #ffffff;
+    margin-bottom: 80px;
+}
+
+.news__signup {
+    text-align: center;
+}
+
+.news__signup__title {
+    margin: 80px 0 -17px;
+    font-size: 37px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.news__signup__subtitle {
+    color: #a2a2a4;
+}
+
+.news__signup__btn {
+    background-color: #1b9772;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 20px 80px;
+    border: #1b9772;
+}
+
+.articles {
+    background-color: #383838;
+    padding-bottom: 60px;
+}
+
+.articles__list {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.articles__list__item__title {
+    font-size: 25px;
+    padding: 60px 0 30px;
+    color: #ffffff;
+
+}
+
+.articles__list__item__description {
+    color: #6b6b6a;
+    padding: 0 21px;
+}
+
+footer {
+    background-color: #1b9772;
+    color: rgba(255, 255, 255, .5);
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 80px 160px;
+}
+
+footer>span {
+    color: rgba(255, 255, 255, .7);
+}

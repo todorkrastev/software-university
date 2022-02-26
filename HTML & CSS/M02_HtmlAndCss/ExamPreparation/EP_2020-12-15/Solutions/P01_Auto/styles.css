@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.car {
+    max-width: 80vw;
+    height: auto;
+    margin: 20px 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.car__content {
+    width: 60%;
+}
+
+.car__content__title {
+    margin-top: 0;
+}
+
+.car__content__description {
+    color: #9c9c9c;
+}
+
+.car__content__benefits {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.car__content__benefit {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.car__content__benefit__wrapper_title {
+    margin: 0;
+}
+
+.car__content__benefit__wrapper_subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.car__content__benefit__image {
+    max-width: 60px;
+}
+
+.car__image {
+    width: 40%;
+}
