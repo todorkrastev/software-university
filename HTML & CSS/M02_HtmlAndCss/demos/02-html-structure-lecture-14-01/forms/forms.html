@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form examples 123</h1>
+
+    <form class="form" action="" method="get">
+      <input type="text" required="true" name="firstName" placeholder="First name" />
+
+      <label class="labelItem">
+        Last name
+        <input type="text" required="true" placeholder="Doe" />
+      </label>
+      <label class="labelItem">
+        Email
+        <input type="email" required="true" placeholder="johndoe@mail.com" />
+      </label>
+      <label class="labelItem">
+        Occupation
+        <input type="text" required="true" />
+      </label>
+      <label class="labelItem">
+        Аge
+        <input type="number" required="true" />
+      </label>
+
+      <div>
+        <span>Gender</span>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+      </div>
+
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="39">39 EU</option>
+        <option value="40">40 EU</option>
+        <option value="41.5">41.5 EU</option>
+      </select>
+
+      <label for="message">Send us a message</label>
+      <textarea name="message" id="message" rows="10"></textarea>
+
+      <div>
+        <button type="button">button</button>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+
+        <input type="button" value="Input button" />
+        <input type="submit" value="Input submit" />
+      </div>
+    </form>
+  </body>
+</html>

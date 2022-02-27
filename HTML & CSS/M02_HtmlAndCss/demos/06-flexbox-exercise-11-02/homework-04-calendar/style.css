@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Helvetica");
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.main_container {
+  max-width: 65vw;
+  background-color: lightgray;
+  display: flex;
+}
+
+.week {
+  background-color: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.week span {
+  width: 20%;
+  height: 4rem;
+}
+
+.week span:nth-child(1),
+.week span:nth-child(7) {
+  width: 100%;
+}
+
+.week span:nth-child(8),
+.week span:nth-child(9) {
+  width: 50%;
+}
+
+.notes {
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.notes span {
+  flex-grow: 1;
+}
+
+span {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.5rem;
+}

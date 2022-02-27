@@ -1,0 +1,33 @@
+ul li {
+  list-style: square;
+}
+
+ul ul li {
+  list-style-type: disc;
+}
+
+ul ul ul li {
+  list-style: circle;
+}
+
+table {
+  width: 400px;
+  border-collapse: collapse;
+  border: 1px solid darkgrey;
+  table-layout: fixed;
+}
+
+table td,
+table th {
+  padding: 4px 8px;
+  border: 1px solid darkgrey;
+}
+
+table thead th {
+  text-align: left;
+  background: darkgrey;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightgrey;
+}

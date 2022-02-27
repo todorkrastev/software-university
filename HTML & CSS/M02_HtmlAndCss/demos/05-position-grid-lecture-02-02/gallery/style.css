@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+ul li {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 24px;
+  vertical-align: middle;
+}
+
+ul li:not(:nth-child(3n)) {
+  margin-right: 3.5%;
+}
+
+
+/* ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+} */

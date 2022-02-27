@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  text-align: center;
+  font-size: 42px;
+  line-height: 36px;
+  letter-spacing: 1px;
+
+  width: 200px;
+  background-color: lightcoral;
+}
+
+article p {
+  font-family: Roboto;
+  font-size: 21px;
+  background-color: lightblue;
+}
+
+.customCard{
+  width: 220px;
+  background-color: lightgreen;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Font-size units */
+
+/* article {
+  font-size: 16px;
+}
+
+article p {
+  font-size: 21px;
+}
+
+article p span {
+  font-size: 30px;
+} */
+
+/* html{
+  font-size: 16px;
+}
+article p {
+  font-size: 1.5rem;
+}
+article p span{
+  font-size: 0.8rem;
+} */
+
+/* article {
+  font-size: 21px;
+}
+article p{
+  font-size: 1.5em;
+}
+article p span {
+  font-size: 1.5em;
+} */
+
+/* CLIP / Elipsis */
+
+/* article {
+  width: 300px;
+}
+
+article p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+} */

@@ -1,0 +1,31 @@
+/* Button --------- */
+.btn {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.btn--primary {
+  background-color: #e50914;
+  color: #fff;
+}
+
+/* Input --------- */
+.input {
+  border: none;
+  padding: 0.75rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Divider --------- */
+.divider {
+  background-color: #222222;
+  height: 5px;
+}
+
+/* Section --------- */
+.section {
+  padding: 3rem 1rem;
+}

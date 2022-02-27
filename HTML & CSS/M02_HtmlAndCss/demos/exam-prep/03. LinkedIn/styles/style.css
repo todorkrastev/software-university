@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("./reset.css");
+@import url("./components.css");
+
+:root {
+  --color-blue: #0072b1;
+  --color-beige: #f1ece5;
+  --color-beige-light: #faf9f7;
+  --color-gray: #605e5c;
+  --color-gray-light: #e6e5e4;
+  --color-orange: #b54829;
+  --section-padding-x: 180px;
+  --section-padding: 48px var(--section-padding-x);
+  --section-padding-sm: 48px 120px;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  padding: var(--section-padding-sm);
+  position: relative;
+}
+.hero .content {
+  width: 60%;
+}
+
+.hero .content .title {
+  color: var(--color-blue);
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 1.2;
+  margin-bottom: 21px;
+}
+
+.hero .content form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 100px;
+}
+
+.hero .content form input {
+  padding: 10px 6px;
+}
+.hero .content form input {
+  margin-bottom: 12px;
+}
+
+.hero .content form a {
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.hero .hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 39%;
+}
+
+/* Section layout */
+
+.section {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.section .col-sm {
+  width: 45%;
+}
+.section .col-lg {
+  width: calc(55% - 100px);
+}
+
+.subTitle {
+  font-size: 64px;
+  width: 500px;
+}
+
+/* Jobs */
+.jobs {
+  padding: 160px var(--section-padding-x);
+  background-color: var(--color-beige-light);
+}
+
+.jobs .options {
+  width: 46%;
+}
+
+.jobs .options h3 {
+  color: var(--color-gray);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.jobs .options .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Post job */
+
+.postJobs {
+  padding: var(--section-padding);
+  background-color: var(--color-beige);
+}
+
+.postJobs .subTitle {
+  color: var(--color-orange);
+}
+
+.postJobs .btn {
+  font-size: 21px;
+}
+
+.join {
+  height: 45vh;
+  padding: var(--section-padding);
+  background-image: url("../images/background.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.join .title {
+  color: var(--color-blue);
+  font-size: 68px;
+  line-height: 1.2;
+  margin-bottom: 21px;
+}

@@ -1,0 +1,9 @@
+.form label {
+  display: block;
+  margin: 10px;
+}
+
+.labelItem {
+  background-color: lightsalmon;
+}
+

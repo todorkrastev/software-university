@@ -1,0 +1,198 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./components.css");
+
+body {
+  background-color: black;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.header .logo {
+  width: 100px;
+}
+
+/* Hero */
+
+#hero {
+  min-height: 100vh;
+  position: relative;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#hero .img--bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#hero .hero__title,
+#hero .hero__subtitle {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+#hero .hero__subtitle {
+  font-size: 1.25rem;
+}
+
+#hero .hero__description {
+  width: 80%;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+#hero .hero__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+#hero .hero__form .form__input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#hero .hero__form .form__btn {
+  /* padding: 0.75rem; */
+  text-transform: capitalize;
+}
+
+#hero .hero__form .form__btn i {
+  font-size: 29px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+#hero .form__suffix {
+  position: relative;
+  z-index: 3;
+}
+
+/* Basic information section layout */
+.info .info__title,
+.info .info__description {
+  text-align: center;
+}
+.info .info__title {
+  margin-bottom: 1rem;
+}
+.info .info__description {
+  margin-bottom: 2rem;
+}
+.info .info__poster {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  #hero .hero__form {
+    width: 70%;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #hero .hero__form .form__input {
+    margin-bottom: 0;
+    width: calc(100% - 155px);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #hero .hero__form .form__btn {
+    width: 155px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    padding: 3rem 0;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .info:nth-of-type(2n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  .info .info__wrapper,
+  .info .info__poster {
+    width: 50%;
+  }
+
+  .info .info__title,
+  .info .info__description {
+    text-align: left;
+  }
+
+  .info .info__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+
+  .info {
+    padding: 4rem 0;
+    justify-content: space-between;
+  }
+
+  .info .info__poster {
+    width: 45%;
+  }
+  .info .info__wrapper {
+    width: 50%;
+  }
+  .info .info__title {
+    font-size: 2rem;
+  }
+}

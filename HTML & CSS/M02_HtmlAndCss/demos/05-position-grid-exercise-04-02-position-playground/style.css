@@ -1,0 +1,49 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+.viewport {
+  height: 100vh;
+  position: relative;
+}
+
+.viewport:first-of-type {
+  background-color: #051937;
+  background-image: linear-gradient(
+    to right,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+.viewport:last-of-type {
+  background-color: #845ec2;
+  background-image: linear-gradient(
+    to right,
+    #845ec2,
+    #c05cb0,
+    #e66599,
+    #fa7a82,
+    #ff9671
+  );
+}
+
+.viewport .card {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.viewport .card img {
+  width: 100%;
+}
+
+.viewport .card i {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #fff;
+}

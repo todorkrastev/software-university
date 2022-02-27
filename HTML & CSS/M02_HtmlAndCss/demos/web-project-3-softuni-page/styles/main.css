@@ -1,0 +1,226 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./components.css");
+@import url("./navigation.css");
+@import url("./footer.css");
+
+:root {
+  --color-primary: #9b5dc6;
+  --color-blue: #14162b;
+  --color-gray: #54546d;
+  --color-gray-light: #616178;
+  --color-gray-dark: #2c2c3a;
+  --color-white: #fff;
+
+  --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --navi-height: 58px;
+}
+
+main {
+  margin-top: var(--navi-height);
+}
+
+.overlay-circle {
+  display: none;
+}
+
+/* General section -------- */
+.general-section {
+  padding: 2.5rem 1rem;
+}
+.general-section .info {
+  margin-bottom: 2.5rem;
+}
+
+.general-section .info__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.general-section .info__desc {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.general-section .info__comment {
+  font-style: italic;
+  color: var(--color-gray-light);
+}
+
+.general-section .info__comment:last-child {
+  margin-top: 0.5rem;
+}
+
+.general-section .img {
+  width: 100%;
+}
+
+/* Certificates section -------- */
+.certificates-wrapper {
+  background-color: var(--color-blue);
+}
+.certificates {
+  color: var(--color-white);
+  position: relative;
+}
+.certificates::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 15%;
+  background-color: var(--color-white);
+}
+
+.certificates .info,
+.certificates .img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Career section -------- */
+.general-section.career {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .general-section .img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .general-section {
+    padding: 4rem;
+  }
+  .general-section .img {
+    width: 50%;
+  }
+  .certificates::after {
+    height: 18%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .general-section {
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+  .general-section .info {
+    margin-bottom: 0;
+  }
+  .general-section .info__title {
+    text-align: left;
+  }
+
+  .general-section .info__desc {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .general-section .info {
+    width: calc(100% - 400px);
+  }
+
+  .general-section .img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Certificates */
+  .certificates .info {
+    width: calc(100% - 380px - 1rem);
+  }
+  .certificates .img {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    width: 380px;
+    max-width: unset;
+  }
+  .certificates::after {
+    display: none;
+  }
+
+  /* Career */
+  .general-section.career {
+    padding-top: 4rem;
+    flex-direction: row-reverse;
+  }
+
+  .career .btn {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .general-section {
+    padding: 4rem;
+  }
+
+  /* Circle overlay */
+  .general-section.diplomas {
+    overflow: hidden;
+  }
+
+  .diplomas-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .diplomas-wrapper .general-section {
+    position: static;
+  }
+
+  .general-section.diplomas .info,
+  .general-section.diplomas .img {
+    z-index: 2;
+    position: relative;
+  }
+
+  .overlay-circle {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-gray);
+    right: -100px;
+    top: -180px;
+    border-radius: 100%;
+    z-index: 1;
+  }
+
+  .overlay-circle > i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 10rem;
+    color: var(--color-gray-light);
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .general-section {
+    padding: 6rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .general-section {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

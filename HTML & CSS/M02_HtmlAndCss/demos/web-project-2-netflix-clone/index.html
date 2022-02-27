@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./imgs/logo.png" class="logo" alt="Logo" />
+
+      <button class="btn btn--primary">Sign in</button>
+    </header>
+
+    <main>
+      <section id="hero">
+        <img src="./imgs/bg.jpg" class="img--bg" alt="Background poster" />
+
+        <h1 class="hero__title">Unlimited movies, TV shows, and more.</h1>
+        <h2 class="hero__subtitle">Watch anywhere. Cancel anytime.</h2>
+        <p class="hero__description">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <form class="hero__form" action="">
+          <input
+            type="text"
+            class="form__input input"
+            placeholder="Email address"
+          />
+          <button class="form__btn btn btn--primary">
+            Try 30 days free <i class="fas fa-angle-right"></i>
+          </button>
+        </form>
+
+        <p class="form__suffix">
+          Only new members are eligible for this offer.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="enjoy" class="info section">
+        <div class="info__wrapper">
+          <h2 class="info__title">Enjoy on your TV.</h2>
+          <p class="info__description">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+        </div>
+
+        <img
+          class="info__poster"
+          src="./imgs/enjoy-tv.png"
+          alt="Section poster"
+        />
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="download" class="info section">
+        <div class="info__wrapper">
+          <h2 class="info__title">Download your shows to watch offline.</h2>
+          <p class="info__description">
+            Save your favorites easily and always have something to watch.
+          </p>
+        </div>
+
+        <img class="info__poster" src="./imgs/shows.png" alt="Section poster" />
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="watch" class="info section">
+        <div class="info__wrapper">
+          <h2 class="info__title">Watch everywhere.</h2>
+          <p class="info__description">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV without paying more.
+          </p>
+        </div>
+
+        <img
+          class="info__poster"
+          src="./imgs/watch-everywhere.png"
+          alt="Section poster"
+        />
+      </section>
+    </main>
+  </body>
+</html>

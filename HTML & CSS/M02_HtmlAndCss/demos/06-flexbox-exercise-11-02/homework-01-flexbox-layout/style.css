@@ -1,0 +1,30 @@
+body {
+  background-color: lightgray;
+
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+  padding: 2rem;
+}
+
+header,
+main,
+aside,
+footer {
+  background-color: lightgreen;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+header,
+footer {
+  flex-basis: 100%;
+}
+
+main {
+  flex-basis: 500px;
+}
+
+aside {
+  flex-basis: 500px;
+}

@@ -1,0 +1,24 @@
+.article {
+  width: 500px;
+  /* height: 200px; */
+  background-color: lightgray;
+  overflow-y: auto;
+  margin: 50px;
+  padding: 50px;
+}
+
+.article .article__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px;
+}
+
+.article .article__subtitle {
+  text-align: center;
+  margin: 20px;
+}
+
+.article .article__desc {
+  text-indent: 30px;
+  padding: 30px;
+}

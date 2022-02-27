@@ -1,0 +1,88 @@
+.flex__container {
+  display: flex;
+}
+
+.flex__item {
+  /* width: 33.333%; */
+  /* flex: 1 1 200px; */
+  /* flex-basis: 200px; */
+}
+
+
+
+/* .flex__item.first{
+  flex-shrink: 1;
+}
+.flex__item.second{
+  flex-shrink: 2;
+}
+.flex__item.third{
+  flex-shrink: 3;
+} */
+
+
+/* .flex__item.first{
+  flex-grow: 1;
+}
+.flex__item.second{
+  flex-grow: 2;
+}
+.flex__item.third{
+  flex-grow: 3;
+} */
+
+/* .flex__item.second {
+  order: 1;
+  align-self: flex-start;
+}
+
+.flex__item.third {
+  order: 0;
+} */
+
+/* 
+Basic setup styles
+------------------------------------------
+*/
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+.flex__container {
+  background-color: lightgrey;
+  border: 3px solid black;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+.flex__item {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.flex__item.first {
+  background-color: red;
+}
+
+.flex__item.second {
+  background-color: green;
+}
+
+.flex__item.third {
+  background-color: orange;
+}
+
+.flex__item.fourth {
+  background-color: navy;
+  color: white;
+}
+
+.flex__item.fift {
+  background-color: purple;
+}
+
+.flex__item.sixt {
+  background-color: lightcoral;
+}

@@ -1,0 +1,47 @@
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./setup.css");
+
+/* Nav flex */
+.header--flex {
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--flex ul {
+  display: flex;
+  gap: 12px;
+}
+
+/* Nav grid */
+.header--grid {
+  padding: 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 50px 1rem;
+  align-items: center;
+}
+
+.header--grid ul {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  justify-items: end;
+}
+
+/* Listing grid */
+.list--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Listing flex */
+.list--flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.list--flex li {
+  width: calc((100% - 24px) / 3);
+}

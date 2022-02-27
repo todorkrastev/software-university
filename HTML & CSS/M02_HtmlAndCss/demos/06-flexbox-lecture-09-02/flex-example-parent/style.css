@@ -1,0 +1,35 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+.flex__container {
+  background-color: lightgrey;
+  border: 3px solid black;
+  padding: 0.5rem;
+  margin: 2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex__item {
+  width: 100px;
+  /* height: 100px; */
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.flex__item.first {
+  background-color: red;
+}
+
+.flex__item.second {
+  background-color: green;
+}
+
+.flex__item.third {
+  padding-top: 30px;
+  background-color: orange;
+}

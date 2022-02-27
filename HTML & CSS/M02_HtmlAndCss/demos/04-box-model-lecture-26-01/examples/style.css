@@ -1,0 +1,93 @@
+p,
+span {
+  display: inline-block;
+  width: 200px;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.button {
+  padding: 6px 12px;
+  background-color: lightsalmon;
+  border-radius: 6px;
+  border: none;
+  width: 30%;
+}
+
+.button.fill {
+  max-width: 50px;
+}
+
+.button.hover {
+  min-width: 250px;
+}
+
+/* 
+    Arcticle example
+    ------------
+*/
+
+article {
+  max-width: 500px;
+  background-color: lightblue;
+}
+
+article p {
+  width: 50%;
+  background-color: lightcoral;
+}
+
+#btnsExample {
+  margin: 50px 20px;
+}
+
+.customBtn {
+  padding: 6px 12px;
+  background-color: lightgray;
+  border-radius: 6px;
+  border: none;
+  /* min-width: 120px; */
+  width: 100%;
+  max-width: 150px;
+}
+
+button.customBtn.customBtn {
+  width: 200px;
+}
+
+/* Box sizing */
+
+#boxSizing {
+  margin: 100px 0;
+}
+
+#boxSizing button {
+  background-color: lightskyblue;
+  border-radius: 6px;
+  border: none;
+}
+
+#boxSizing .content {
+  box-sizing: content-box;
+  width: 300px;
+  padding: 12px 28px;
+  background-color: lightpink;
+  border: 2px solid navy;
+}
+
+#boxSizing .box {
+  box-sizing: border-box;
+  width: 300px;
+  border: 2px solid navy;
+
+  margin: 20px -50px;
+  padding: 15px;
+}
+
+#triangle {
+  width: 300px;
+  height: 20px;
+
+  background-color: orange;
+  margin: 0 auto;
+}

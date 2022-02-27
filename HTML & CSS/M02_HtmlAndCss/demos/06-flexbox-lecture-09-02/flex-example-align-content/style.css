@@ -1,0 +1,58 @@
+/* Showing align-items */
+.items {
+  align-items: center;
+  gap: 10px;
+  align-content: center;
+}
+
+/* Showing align-content */
+.content {
+  height: 100vh;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+.flex__container {
+  background-color: lightgrey;
+  border: 3px solid black;
+  padding: 0.5rem;
+  margin: 2rem;
+  display: flex;
+}
+
+.flex__child {
+  width: 30%;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.flex__child.first {
+  background-color: red;
+}
+
+.flex__child.second {
+  background-color: green;
+}
+
+.flex__child.third {
+  background-color: orange;
+}
+
+.flex__child.fourth {
+  background-color: navy;
+  color: white;
+}
+
+.flex__child.fift {
+  background-color: purple;
+}
+
+.flex__child.sixt {
+  background-color: lightcoral;
+}

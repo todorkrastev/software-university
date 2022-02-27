@@ -1,0 +1,33 @@
+.mainHeader {
+  background-image: url("https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+
+  width: 100%;
+  height: 80px;
+}
+
+.article,
+.sidebar {
+  display: inline-block;
+}
+
+.article {
+  vertical-align: top;
+  width: 80%;
+}
+.sidebar {
+  vertical-align: top;
+  width: 19%;
+}
+
+footer {
+  height: 80px;
+  color: #fff;
+  background-color: #4c51bf;
+}
+
+main{
+    min-height: calc(100vh - 80px - 80px);
+}

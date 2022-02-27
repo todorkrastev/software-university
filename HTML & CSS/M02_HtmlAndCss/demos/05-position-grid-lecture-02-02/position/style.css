@@ -1,0 +1,56 @@
+section {
+  background-color: lightgreen;
+  position: relative;
+}
+
+.example {
+  background-color: lightblue;
+  width: 80vw;
+  height: 200vh;
+  padding: 2rem;
+  margin: 2rem;
+
+  position: relative;
+}
+
+.position {
+  padding: 1rem;
+  background-color: orangered;
+
+  /* 
+  static
+  position: static;
+  top: 20px;
+  left: 20px;
+  */
+
+  /* relative */
+  /* position: relative;
+  top: 20px;
+  left: 20px; */
+
+  /* absolute */
+  /* position: absolute;
+  top: 10px;
+  left: 10px; */
+
+  /* margin-top: 100px; */
+  /* bottom: 0;
+  right: 0; */
+
+  /* fixed */
+  /* position: fixed;
+  bottom: 50px;
+  right: 50px; */
+
+  /* sticky */
+  /* position: sticky;
+  top: 50px;
+  right: 50px; */
+}
+
+
+#float img{
+  float: right;
+  padding: 2rem;
+}

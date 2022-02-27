@@ -1,0 +1,39 @@
+body {
+  overflow-x: hidden;
+}
+.header {
+  background-color: #bee3f8;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .logo {
+  width: 40px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #2b6cb0;
+  transition: color 300ms ease-in-out;
+}
+
+.navigation ul li a:hover {
+  color: #3c366b;
+}

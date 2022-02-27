@@ -1,0 +1,105 @@
+* {
+  color: #fff;
+}
+
+.grid__container {
+  position: relative;
+  z-index: 1;
+  background-color: #1a1a1a;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 1fr;
+
+  grid-template-areas:
+    ". . . . . . . ."
+    ". heading heading heading heading heading . ."
+    ". heading heading heading heading heading . ."
+    ". heading heading heading heading heading join ."
+    ". karen__img karen__img . about about . grey__square"
+    ". karen__img karen__img . . . . .";
+}
+
+.heading {
+  grid-area: heading;
+}
+
+.heading h2 {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  opacity: 0.5;
+  border-left: 1px solid #ffffff;
+  padding-left: 1rem;
+}
+
+.heading h1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.join {
+  grid-area: join;
+  aspect-ratio: 1 / 1;
+  background-color: #febe02;
+  position: relative;
+  padding: 4px;
+}
+
+.join h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 40%;
+}
+
+.join svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  z-index: -1;
+}
+
+.karen__img {
+  grid-area: karen__img;
+  aspect-ratio: 1;
+}
+.karen__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  grid-area: about;
+}
+.about h2 {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  padding-left: 1rem;
+}
+.about p {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.323077px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.grey__square {
+  grid-area: grey__square;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.12;
+  aspect-ratio: 1;
+}
