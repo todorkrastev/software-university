@@ -10,7 +10,7 @@ public class Queue<E> implements AbstractQueue<E> {
     private int size;
 
     private static class Node<E> {
-        private E element;
+        private final E element;
         private Node<E> next;
 
         private Node(E element) {
@@ -66,7 +66,7 @@ public class Queue<E> implements AbstractQueue<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+        return new Iterator<>() {
             private Node<E> current = head;
 
             @Override
