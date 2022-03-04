@@ -10,7 +10,7 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
     private int size;
 
     private static class Node<E> {
-        private E element;
+        private final E element;
         private Node<E> next;
         private Node<E> previous;
 
@@ -111,7 +111,7 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+        return new Iterator<>() {
             private Node<E> current = head;
 
             @Override
