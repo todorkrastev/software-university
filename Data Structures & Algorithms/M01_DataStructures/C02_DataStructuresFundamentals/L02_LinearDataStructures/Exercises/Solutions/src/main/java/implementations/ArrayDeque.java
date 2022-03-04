@@ -5,13 +5,13 @@ import interfaces.Deque;
 import java.util.Iterator;
 
 public class ArrayDeque<E> implements Deque<E> {
-    private final int INITIAL_CAPACITY = 7;
     private int size;
     private int head;
     private int tail;
     private Object[] elements;
 
     public ArrayDeque() {
+        int INITIAL_CAPACITY = 7;
         this.elements = new Object[INITIAL_CAPACITY];
         int middle = INITIAL_CAPACITY / 2;
         head = tail = middle;
@@ -247,7 +247,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+        return new Iterator<>() {
             private int index = head;
 
             @Override
