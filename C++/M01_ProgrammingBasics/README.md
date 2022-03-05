@@ -9,7 +9,7 @@
 
 <body>
     <header class="softuni__header">
-        <h1 class="softuni__header__title" align="center" style="margin-bottom: 10px;">
+        <h1 class="softuni__header__title" align="center" style="text-decoration: none;">
             <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M01_ProgrammingBasics/L00_CourseIntroduction"
                 class="softuni__header__title__link">Programming Basics with C++</a>
         </h1>
