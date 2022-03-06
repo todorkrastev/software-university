@@ -248,7 +248,7 @@
                             HTML & CSS
                         </a>
                         -
-                        <a href="" class="softuni__certifications__htmlcss__list__item__softuni" target="_blank">
+                        <a href="https://softuni.bg/certificates/details/127577/88e20f6d" class="softuni__certifications__htmlcss__list__item__softuni" target="_blank">
                             See credential
                         </a>
                     </li>
