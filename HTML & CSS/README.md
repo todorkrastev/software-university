@@ -27,13 +27,16 @@
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Data Structures</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/HTML%20%26%20CSS/M01_HtmlAndCssMiniCourse"
+                            class="softuni__subjects__table__row__data__link" target="_blank">HTML & CSS Mini
+                            Course</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <span class="softuni__subjects__table__row__data__span" target="_blank">Algorithms</span>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/HTML%20%26%20CSS/M02_HtmlAndCss"
+                            class="softuni__subjects__table__row__data__link" target="_blank">HTML & CSS
+                            Fundamentals</a>
                     </td>
                 </tr>
             </table>

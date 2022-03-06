@@ -10,8 +10,8 @@
 <body>
     <header class="softuni__header">
         <h1 class="softuni__header__title" align="center" style="text-decoration: none;">
-            <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L00_CourseIntroduction"
-                class="softuni__header__title__link">MySQL</a>
+            <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/CourseIntroduction"
+                class="softuni__header__title__link">Programming Basics with Python</a>
         </h1>
     </header>
     <main class="softuni">
@@ -37,94 +37,80 @@
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L01_DataDefinitionAndDataTypes/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Data Definition and Data
-                            Types</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L01_FirstStepsInCoding/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">First Steps in Coding</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L01_DataDefinitionAndDataTypes/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L01_FirstStepsInCoding/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L01_DataDefinitionAndDataTypes/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L01_FirstStepsInCoding/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L02_BasicCRUD/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Basic CRUD</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L02_ConditionalStatements/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Conditional Statements</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L02_BasicCRUD/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L02_ConditionalStatements/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L02_BasicCRUD/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L02_ConditionalStatements/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L03_BuiltinFunctions/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Built-in Functions</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L03_ConditionalStatementsAdvanced/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Conditional Statements
+                            Advanced</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L03_BuiltinFunctions/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L03_ConditionalStatementsAdvanced/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L03_BuiltinFunctions/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L03_ConditionalStatementsAdvanced/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L04_DataAggregation/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Data Aggregation</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L04_ForLoop/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">For Loop</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L04_DataAggregation/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L04_ForLoop/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L04_DataAggregation/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L04_ForLoop/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L05_TableRelations/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Table Relations</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L05_WhileLoop/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">While Loop</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L05_TableRelations/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L05_WhileLoop/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L05_TableRelations/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L05_WhileLoop/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L06_SubqueriesAndJOIN/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Subqueries and JOIN</a>
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L06_NestedLoops/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Nested Loop</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L06_SubqueriesAndJOIN/Lab"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L06_NestedLoops/Lab"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                         |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L06_SubqueriesAndJOIN/Exercises"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
-                    </td>
-                </tr>
-                <tr class="softuni__subjects__table__row">
-                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L07_DatabaseProgrammabilityAndTransactions/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Database Programmability
-                            and Transactions</a>
-                    </td>
-                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L07_DatabaseProgrammabilityAndTransactions/Lab"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
-                        |
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/DBMS/M01_MySQL/L07_DatabaseProgrammabilityAndTransactions/Exercises"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics/L06_NestedLoops/Exercises"
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
