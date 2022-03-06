@@ -20,7 +20,7 @@
             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 300%); width:100%; max-width:1000px;">
             <tr class="softuni__subjects__table__row">
                 <th class="softuni__subjects__table__row__header" style="text-align:center; vertical-align: middle;">
-                    COURSES
+                    MODULES
                 </th>
             </tr>
             <tr class="softuni__subjects__table__row">
