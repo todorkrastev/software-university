@@ -11,7 +11,7 @@
     <header class="softuni__header">
         <h1 class="softuni__header__title" align="center" style="text-decoration: none;">
             <a href="https://github.com/todorkrastev/software-university/tree/main/HTML%20%26%20CSS/M02_HtmlAndCss/L00_CourseIntroduction"
-                class="softuni__header__title__link">HTML & CSS Fundamentals</a>
+                class="softuni__header__title__link">HTML & CSS</a>
         </h1>
     </header>
     <main class="softuni">
