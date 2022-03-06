@@ -28,7 +28,7 @@
                 <tr class="softuni__subjects__table__row">
                     <th class="softuni__subjects__table__row__header"
                         style="text-align:center; vertical-align: middle;">
-                        SUBJECTS
+                        COURSE CURRICULUM
                     </th>
                     <th class="softuni__subjects__table__row__header"
                         style="text-align:center; vertical-align: middle;">
