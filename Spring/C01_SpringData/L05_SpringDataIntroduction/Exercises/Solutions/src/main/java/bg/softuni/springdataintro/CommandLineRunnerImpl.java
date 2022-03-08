@@ -17,6 +17,12 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
     private final AuthorService authorService;
     private final BookService bookService;
     private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static int input;
+    private static final int startYear = 1987;
+    private static final int endYear = 2015;
+    private static String firstName;
+    private static String lastName;
+
 
     public CommandLineRunnerImpl(CategoryService categoryService, AuthorService authorService, BookService bookService) {
         this.categoryService = categoryService;
@@ -33,36 +39,26 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         printWelcomeMessage();
         printSeparatorLine();
 
-        String answer = "";
+        String answer;
         do {
-            int selectedQuery = 0;
             do {
-                try {
-                    System.out.println("Please, select Query Number [1-4]");
-                    selectedQuery = Integer.parseInt(reader.readLine());
-                    printSeparatorLine();
-                } catch (Exception e) {
-                    printSeparatorLine();
-                    System.out.println("Invalid input!");
-                    printSeparatorLine();
-                }
-            } while (selectedQuery != 1 && selectedQuery != 2 && selectedQuery != 3 && selectedQuery != 4);
+                validateInput("Please, select Query Number [1-4]");
+            } while (input < 1 || input > 4);
 
-
-            switch (selectedQuery) {
+            switch (input) {
                 case 1 -> {
                     printSelectQueryMessage("1. Get all books after the year");
-                    System.out.println("Please, select an year. Example -> 2000");
-                    int year = Integer.parseInt(reader.readLine());
-                    printSeparatorLine();
-                    p01_GetAllBooksAfterYear(year);
+                    do {
+                        validateInput("Please, select an year [1987 - 2015]. Example -> 2000");
+                    } while (input < startYear || input > endYear);
+                    p01_GetAllBooksAfterYear();
                 }
                 case 2 -> {
                     printSelectQueryMessage("2. Get all authors with at least one book with release date before selected year");
-                    System.out.println("Please, select an year. Example -> 1990");
-                    int year = Integer.parseInt(reader.readLine());
-                    printSeparatorLine();
-                    p02_GetAllAuthorsWithAtLeastOneBookWithReleaseDateBefore(year);
+                    do {
+                        validateInput("Please, select an year [1987 - 2015]. Example -> 1990");
+                    } while (input < startYear || input > endYear);
+                    p02_GetAllAuthorsWithAtLeastOneBookWithReleaseDateBefore();
                 }
                 case 3 -> {
                     printSelectQueryMessage("3. Get all authors ordered by the number of their books");
@@ -72,17 +68,29 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
                 case 4 -> {
                     printSelectQueryMessage("4. Get all books from selected author ordered by release date (descending)," +
                             "then by book title (ascending)");
-                    System.out.println("Please, enter full name of an author. Example -> George Powell");
-                    String[] fullName = reader.readLine().trim().split("\\s+");
-                    String firstName = fullName[0];
-                    String lastName = fullName[1];
-                    printSeparatorLine();
-                    p04_GetAllBooksByAuthorNameOrderedByReleaseDataDescAndBookTitleAsc(firstName, lastName);
+                    do {
+                        try {
+                            System.out.println("Please, enter full name of an author. Example -> George Powell");
+                            String[] fullName = reader.readLine().trim().split("\\s+");
+                            firstName = fullName[0];
+                            lastName = fullName[1];
+                            printSeparatorLine();
+                        } catch (Exception e) {
+                            printSeparatorLine();
+                            System.out.println("Invalid input");
+                            printSeparatorLine();
+                        }
+                    } while (!((!firstName.isBlank() && !lastName.isBlank()) &&
+                            (!firstName.matches("^\\d+(\\.\\d+)?") && !lastName.matches("^\\d+(\\.\\d+)?"))));
+
+                    p04_GetAllBooksByAuthorNameOrderedByReleaseDataDescAndBookTitleAsc();
                 }
             }
             printSeparatorLine();
-            System.out.println("Would you like to continue exploring more queries?: [Y/N]");
-            answer = reader.readLine().trim().toLowerCase();
+            do {
+                System.out.println("Would you like to continue exploring more queries?: [Y/N]");
+                answer = reader.readLine().trim().toLowerCase();
+            } while (!answer.equals("n") && !answer.equals("y"));
         } while (!answer.equals("n"));
 
         printSeparatorLine();
@@ -90,7 +98,7 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         printSeparatorLine();
     }
 
-    private void p04_GetAllBooksByAuthorNameOrderedByReleaseDataDescAndBookTitleAsc(String firstName, String lastName) {
+    private void p04_GetAllBooksByAuthorNameOrderedByReleaseDataDescAndBookTitleAsc() {
         bookService
                 .findAllBooksByAuthorsFirstAndLastNameOrderedByReleaseDataDescAndBootTitleAsc(firstName, lastName)
                 .forEach(System.out::println);
@@ -102,16 +110,16 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
                 .forEach(System.out::println);
     }
 
-    private void p02_GetAllAuthorsWithAtLeastOneBookWithReleaseDateBefore(int year) {
+    private void p02_GetAllAuthorsWithAtLeastOneBookWithReleaseDateBefore() {
         bookService
-                .findAllAuthorsWithBooksBeforeYear(year)
+                .findAllAuthorsWithBooksBeforeYear(input)
                 .forEach(System.out::println);
 
     }
 
-    private void p01_GetAllBooksAfterYear(int year) {
+    private void p01_GetAllBooksAfterYear() {
         bookService
-                .findAllBooksAfterYear(year)
+                .findAllBooksAfterYear(input)
                 .stream()
                 .map(Book::getTitle)
                 .forEach(System.out::println);
@@ -125,6 +133,18 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
 
     private void printGoodbyeMessage() {
         System.out.println("Thank you for spending your time exploring my code!");
+    }
+
+    private void validateInput(String message) {
+        try {
+            System.out.println(message);
+            input = Integer.parseInt(reader.readLine());
+            printSeparatorLine();
+        } catch (Exception e) {
+            printSeparatorLine();
+            System.out.println("Invalid input!");
+            printSeparatorLine();
+        }
     }
 
     private void printSelectQueryMessage(String query) {
