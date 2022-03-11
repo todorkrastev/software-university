@@ -52,10 +52,14 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         BigDecimal percentage = new BigDecimal(reader.readLine());
 
         System.out.println("Please, enter the names of the ingredients that requires increase of the price -> Apple, Aloe Vera, Wild Rose");
-        Set<String> namesForUpdate = Arrays.stream(reader.readLine().trim().split(",\\s+"))
-                .collect(Collectors.toSet());
+        Set<String> namesForUpdate =
+                Arrays
+                        .stream(reader.readLine().trim().split(",\\s+"))
+                        .collect(Collectors.toSet());
 
-        int affectedIngredients = this.ingredientService.increasePricesWithGivenPercentageAndListOfNames(percentage, namesForUpdate);
+        int affectedIngredients =
+                this.ingredientService
+                        .increasePricesWithGivenPercentageAndListOfNames(percentage, namesForUpdate);
 
         printSeparatorLine();
         System.out.println("Successfully updated the price with " + percentage + "%. Total ingredients changed: " + affectedIngredients + ".\nNames of updated ingredients: ");
@@ -67,7 +71,9 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         System.out.println("Please, increase price with desired percentage -> 10");
         BigDecimal percentage = new BigDecimal(reader.readLine());
 
-        int affectedIngredients = this.ingredientService.increasePriceByGivenPercentage(percentage);
+        int affectedIngredients =
+                this.ingredientService
+                        .increasePriceByGivenPercentage(percentage);
 
         printSeparatorLine();
         System.out.println("Successfully updated the price of all ingredients with " + percentage + "%. Total ingredients changed: " + affectedIngredients);
@@ -78,7 +84,9 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         System.out.println("Please, delete ingredients by given name -> Apple");
         String ingredient = reader.readLine();
 
-        int affectedIngredients = this.ingredientService.deleteIngredientByGivenName(ingredient);
+        int affectedIngredients =
+                this.ingredientService
+                        .deleteIngredientByGivenName(ingredient);
 
         printSeparatorLine();
         System.out.printf("%d are successfully deleted.%n", affectedIngredients);
@@ -90,18 +98,22 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         int number = Integer.parseInt(reader.readLine());
 
         printSeparatorLine();
-        this.shampooService.findAllShampoosWithIngredientsLessThanGivenNumber(number);
+        this.shampooService
+                .findAllShampoosWithIngredientsLessThanGivenNumber(number);
         printSeparatorLine();
     }
 
     private void p07_SelectShampoosByIngredients() throws IOException {
         System.out.println("Please, select all shampoos with ingredients by given list -> Berry, Mineral-Collagen");
 
-        Set<String> ingredients = Arrays.stream(reader.readLine().trim().split(",\\s+"))
-                .collect(Collectors.toSet());
+        Set<String> ingredients =
+                Arrays
+                        .stream(reader.readLine().trim().split(",\\s+"))
+                        .collect(Collectors.toSet());
 
         printSeparatorLine();
-        this.shampooService.findAllShampoosByGivenListWithIngredients(ingredients);
+        this.shampooService
+                .findAllShampoosByGivenListWithIngredients(ingredients);
         printSeparatorLine();
     }
 
@@ -110,8 +122,9 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
 
         BigDecimal price = new BigDecimal(reader.readLine());
 
-        int size = this.shampooService
-                .countAllShampoosWithPriceLowerThanGivenOne(price);
+        int size =
+                this.shampooService
+                        .countAllShampoosWithPriceLowerThanGivenOne(price);
 
         printSeparatorLine();
         System.out.println(size);
@@ -121,8 +134,10 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
     private void p05_SelectIngredientsByName() throws IOException {
         System.out.println("Please, select all ingredients by given name -> Lavender, Herbs, Apple");
 
-        Set<String> names = Arrays.stream(reader.readLine().trim().split(",\\s+"))
-                .collect(Collectors.toSet());
+        Set<String> names =
+                Arrays
+                        .stream(reader.readLine().trim().split(",\\s+"))
+                        .collect(Collectors.toSet());
 
         printSeparatorLine();
         this.ingredientService

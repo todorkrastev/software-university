@@ -26,8 +26,7 @@ public class IngredientServiceImpl implements IngredientService {
 
     @Override
     public void selectIngredientsByName(Set<String> names) {
-        this
-                .ingredientRepository
+        this.ingredientRepository
                 .findAllByNameInOrderByPriceAsc(names)
                 .forEach(ingredient -> System.out.println(ingredient.getName()));
     }
@@ -35,18 +34,21 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     @Transactional
     public int deleteIngredientByGivenName(String ingredient) {
-        return this.ingredientRepository.deleteIngredientByName(ingredient);
+        return this.ingredientRepository
+                .deleteIngredientByName(ingredient);
     }
 
     @Override
     @Transactional
     public int increasePriceByGivenPercentage(BigDecimal percentage) {
-        return this.ingredientRepository.increasePriceByPercentage(percentage);
+        return this.ingredientRepository
+                .increasePriceByPercentage(percentage);
     }
 
     @Override
     @Transactional
     public int increasePricesWithGivenPercentageAndListOfNames(BigDecimal percentage, Collection<String> names) {
-        return this.ingredientRepository.increasePricesWithGivenPercentageAndListOfNames(percentage, names);
+        return this.ingredientRepository
+                .increasePricesWithGivenPercentageAndListOfNames(percentage, names);
     }
 }

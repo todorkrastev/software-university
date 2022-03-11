@@ -54,7 +54,8 @@ public class ShampooServiceImpl implements ShampooService {
 
     @Override
     public void findAllShampoosByGivenListWithIngredients(Set<String> ingredients) {
-        this.shampooRepository.findByIngredientsNames(ingredients)
+        this.shampooRepository
+                .findByIngredientsNames(ingredients)
                 .forEach(ingredient -> System.out.println(ingredient.getBrand()));
     }
 
