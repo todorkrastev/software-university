@@ -18,30 +18,19 @@ public class ModelMapperConfig {
         ModelMapper modelMapper = new ModelMapper();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-        Converter<String, LocalDate> toLocalDate =
-                mappingContext -> LocalDate.parse(mappingContext.getSource(), formatter);
-
-        modelMapper
-                .typeMap(GameAddDto.class, Game.class)
-                .addMappings(mapper ->
-                        mapper
-                                .map(GameAddDto::getThumbnailURL, Game::setImageThumbnail))
-                .addMappings(mapper ->
-                        mapper
-                                .using(toLocalDate)
-                                .map(GameAddDto::getReleaseDate, Game::setReleaseDate));
-
-
-        /*
-              Converter<String, LocalDate> localDateConverter =
+        Converter<String, LocalDate> localDateConverter =
                 mappingContext -> mappingContext.getSource() == null
                         ? LocalDate.now()
-                        : LocalDate.parse(mappingContext.getSource(),
-                        formatter);
+                        : LocalDate.parse(mappingContext.getSource(), formatter);
 
-                              modelMapper.addConverter(localDateConverter);
-         */
+        modelMapper.addConverter(localDateConverter);
 
+
+        modelMapper
+                .createTypeMap(GameAddDto.class, Game.class)
+                .addMappings(mapper ->
+                        mapper
+                                .map(GameAddDto::getThumbnailURL, Game::setImageThumbnail));
 
         return modelMapper;
     }

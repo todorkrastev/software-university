@@ -64,6 +64,7 @@ public class UserServiceImpl implements UserService {
             if (user == null) {
                 System.out.println("Incorrect username / password");
             } else {
+                System.out.println("Successfully logged in " + user.getFullName());
                 this.loggedInUser = user;
             }
         }
