@@ -202,23 +202,6 @@
                     </li>
                 </ul>
             </article>
-            <article class="softuni__certifications__ai">
-                <h2 class="softuni__certifications__ai__title">
-                    AI
-                </h2>
-                <ul class="softuni__certifications__ai__list">
-                    <li class="softuni__certifications__ai__list__item">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/AI/C01_MathConceptsForDevelopers"
-                            class="softuni__certifications__ai__list__item__github" target="_blank">
-                            Math Concepts for Developers
-                        </a>
-                        -
-                        <span class="softuni__certifications__ai__list__item__span">
-                            Studying now
-                        </span>
-                    </li>
-                </ul>
-            </article>
             <article class="softuni__certifications__dbms">
                 <h2 class="softuni__certifications__dbms__title">
                     DBMS
