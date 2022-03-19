@@ -1,8 +1,10 @@
 package bg.softuni.productshop.core.implementations;
 
 import bg.softuni.productshop.core.Engine;
+import bg.softuni.productshop.models.dtos.CategoriesByProductsDto;
 import bg.softuni.productshop.models.dtos.ProductNameAndPriceDto;
 import bg.softuni.productshop.models.dtos.UserSoldDto;
+import bg.softuni.productshop.models.dtos.UsersAndProductsDto;
 import bg.softuni.productshop.services.CategoryService;
 import bg.softuni.productshop.services.ProductService;
 import bg.softuni.productshop.services.UserService;
@@ -21,8 +23,10 @@ import java.util.List;
 public class EngineImpl implements Engine {
 
     private static final String OUTPUT_PATH = "src/main/resources/files/out/";
-    public static final String PRODUCTS_IN_RANGE_FILE_NAME = "products-in-range.json";
-    public static final String SUCCESSFULLY_SOLD_PRODUCTS_FILE_NAME = "successfully-sold-products.json";
+    public static final String PRODUCTS_IN_RANGE_FILE_NAME = "q01-products-in-range.json";
+    public static final String SUCCESSFULLY_SOLD_PRODUCTS_FILE_NAME = "q02-successfully-sold-products.json";
+    public static final String CATEGORIES_BY_PRODUCTS_COUNT_FILE_NAME = "q03-categories-by-products-count.json";
+    public static final String USERS_AND_PRODUCTS_FILE_NAME = "q04-users-and-products.json";
 
     private final CategoryService categoryService;
     private final UserService userService;
@@ -53,8 +57,8 @@ public class EngineImpl implements Engine {
             switch (input) {
                 case 1 -> q01_ProductsInRange();
                 case 2 -> q02_SuccessfullySoldProducts();
-
-                //TODO: -25:10
+                case 3 -> q03_CategoriesByProductsCount();
+                case 4 -> q04_UsersAndProducts();
             }
 
             input = 0;
@@ -62,6 +66,29 @@ public class EngineImpl implements Engine {
         } while (!isProgramRunning());
 
         printGoodbyeMessage();
+    }
+
+    private void q04_UsersAndProducts() throws IOException {
+        UsersAndProductsDto usersAndProductsDto = this.userService.getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastName();
+
+        String content = gson.toJson(usersAndProductsDto);
+
+        writeToFile(OUTPUT_PATH + USERS_AND_PRODUCTS_FILE_NAME, content);
+    }
+
+    private void q03_CategoriesByProductsCount() throws IOException {
+        printSelectedQueryMessage("""
+                Query 3 - Categories by Products Count
+                Description -> Get all categories.
+                Order them by the number of products in each category (a product can be in many categories).
+                For each category select its name, the number of products, the average price of those products and the total revenue (total price sum) of those products (regardless if they have a buyer or not).""");
+
+        List<CategoriesByProductsDto> categoriesByProductsDtoList = this.categoryService
+                .getAllCategoriesOrderByNumberOfProducts();
+
+        String content = gson.toJson(categoriesByProductsDtoList);
+
+        writeToFile(OUTPUT_PATH + CATEGORIES_BY_PRODUCTS_COUNT_FILE_NAME, content);
     }
 
     private void q02_SuccessfullySoldProducts() throws IOException {

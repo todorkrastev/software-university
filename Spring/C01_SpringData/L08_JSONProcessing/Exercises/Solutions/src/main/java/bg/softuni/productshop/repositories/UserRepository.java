@@ -10,8 +10,16 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("SELECT u FROM User u " +
-            "WHERE (SELECT COUNT(p) FROM Product p WHERE p.seller.id = u.id) > 0 " +
+    @Query("SELECT u " +
+            "FROM User u " +
+            "WHERE (SELECT COUNT(p) FROM Product p WHERE p.seller.id = u.id AND p.buyer IS NOT NULL) > 0 " +
             "ORDER BY u.lastName, u.firstName")
     List<User> findAllUsersWithMoreThanOneSoldProductOrderByLastNameAndFirstName();
+
+    @Query("SELECT u " +
+            "FROM User u " +
+            "WHERE size(u.soldProducts) > 0 " +
+            "ORDER BY size(u.soldProducts) DESC, " +
+            "u.lastName ASC ")
+    List<User> findAllUsersWithMoreThanOneSoldProductOrderBySoldProductsDescLastNameAsc();
 }

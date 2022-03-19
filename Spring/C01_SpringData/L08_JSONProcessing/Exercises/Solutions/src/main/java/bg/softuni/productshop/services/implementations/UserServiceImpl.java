@@ -1,8 +1,10 @@
 package bg.softuni.productshop.services.implementations;
 
 import bg.softuni.productshop.constants.GlobalConstant;
+import bg.softuni.productshop.models.dtos.UserAndSoldProductsDto;
 import bg.softuni.productshop.models.dtos.UserSeedDto;
 import bg.softuni.productshop.models.dtos.UserSoldDto;
+import bg.softuni.productshop.models.dtos.UsersAndProductsDto;
 import bg.softuni.productshop.models.entities.User;
 import bg.softuni.productshop.repositories.UserRepository;
 import bg.softuni.productshop.services.UserService;
@@ -67,5 +69,16 @@ public class UserServiceImpl implements UserService {
                 .stream()
                 .map(user -> modelMapper.map(user, UserSoldDto.class))
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public UsersAndProductsDto getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastName() {
+        List<UserAndSoldProductsDto> userAndSoldProductsDtos = this.userRepository
+                .findAllUsersWithMoreThanOneSoldProductOrderBySoldProductsDescLastNameAsc()
+                .stream()
+                .map(user -> this.modelMapper.map(user, UserAndSoldProductsDto.class))
+                .collect(Collectors.toList());
+
+        return new UsersAndProductsDto(userAndSoldProductsDtos);
     }
 }

@@ -1,6 +1,7 @@
 package bg.softuni.productshop.services.implementations;
 
 import bg.softuni.productshop.constants.GlobalConstant;
+import bg.softuni.productshop.models.dtos.CategoriesByProductsDto;
 import bg.softuni.productshop.models.dtos.CategorySeedDto;
 import bg.softuni.productshop.models.entities.Category;
 import bg.softuni.productshop.repositories.CategoryRepository;
@@ -15,8 +16,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
@@ -67,5 +70,14 @@ public class CategoryServiceImpl implements CategoryService {
                     .orElse(null));
         }
         return categories;
+    }
+
+    @Override
+    public List<CategoriesByProductsDto> getAllCategoriesOrderByNumberOfProducts() {
+        return this.categoryRepository
+                .findAllOrderByProductCount()
+                .stream()
+                .map(categoriesByProductsDto -> modelMapper.map(categoriesByProductsDto, CategoriesByProductsDto.class))
+                .collect(Collectors.toList());
     }
 }

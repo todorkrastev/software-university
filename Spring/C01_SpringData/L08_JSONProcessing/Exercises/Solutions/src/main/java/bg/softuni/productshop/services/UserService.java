@@ -1,6 +1,7 @@
 package bg.softuni.productshop.services;
 
 import bg.softuni.productshop.models.dtos.UserSoldDto;
+import bg.softuni.productshop.models.dtos.UsersAndProductsDto;
 import bg.softuni.productshop.models.entities.User;
 
 import java.io.IOException;
@@ -12,4 +13,6 @@ public interface UserService {
     User findRandomUser();
 
     List<UserSoldDto> findAllUsersWithMoreThanOneSoldProduct();
+
+    UsersAndProductsDto getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastName();
 }

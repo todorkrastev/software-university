@@ -1,16 +1,18 @@
 package bg.softuni.productshop.models.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "categories")
 public class Category extends BaseEntity {
     private String name;
+    private Set<Product> products;
 
     public Category() {
+        this.products = new HashSet<>();
     }
 
     @Column(length = 15, nullable = false, unique = true)
@@ -33,6 +35,15 @@ public class Category extends BaseEntity {
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    @ManyToMany(mappedBy = "categories", targetEntity = Product.class, fetch = FetchType.EAGER)
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
     }
 }
 
