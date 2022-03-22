@@ -1,8 +1,6 @@
 package bg.softuni.productshop.services.implementations;
 
-import bg.softuni.productshop.models.dtos.UserSeedDto;
-import bg.softuni.productshop.models.dtos.UserViewRootDto;
-import bg.softuni.productshop.models.dtos.UserViewWithProductsDto;
+import bg.softuni.productshop.models.dtos.*;
 import bg.softuni.productshop.models.entities.User;
 import bg.softuni.productshop.repositories.UserRepository;
 import bg.softuni.productshop.services.UserService;
@@ -64,5 +62,16 @@ public class UserServiceImpl implements UserService {
         userViewRootDto.setProducts(userViewWithProductsDtoList);
 
         return userViewRootDto;
+    }
+
+    @Override
+    public UserViewRootWithOneSoldProduct getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastNameAsc() {
+        List<UserViewFirstNameLastNameAgeDto> userViewFirstNameLastNameAgeDtoList = this.userRepository
+                .getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastNameAsc()
+                .stream()
+                .map(user -> this.modelMapper.map(user, UserViewFirstNameLastNameAgeDto.class))
+                .collect(Collectors.toList());
+
+        return new UserViewRootWithOneSoldProduct(userViewFirstNameLastNameAgeDtoList);
     }
 }

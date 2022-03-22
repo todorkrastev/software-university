@@ -35,13 +35,14 @@ public class EngineImpl implements Engine {
 
     @Override
     public void run() throws IOException, JAXBException {
+
         seedData();
 
         printWelcomeMessage();
 
         do {
             do {
-                validateInput("Please, select query number [1-4]");
+                validateInput();
             } while (input < 1 || input > 4);
 
             switch (input) {
@@ -58,7 +59,7 @@ public class EngineImpl implements Engine {
         printGoodbyeMessage();
     }
 
-    private void q04_UsersAndProducts() throws IOException {
+    private void q04_UsersAndProducts() throws JAXBException {
         printSelectedQueryMessage("""
                 Query 4 - Users and Products
                 Description -> Get all users, who have at least 1 product sold.
@@ -66,9 +67,18 @@ public class EngineImpl implements Engine {
                 Select only their first and last name, age and for each product - name and price.""");
 
 
+        UserViewRootWithOneSoldProduct userViewRootWithOneSoldProductList =
+                this.userService.getAllUsersWithMoreThanOneSoldProductOrderByNumberOfSoldProductsDescThenByLastNameAsc();
+
+        System.out.println();
+
+        this.xmlParser.writeToFile(
+                GlobalConstant.OUTPUT_FILE_PATH + GlobalConstant.USERS_AND_PRODUCTS_FILE_NAME,
+                userViewRootWithOneSoldProductList
+        );
     }
 
-    private void q03_CategoriesByProductsCount() throws IOException, JAXBException {
+    private void q03_CategoriesByProductsCount() throws JAXBException {
         printSelectedQueryMessage("""
                 Query 3 - Categories by Products Count
                 Description -> Get all categories.
@@ -84,7 +94,7 @@ public class EngineImpl implements Engine {
         );
     }
 
-    private void q02_SuccessfullySoldProducts() throws IOException, JAXBException {
+    private void q02_SuccessfullySoldProducts() throws JAXBException {
         printSelectedQueryMessage("""
                 Query 2 - Successfully Sold Products
                 Description -> Get all users who have at least 1 item sold with a buyer.
@@ -182,9 +192,9 @@ public class EngineImpl implements Engine {
         System.out.printf("You selected query: %s%n", exercise);
     }
 
-    private void validateInput(String message) {
+    private void validateInput() {
         try {
-            System.out.println(message);
+            System.out.println("Please, select query number [1-4]");
             input = Integer.parseInt(this.reader.readLine());
             printSeparatorLine();
         } catch (Exception e) {
