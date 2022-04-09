@@ -9,17 +9,18 @@ int main() {
     input.open("input.txt");
 
     //IMPORTANT: always make an error check
-    if(!input.is_open())
-    {
+    if(!input.is_open()) {
     	cerr << "input.txt file could not be found" << endl;
     }
-
+    
     int a, b;
     input >> a >> b;
+    input.close();
 
     ofstream output;
     output.open("output.txt", ofstream::app);
     output << a + b << endl;
+    output.close();
 
     return 0;
 }
