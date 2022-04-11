@@ -231,9 +231,10 @@
                             Spring Data
                         </a>
                         -
-                        <span class="softuni__certifications__spring__list__item__span">
-                            Studying now
-                        </span>
+                        <a href="https://softuni.bg/certificates/details/130702/6978fb13"
+                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
