@@ -50,3 +50,61 @@ int main() {
 
     return 0;
 }
+
+// -------------------------------------------------------------------------------------------------
+
+// Second option -> using Nested Map
+
+// -------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+#include <map>
+#include <vector>
+#include <algorithm>
+
+
+int main() {
+
+	std::map<std::string, std::map<int, double>> pets;
+	int num;
+	std::cin >> num;
+
+	std::string name;
+	int age = 0;
+	double score = 0.0;
+	for (size_t i = 0; i < num; i++) {
+		std::cin >> name >> age >> score;
+
+		if (12 <= age) {
+			score += 2.5;
+		}
+
+		if (score < 4) {
+			continue;
+		}
+
+		pets[name][0] = age;
+		pets[name][1] = score;
+	}
+
+	
+	std::map<std::string, double> newMap;
+	for (auto& pet : pets) {
+		newMap[pet.first] = pet.second[1];
+	}
+
+	std::vector<std::pair<std::string, double>> vector;
+	for (auto& pet : newMap) {
+		vector.emplace_back(pet);
+	}
+	
+	sort(vector.begin(), vector.end(),
+		[](const auto& x, const auto& y) {return y.second < x.second; });
+	
+	for (auto& name : vector) {
+		std::cout << name.first << " ";
+	}
+
+	return 0;
+}
