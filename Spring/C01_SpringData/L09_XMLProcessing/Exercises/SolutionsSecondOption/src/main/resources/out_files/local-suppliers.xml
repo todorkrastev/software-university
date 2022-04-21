@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<suppliers>
+    <supplier id="3" name="Airgas, Inc." parts-count="8"/>
+    <supplier id="4" name="Agway Inc." parts-count="3"/>
+    <supplier id="8" name="VF Corporation" parts-count="2"/>
+    <supplier id="9" name="Saks Inc" parts-count="4"/>
+    <supplier id="10" name="Zale" parts-count="2"/>
+    <supplier id="11" name="Cintas Corp." parts-count="7"/>
+    <supplier id="15" name="E.I. Du Pont de Nemours and Company" parts-count="0"/>
+    <supplier id="16" name="Nicor Inc" parts-count="4"/>
+    <supplier id="19" name="Cintas Corp." parts-count="2"/>
+    <supplier id="23" name="Caterpillar Inc." parts-count="3"/>
+    <supplier id="24" name="GenCorp Inc." parts-count="8"/>
+    <supplier id="27" name="The Clorox Co." parts-count="5"/>
+    <supplier id="31" name="Level 3 Communications Inc." parts-count="3"/>
+</suppliers>

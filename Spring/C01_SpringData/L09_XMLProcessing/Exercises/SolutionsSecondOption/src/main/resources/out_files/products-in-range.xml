@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product name="Naproxen" price="807.22" seller="Chris Mitchell"/>
+    <product name="Meloxicam" price="809.18" seller="Harrison"/>
+    <product name="Clarins Paris Skin Illusion - 114 cappuccino" price="811.42" seller="Jonathan Rodriguez"/>
+    <product name="Azithromycin" price="813.87" seller="Thomas Snyder"/>
+    <product name="LV-FX" price="820.87" seller="Arthur Reynolds"/>
+    <product name="IOPE SUPER VITAL" price="824.68" seller="Sandra Riley"/>
+    <product name="Aquafresh" price="849.93" seller="Cunningham"/>
+    <product name="RESCRIPTOR" price="850.52" seller="Moreno"/>
+    <product name="Moore Medical Sinus Pain and Pressure Relief" price="855.39" seller="Jennifer Riley"/>
+    <product name="Shopko Lip Treatment" price="861.42" seller="Schmidt"/>
+    <product name="Perrigo Benzoyl Peroxide" price="873.24" seller="Arthur Reynolds"/>
+    <product name="ESIKA" price="879.37" seller="Jonathan Rodriguez"/>
+    <product name="Levothyroxine Sodium" price="885.86" seller="Diana Harvey"/>
+    <product name="EPZICOM" price="895.65" seller="Christine Gomez"/>
+    <product name="Myristica Argentum Sinus Relief" price="904.52" seller="Nicole Harris"/>
+    <product name="Aspirin" price="925.45" seller="Gloria Alexander"/>
+    <product name="Ranitidine" price="926.64" seller="Arthur Reynolds"/>
+    <product name="Care One Hemorrhoidal" price="932.18" seller="Rachel Johnson"/>
+    <product name="Spironolactone" price="933.69" seller="Jean Henry"/>
+    <product name="pain relief" price="938.23" seller="Kathy Gilbert"/>
+    <product name="Glipizide and Metformin Hydrochloride" price="953.60" seller="Thompson"/>
+    <product name="Metformin Hydrochloride" price="953.99" seller="Paula Hill"/>
+    <product name="Homeopathic Rheumatism" price="967.08" seller="Fred Barnes"/>
+    <product name="NEO-POLY-BAC HYDRO" price="967.32" seller="Jean Henry"/>
+    <product name="Clearskin" price="968.59" seller="Harrison"/>
+    <product name="Dawn Ultra Antibacterial Hand" price="969.86" seller="Chris Mitchell"/>
+    <product name="Megestrol Acetate" price="976.15" seller="Billy Parker"/>
+    <product name="Smooth texture Orange flavor" price="976.65" seller="Betty Lawson"/>
+    <product name="Retin-A MICRO" price="995.98" seller="Kathy Gilbert"/>
+</products>
