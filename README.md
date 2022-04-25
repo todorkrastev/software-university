@@ -133,9 +133,10 @@
                             C++ Fundamentals
                         </a>
                         -
-                        <span class="softuni__certifications__c++__list__item__span">
-                            Studying now
-                        </span>
+                        <a href="https://softuni.bg/certificates/details/132766/b57ee79a"
+                            class="softuni__certifications__c++__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
