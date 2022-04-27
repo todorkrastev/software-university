@@ -48,6 +48,33 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L02_ORMFundamentals/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">ORM Fundamentals</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L02_ORMFundamentals"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L02_ORMFundamentals"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L03_IntroductionToHibernate/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Introduction to
+                            Hibernate</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L03_IntroductionToHibernate/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L03_IntroductionToHibernate/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
