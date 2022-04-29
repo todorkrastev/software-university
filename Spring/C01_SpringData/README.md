@@ -75,6 +75,86 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L04_HibernateCodeFirst/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Hibernate Code First</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L04_HibernateCodeFirst/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L04_HibernateCodeFirst/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L05_SpringDataIntroduction/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring Data Intro</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L05_SpringDataIntroduction/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L05_SpringDataIntroduction/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L06_SpringDataAdvancedQuering/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring Data Advanced
+                            Quering</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L06_SpringDataAdvancedQuering/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L06_SpringDataAdvancedQuering/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L07_SpringDataAutoMappingObjects/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring Data Auto Mapping
+                            Objects</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L07_SpringDataAutoMappingObjects/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L07_SpringDataAutoMappingObjects/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L08_JSONProcessing/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">JSON Processing</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L08_JSONProcessing/Lab"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L08_JSONProcessing/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L09_XMLProcessing/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">XML Processing</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L09_XMLProcessing/Lab/Solutions"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                        |
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData/L09_XMLProcessing/Exercises"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Exercises</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
