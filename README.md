@@ -18,7 +18,7 @@
             </article>
             <article class="softuni__header__title">
                 <h1 class="softuni__header__title__about" align="center">
-                    This repository contains my projects, homework, exercises and educational materials created during
+                    My projects, homework, exercises and educational materials created during
                     my studies
                     <a href="https://softuni.bg/curriculum" class="softuni__header__title__about__link"
                         target="_blank">@SoftUni</a>
