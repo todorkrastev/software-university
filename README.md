@@ -17,24 +17,24 @@
                 </a>
             </article>
             <article class="softuni__header__title">
-                <h2 class="softuni__header__title__about" align="center">
+                <h1 class="softuni__header__title__about" align="center">
                     This repository contains my projects, homework, exercises and educational materials created during
                     my studies
                     <a href="https://softuni.bg/curriculum" class="softuni__header__title__about__link"
                         target="_blank">@SoftUni</a>
-                </h2>
+                </h1>
             </article>
         </section>
     </header>
     <main>
         <section class="softuni__certifications">
-            <h1 class="softuni__certifications__title">
+            <h2 class="softuni__certifications__title">
                 Certifications
-            </h1>
+            </h2>
             <article class="softuni__certifications__java">
-                <h2 class="softuni__certifications__java__title">
+                <h3 class="softuni__certifications__java__title">
                     Java
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__java__list">
                     <li class="softuni__certifications__java__list__item">
                         <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/Java/M01JavaProgrammingBasics"
@@ -83,9 +83,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__js">
-                <h2 class="softuni__certifications__js__title">
+                <h3 class="softuni__certifications__js__title">
                     JavaScript
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__js__list">
                     <li class="softuni__certifications__js__list__item">
                         <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
@@ -112,9 +112,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__c++">
-                <h2 class="softuni__certifications__c++__title">
+                <h3 class="softuni__certifications__c++__title">
                     C++
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__c++__list">
                     <li class="softuni__certifications__c++__list__item">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M01_ProgrammingBasics"
@@ -141,9 +141,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__python">
-                <h2 class="softuni__certifications__python__title">
+                <h3 class="softuni__certifications__python__title">
                     Python
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__python__list">
                     <li class="softuni__certifications__python__list__item">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/Python"
@@ -158,9 +158,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__c#">
-                <h2 class="softuni__certifications__c#__title">
+                <h3 class="softuni__certifications__c#__title">
                     C#
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__c#__list">
                     <li class="softuni__certifications__c#__list__item">
                         <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics"
@@ -176,9 +176,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__dsa">
-                <h2 class="softuni__certifications__dsa__title">
+                <h3 class="softuni__certifications__dsa__title">
                     Data Structures & Algorithms
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__dsa__list">
                     <li class="softuni__certifications__dsa__list__item">
                         <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C01_FundamentalsInMathematics"
@@ -204,9 +204,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__dbms">
-                <h2 class="softuni__certifications__dbms__title">
+                <h3 class="softuni__certifications__dbms__title">
                     DBMS
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__dbms__list">
                     <li class="softuni__certifications__dbms__list__item">
                         <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/DBMS/M01_MySQL"
@@ -222,9 +222,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__spring">
-                <h2 class="softuni__certifications__spring__title">
+                <h3 class="softuni__certifications__spring__title">
                     Spring
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__spring__list">
                     <li class="softuni__certifications__spring__list__item">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData"
@@ -240,9 +240,9 @@
                 </ul>
             </article>
             <article class="softuni__certifications__htmlcss">
-                <h2 class="softuni__certifications__htmlcss__title">
+                <h3 class="softuni__certifications__htmlcss__title">
                     HTML & CSS
-                </h2>
+                </h3>
                 <ul class="softuni__certifications__htmlcss__list">
                     <li class="softuni__certifications__htmlcss__list__item">
                         <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/HTML%20%26%20CSS/M02_HtmlAndCss"
