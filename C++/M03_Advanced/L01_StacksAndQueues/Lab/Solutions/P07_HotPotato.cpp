@@ -60,3 +60,51 @@ int main() {
 
 	return 0;
 }
+
+
+
+// Second option
+
+
+
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <queue>
+
+
+int main() {
+
+	std::string str;
+	getline(std::cin, str);
+	std::istringstream istr(str);
+
+	std::queue<std::string> circle;
+	std::string kid;
+	
+	while (istr >> kid) {
+		circle.push(kid);
+	}
+
+	int throws;
+	std::cin >> throws;
+
+	int remaining = throws;
+
+	while (circle.size() > 1) {
+		kid = circle.front();
+		circle.pop();
+		remaining--;
+
+		if (remaining == 0) {
+			std::cout << "Removed " << kid << std::endl;
+			remaining = throws;
+		} else {
+			circle.push(kid);
+		}
+	}
+
+	std::cout << "Last is " << circle.front() << std::endl;
+
+	return 0;
+}
