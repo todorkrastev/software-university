@@ -47,7 +47,7 @@ int main() {
 		}
 	}
 
-	int minNum = INT16_MAX;
+	int minNum = INT32_MAX;
 
 	while (!nums.empty()) {
 		int currNum = nums.top();
