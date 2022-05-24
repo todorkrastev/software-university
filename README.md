@@ -138,6 +138,14 @@
                             See credential
                         </a>
                     </li>
+                    <li class="softuni__certifications__c++__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M03_Advanced"
+                            class="softuni__certifications__c++__list__item__github" target="_blank">
+                            C++ Advanced
+                        </a>
+                        -
+                        Studying now
+                    </li>
                 </ul>
             </article>
             <article class="softuni__certifications__python">
@@ -236,6 +244,14 @@
                             class="softuni__certifications__spring__list__item__softuni" target="_blank">
                             See credential
                         </a>
+                    </li>
+                    <li class="softuni__certifications__spring__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals"
+                            class="softuni__certifications__spring__list__item__github" target="_blank">
+                            Spring Fundamentals
+                        </a>
+                        -
+                        Studying now
                     </li>
                 </ul>
             </article>
