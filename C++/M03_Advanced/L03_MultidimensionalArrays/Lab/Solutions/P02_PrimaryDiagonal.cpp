@@ -9,8 +9,10 @@ int main() {
 
 	std::cin.ignore();
 
-	int matrix[100][100];
+	const int r = 100;
+	const int c = 100;
 
+	int matrix[r][c]{};
 
 	for (size_t row = 0; row < num; row++) {
 		std::string input;
