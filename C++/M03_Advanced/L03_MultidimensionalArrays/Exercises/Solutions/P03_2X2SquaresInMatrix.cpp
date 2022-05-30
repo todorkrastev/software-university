@@ -104,3 +104,52 @@ int main() {
 
 	return 0;
 }
+
+// -----------------------------------------------------------------------------------------------
+
+// Second option
+
+// -----------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <vector>
+
+bool checkTwoByTwoSquare(const std::vector<std::vector<char>> matrix, int row, int col) {
+
+	return matrix[row][col] == matrix[row][col + 1] &&
+		matrix[row][col] == matrix[row + 1][col] &&
+		matrix[row][col] == matrix[row + 1][col + 1];
+
+}
+
+
+int main() {
+
+	std::vector<std::vector<char>> matrix;
+	int rows, cols;
+
+	std::cin >> rows >> cols;
+	matrix.resize(rows);
+
+
+	for (size_t currRow = 0; currRow < rows; currRow++) {
+		matrix[currRow].resize(cols);
+		for (size_t currCol = 0; currCol < cols; currCol++) {
+			std::cin >> matrix[currRow][currCol];
+		}
+	}
+
+	int twoByTwoSquares = 0;
+
+	for (size_t currRow = 0; currRow < rows - 1; currRow++) {
+		for (size_t currCol = 0; currCol < cols - 1; currCol++) {
+			if (checkTwoByTwoSquare(matrix, currRow, currCol)) {
+				twoByTwoSquares++;
+			}
+		}
+	}
+
+	std::cout << twoByTwoSquares << std::endl;
+
+	return 0;
+}

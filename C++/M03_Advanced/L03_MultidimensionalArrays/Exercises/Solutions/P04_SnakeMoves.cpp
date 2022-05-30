@@ -58,3 +58,58 @@ int main() {
 
 	return 0;
 }
+
+// ----------------------------------------------------------------------------------------------
+
+// Second option
+
+// ----------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+
+
+int main() {
+
+	int rows, cols;
+	std::string snake;
+
+	char matrix[12][12] = {};
+
+	int snakeCount = 0;
+
+	std::cin >> rows >> cols >> snake;
+
+	int currRow = 0;
+	int currCol = 0;
+	int incr = 1;
+
+	while (currRow < rows) {
+		matrix[currRow][currCol] = snake[snakeCount % snake.length()];
+		snakeCount++;
+
+		currCol += incr;
+
+		if (currCol >= cols) {
+			currCol = cols - 1;
+			currRow++;
+			incr = -1;
+		}
+
+		if (currCol < 0) {
+			currCol = 0;
+			currRow++;
+			incr = 1;
+		}
+	}
+
+	for (currRow = 0; currRow < rows; currRow++) {
+		for (currCol = 0; currCol < cols; currCol++) {
+			std::cout << matrix[currRow][currCol];
+		}
+		
+		std::cout << std::endl;
+	}
+
+	return 0;
+}

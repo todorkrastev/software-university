@@ -153,3 +153,126 @@ int main() {
 
 	return 0;
 }
+
+// -----------------------------------------------------------------------------------------------
+
+// Third option
+
+// -----------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <sstream>
+#include <cstring>
+
+
+void getMatrix(int mat[][10], int& rows, int& cols) {
+
+	std::cin >> rows;
+	std::cin.ignore();
+
+	for (size_t currRow = 0; currRow < rows; currRow++) {
+
+		std::string buffer;
+		std::getline(std::cin, buffer);
+
+		std::istringstream iStrStream(buffer);
+
+		cols = 0;
+		while (iStrStream >> mat[currRow][cols]) {
+			cols++;
+		}
+	}
+}
+
+bool compare(const int mat1[][10], int rows1, int cols1,
+	const int mat2[][10], int rows2, int cols2) {
+
+	if (rows1 != rows2 || cols1 != cols2) {
+		return false;
+	}
+
+	for (size_t currRow = 0; currRow < rows1; currRow++) {
+		if (memcmp(mat1[currRow], mat2[currRow], cols1*sizeof(mat1[0][0])) != 0) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+
+int main() {
+
+	int rows1, cols1;
+	int rows2, cols2;
+
+	const int r = 10;
+	const int c = 10;
+
+	int mat1[r][c], mat2[r][c];
+
+	int currRow, currCol;
+
+	getMatrix(mat1, rows1, cols1);
+	getMatrix(mat2, rows2, cols2);
+
+	std::cout << (compare(mat1, rows1, cols1, mat2, rows2, cols2) ?
+		"equal" :
+		"not equal")
+		<< std::endl;
+
+	return 0;
+}
+
+// -----------------------------------------------------------------------------------------------
+
+// Fourth option
+
+// -----------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <sstream>
+#include <cstring>
+
+void getMatrix(int mat[][10], int& rows, int& cols) {
+
+	std::cin >> rows;
+	std::cin.ignore();
+
+	for (size_t currRow = 0; currRow < rows; currRow++) {
+
+		std::string buffer;
+		std::getline(std::cin, buffer);
+
+		std::istringstream iStrStream(buffer);
+
+		cols = 0;
+		while (iStrStream >> mat[currRow][cols]) {
+			cols++;
+		}
+	}
+}
+
+
+int main() {
+
+	int rows1, cols1;
+	int rows2, cols2;
+
+	const int r = 10;
+	const int c = 10;
+
+	int mat1[r][c] = {}, mat2[r][c] = {};
+
+	int currRow, currCol;
+
+	getMatrix(mat1, rows1, cols1);
+	getMatrix(mat2, rows2, cols2);
+
+	std::cout << (rows1 != rows2 || cols1 != cols2 || memcmp(mat1, mat2, sizeof(mat1)) ?
+		"not equal" :
+		"equal")
+		<< std::endl;
+
+	return 0;
+}
