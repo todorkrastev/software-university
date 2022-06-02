@@ -9,6 +9,8 @@ public class Dog implements Animal, BeanNameAware {
 
     private final boolean isSuperDog;
 
+    private String name;
+
 
     public Dog() {
         this(false);
@@ -36,5 +38,19 @@ public class Dog implements Animal, BeanNameAware {
     @Override
     public void setBeanName(String name) {
         System.out.println("The name of this bean is: " + name);
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public Dog setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public boolean isSuperDog() {
+        return isSuperDog;
     }
 }

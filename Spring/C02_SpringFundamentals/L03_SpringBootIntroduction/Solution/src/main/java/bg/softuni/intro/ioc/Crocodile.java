@@ -1,23 +1,21 @@
 package bg.softuni.intro.ioc;
 
-public class Cat implements Animal{
+public class Crocodile implements Animal{
 
     private String name;
+
+    @Override
+    public String makeNoise() {
+        return "Traka Trak";
+    }
 
     @Override
     public String getName() {
         return name;
     }
 
-    public Cat setName(String name) {
+    public Crocodile setName(String name) {
         this.name = name;
         return this;
     }
-
-    @Override
-    public String makeNoise() {
-        return "Miau miau!";
-    }
-
-
 }
