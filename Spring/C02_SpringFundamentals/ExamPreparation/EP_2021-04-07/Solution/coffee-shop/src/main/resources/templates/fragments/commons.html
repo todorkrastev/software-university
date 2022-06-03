@@ -17,18 +17,22 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/users/login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/users/register">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/orders/add">Add Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/users/logout">Logout</a>
-                </li>
+                <th:block th:if="${@currentUser.id == null}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/register">Register</a>
+                    </li>
+                </th:block>
+                <th:block th:unless="${@currentUser.id == null}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/orders/add">Add Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                </th:block>
             </ul>
             <img width="50px" src="/images/coffee.png" alt="Coffee image">
         </div>

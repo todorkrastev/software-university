@@ -41,7 +41,7 @@ public class UserRegisterBindingModel {
         this.lastName = lastName;
     }
 
-    @Email()
+    @Email
     public String getEmail() {
         return email;
     }

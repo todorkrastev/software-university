@@ -8,16 +8,17 @@
     <div class="jumbotron">
         <div class="container text-light ">
             <h1 class="display-3 ">
-                <strong class="bg-blur rounded border-left border-white pl-3 border-bottom">
-                    Register</strong></h1>
+                <strong class="bg-blur rounded border-left border-white pl-3 border-bottom">Register</strong></h1>
         </div>
         <div class="container bg-blur rounded p-5 mt-5 w-75">
-            <form th:action="@{/users/register}" th:method="post" th:object="${userRegisterBindingModel}"
-                  class=" text-center text-light">
+            <form th:object="${userRegisterBindingModel}" th:action="@{/users/register}" th:method="POST">
+
+                class=" text-center text-light">
                 <div class="form-group row">
                     <label for="username" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-10">
-                        <input th:field="*{username}" th:errorclass="is-invalid" type="text" class="form-control" id="username"
+                        <input th:field="*{username}" th:errorclass="is-invalid" type="text" class="form-control"
+                               id="username"
                                aria-describedby="usernameHelpInline" placeholder="Username">
                         <small id="usernameHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Username length must be between 5 and 20 characters.
@@ -34,9 +35,10 @@
                 <div class="form-group row">
                     <label for="lastName" class="col-sm-2 col-form-label">Last name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="lastName"
+                        <input th:field="*{lastName}" th:errorclass="is-invalid" type="text" class="form-control"
+                               id="lastName"
                                aria-describedby="lastNameHelpInline" placeholder="Last name">
-                        <small id="lastNameHelpInline" class="bg-danger text-light rounded">
+                        <small id="lastNameHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Last name length must be between 5 and 20 characters.
                         </small>
                     </div>
@@ -44,9 +46,10 @@
                 <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="email"
+                        <input th:field="*{email}" th:errorclass="is-invalid" type="text" class="form-control"
+                               id="email"
                                aria-describedby="emailHelpInline" placeholder="email@example.com">
-                        <small id="emailHelpInline" class="bg-danger text-light rounded">
+                        <small id="emailHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Enter valid email address.
                         </small>
                     </div>
@@ -54,9 +57,10 @@
                 <div class="form-group row">
                     <label for="password" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="password"
+                        <input th:field="*{password}" th:errorclass="is-invalid" type="password" class="form-control"
+                               id="password"
                                aria-describedby="passwordHelpInline" placeholder="Password">
-                        <small id="passwordHelpInline" class="bg-danger text-light rounded">
+                        <small id="passwordHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Password length must be more than 3 characters long.
                         </small>
                     </div>
@@ -64,9 +68,11 @@
                 <div class="form-group row">
                     <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="confirmPassword"
+                        <input th:field="*{confirmPassword}" th:errorclass="is-invalid" type="password"
+                               class="form-control"
+                               id="confirmPassword"
                                aria-describedby="confirmPasswordHelpInline" placeholder="Confirm Password">
-                        <small id="confirmPasswordHelpInline" class="bg-danger text-light rounded">
+                        <small id="confirmPasswordHelpInline" class="invalid-feedback bg-danger text-light rounded">
                             Password length must be more than 3 characters long.
                         </small>
                     </div>

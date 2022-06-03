@@ -1,38 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Coffee Shop Application</title>
-    <link rel="stylesheet" href="/css/reset-css.css"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
-</head>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/commons::head"></head>
 <body class="bg-secondary">
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info rounded">
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Add Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Logout</a>
-                </li>
-            </ul>
-            <img width="50px" src="/images/coffee.png" alt="Coffee image">
-        </div>
-    </nav>
-</header>
+<header th:replace="fragments/commons::nav"></header>
 <main role="main" class="bg-secondary">
     <div class="jumbotron">
         <div class="container text-light ">
@@ -44,9 +15,9 @@
             </h3>
         </div>
         <div class="container bg-blur rounded p-5 mt-5 w-75 ">
-            <form action="/" method=""
+            <form th:action="@{/users/login}" th:method="POST" th:object="${userLoginBindingModel}"
                   class="text-center text-light">
-                <h3 class="mt-5 text-center">
+                <h3 th:if="${isFound == false}" class="mt-5 text-center">
                     <strong class="bg-blur rounded text-danger">
                         Wrong username and password combination.
                     </strong>
@@ -54,11 +25,11 @@
                 <div class="form-group row">
                     <label for="username" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control"
+                        <input th:field="*{username}" th:errorclass="is-invalid" type="text" class="form-control"
                                id="username"
                                aria-describedby="usernameHelpInline" placeholder="Username">
                         <small id="usernameHelpInline"
-                               class="bg-danger text-light rounded">
+                               class="invalid-feedback bg-danger text-light rounded">
                             Username length must be between 5 and 20 characters.
                         </small>
                     </div>
@@ -66,11 +37,11 @@
                 <div class="form-group row">
                     <label for="password" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control"
+                        <input th:field="*{password}" th:errorclass="is-invalid" type="password" class="form-control"
                                id="password"
                                aria-describedby="passwordHelpInline" placeholder="Password">
                         <small id="passwordHelpInline"
-                               class="bg-danger text-light rounded">
+                               class="invalid-feedback bg-danger text-light rounded">
                             Password length must be more than 3 characters.
                         </small>
                     </div>
@@ -81,8 +52,6 @@
         </div>
     </div>
 </main>
-<footer class="container">
-    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
-</footer>
+<footer th:replace="fragments/commons::footer"></footer>
 </body>
 </html>

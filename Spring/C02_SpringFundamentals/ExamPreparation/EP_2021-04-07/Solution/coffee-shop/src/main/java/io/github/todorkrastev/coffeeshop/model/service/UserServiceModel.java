@@ -1,23 +1,25 @@
-package io.github.todorkrastev.coffeeshop.model.entity;
+package io.github.todorkrastev.coffeeshop.model.service;
 
-import javax.persistence.*;
-import java.util.Set;
+public class UserServiceModel {
 
-@Entity
-@Table(name = "users")
-public class User extends BaseEntity {
-
+    private Long id;
     private String firstName;
     private String lastName;
     private String username;
     private String email;
     private String password;
-    private Set<Order> orders;
 
-    public User() {
+    public UserServiceModel() {
     }
 
-    @Column
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -26,7 +28,6 @@ public class User extends BaseEntity {
         this.firstName = firstName;
     }
 
-    @Column(nullable = false)
     public String getLastName() {
         return lastName;
     }
@@ -35,7 +36,6 @@ public class User extends BaseEntity {
         this.lastName = lastName;
     }
 
-    @Column(nullable = false, unique = true)
     public String getUsername() {
         return username;
     }
@@ -44,7 +44,6 @@ public class User extends BaseEntity {
         this.username = username;
     }
 
-    @Column(nullable = false, unique = true)
     public String getEmail() {
         return email;
     }
@@ -53,21 +52,11 @@ public class User extends BaseEntity {
         this.email = email;
     }
 
-    @Column(nullable = false)
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER)
-    public Set<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
     }
 }
