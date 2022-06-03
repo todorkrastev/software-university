@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coffee Shop Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="bg-secondary">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info rounded">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Add Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+            </ul>
+            <img width="50px" src="/images/coffee.png" alt="Coffee image">
+        </div>
+    </nav>
+</header>
+<main role="main" class="bg-secondary">
+
+    <div class="jumbotron text-center">
+        <div class="container text-light text-center">
+            <h1 class="display-3"><strong class="bg-blur rounded">All active</strong></h1>
+            <h1 class="display-3"><strong class="bg-blur rounded">Orders</strong></h1>
+        </div>
+        <div class="row mt-3 mb-3 ">
+            <div class="col-5 bg-blur rounded m-auto pb-3">
+                <h3 class="mySticky bg-gray text-light rounded">Тime to prepare all orders(in min): 10</h3>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/cake.png" alt="Cake"
+                         width="50px" height="50px">
+                    <span class="p-3">Name</span>
+                    <span class="p-3">Price</span>
+                    <a class="ml-3 p-3 text-warning" href="/">Ready</a>
+                </div>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/drink.png" alt="Drink"
+                         width="50px" height="50px">
+                    <span class="p-3">Name</span>
+                    <span class="p-3">Price</span>
+                    <a class="ml-3 p-3 text-warning" href="/">Ready</a>
+                </div>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/other.png" alt="Other"
+                         width="50px" height="50px">
+                    <span class="p-3">Name</span>
+                    <span class="p-3">Price</span>
+                    <a class="ml-3 p-3 text-warning" href="/">Ready</a>
+                </div>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/coffee.png" alt="Coffee"
+                         width="50px" height="50px">
+                    <span class="p-3">Name</span>
+                    <span class="p-3">Price</span>
+                    <a class="ml-3 p-3 text-warning" href="/">Ready</a>
+                </div>
+            </div>
+            <div class="col-5 bg-blur rounded m-auto pb-3">
+                <h3 class="mySticky bg-gray text-light rounded">Orders by employee</h3>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/employee.png" alt="Employee"
+                         width="50px" height="50px">
+                    <span class="p-3">Employee - Pesho</span>
+                    <span class="p-3">Number of orders: 4</span>
+                </div>
+                <div class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/employee.png" alt="Employee"
+                         width="50px" height="50px">
+                    <span class="p-3">Employee - Gosho</span>
+                    <span class="p-3">Number of orders: 2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container">
+    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url(/images/coffee-shop.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+}

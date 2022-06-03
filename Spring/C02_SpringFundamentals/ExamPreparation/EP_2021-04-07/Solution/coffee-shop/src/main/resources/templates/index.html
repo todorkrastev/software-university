@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/commons::head"></head>
+<body class="bg-secondary">
+<header th:replace="fragments/commons::nav"></header>
+<main role="main" class="bg-secondary">
+
+    <div class="jumbotron">
+        <div class="container text-light text-center">
+            <h1 class="display-3"><strong class="bg-blur rounded">Welcome to</strong></h1>
+            <h1 class="display-3"><strong class="bg-blur rounded">SoftUni</strong></h1>
+            <h1 class="display-3"><strong class="bg-blur rounded">Coffee Shop</strong></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <img width="50px" src="/images/coffee.png" alt="Coffee image">
+                    <h2 class="pl-5">Coffee</h2>
+                </div>
+                <p class="mt-3 ">In our cafe you can find all kinds of coffee drinks that you can imagine.
+                    Short Italian coffee or huge American coffee, a hot drink to keep you warm or an iced frappe to keep
+                    you cool. The choice is yours. :)
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <img width="50px" src="/images/cake.png" alt="Coffee image">
+                    <h2 class="pl-5">Cake</h2>
+                </div>
+                <p class="mt-3">To fully enjoy our excellent coffee, you will surely need a bite of our sweet products.
+                    Here comes the sweet part of our menu. Whether you choose Rainbow cake with Happy lion cake or
+                    prefer Unicorn
+                    , the choice is entirely yours, but the important thing is to relax and fully enjoy this moment. :)
+                </p>
+            </div>
+            <div class="col-md-4 ">
+                <div class="row">
+                    <img width="50px" src="/images/drink.png" alt="Coffee image">
+                    <h2 class="pl-5">Drink</h2>
+                </div>
+                <p class="mt-3">If you feel that you need a little extra freshness to our excellent coffee,
+                    you can browse our menu of drinks.There you will find a huge variety of drinks, starting from
+                    natural juices and carbonated drinks, going through non-alcoholic and light alcoholic cocktails, to
+                    stronger drinks. :)
+                </p>
+            </div>
+        </div>
+        <hr class="bg-light">
+    </div>
+</main>
+<footer th:replace="fragments/commons::footer"></footer>
+</body>
+</html>

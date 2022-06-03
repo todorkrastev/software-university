@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coffee Shop Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="bg-secondary">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info rounded">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Add Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+            </ul>
+            <img width="50px" src="/images/coffee.png" alt="Coffee image">
+        </div>
+    </nav>
+</header>
+<main role="main" class="bg-secondary">
+
+    <div class="jumbotron">
+        <div class="container text-light ">
+            <h1 class="display-3 ">
+                <strong class="bg-blur rounded border-left border-white pl-3 border-bottom">Add Order</strong></h1>
+        </div>
+        <div class="container bg-blur rounded p-5 mt-5 w-75">
+            <form action="/" method="POST"
+                  class=" text-center text-light">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name"
+                               aria-describedby="nameHelpInline" placeholder="Name">
+                        <small id="nameHelpInline" class="bg-danger text-light rounded">
+                            Name must be between 3 and 20 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="price" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" step="1" class="form-control" id="price"
+                               aria-describedby="priceHelpInline">
+                        <small id="priceHelpInline" class="bg-danger text-light rounded">
+                            Price must be positive.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="orderTime" class="col-sm-2 col-form-label">Order time</label>
+                    <div class="col-sm-10">
+                        <input type="datetime-local" class="form-control" id="orderTime"
+                               aria-describedby="orderTimeHelpInline">
+                        <small id="orderTimeHelpInline" class="bg-danger text-light rounded">
+                            Order time cannot be in the future.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <select id="category" name="category" class="custom-select"
+                                aria-describedby="categoryHelpInline">
+                            <option value="" selected>Category</option>
+                            <option value="">Coffee</option>
+                            <option value="">Cake</option>
+                            <option value="">Drink</option>
+                            <option value="">Other</option>
+
+                        </select>
+                        <small id="categoryHelpInline" class="bg-danger text-light rounded">
+                            You must select the category.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                    <textarea class="form-control" id="description"
+                              aria-describedby="descriptionHelpInline" placeholder="Description">
+                    </textarea>
+                        <small id="descriptionHelpInline" class="bg-danger text-light rounded">
+                            The description must be more than 5 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-info w-50">Add order</button>
+            </form>
+            <hr class="bg-light">
+        </div>
+    </div>
+</main>
+<footer class="container">
+    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+</footer>
+</body>
+</html>
