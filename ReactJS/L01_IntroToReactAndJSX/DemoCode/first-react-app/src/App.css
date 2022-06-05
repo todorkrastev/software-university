@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-site {
+  position: relative;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 2%;
+  right: 44%;
+}
