@@ -1,6 +1,6 @@
 package io.github.todorkrastev.pathfinder.model.entity;
 
-import io.github.todorkrastev.pathfinder.model.entity.enums.Level;
+import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -15,7 +15,7 @@ public class User extends BaseEntity {
     private String password;
     private String email;
     private Integer age;
-    private Level level;
+    private LevelName level;
     private Set<Role> roles;
 
     public User() {
@@ -68,11 +68,11 @@ public class User extends BaseEntity {
     }
 
     @Enumerated(EnumType.STRING)
-    public Level getLevel() {
+    public LevelName getLevel() {
         return level;
     }
 
-    public void setLevel(Level level) {
+    public void setLevel(LevelName level) {
         this.level = level;
     }
 

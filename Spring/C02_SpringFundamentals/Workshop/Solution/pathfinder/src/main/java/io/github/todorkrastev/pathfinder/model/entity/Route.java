@@ -1,6 +1,6 @@
 package io.github.todorkrastev.pathfinder.model.entity;
 
-import io.github.todorkrastev.pathfinder.model.entity.enums.Level;
+import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -12,7 +12,7 @@ public class Route extends BaseEntity {
 
     private String gpxCoordinates;
     private String description;
-    private Level level;
+    private LevelName levelName;
     private String name;
     private User author;
     private String videoUrl;
@@ -44,12 +44,12 @@ public class Route extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "level")
-    public Level getLevelEnum() {
-        return level;
+    public LevelName getLevelEnum() {
+        return levelName;
     }
 
-    public void setLevelEnum(Level levelEnum) {
-        this.level = levelEnum;
+    public void setLevelEnum(LevelName levelEnum) {
+        this.levelName = levelEnum;
     }
 
     @Column(name = "name", nullable = false, unique = true)

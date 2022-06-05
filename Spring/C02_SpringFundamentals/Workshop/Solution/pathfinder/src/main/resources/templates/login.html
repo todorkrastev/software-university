@@ -48,10 +48,14 @@
                     <div class="col-auto">
                         <input type="password"
                                th:field="*{password}"
+                               th:errorclass="'is-invalid bg-danger'"
                                required minlength="4" maxlength="20"
                                id="inputPassword" class="form-control"
                                aria-describedby="passwordHelpInline">
                     </div>
+                    <small class="invalid-feedback">
+                        <span class="bg-danger">Username is invalid</span>
+                    </small>
                 </div>
                 <div class="d-flex justify-content-center mt-2">
                     <button class="btn btn-primary btn-block w-50" type="submit">Login</button>

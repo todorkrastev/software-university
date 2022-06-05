@@ -1,34 +1,20 @@
-package io.github.todorkrastev.pathfinder.model.service;
+package io.github.todorkrastev.pathfinder.model.view;
 
 import io.github.todorkrastev.pathfinder.model.entity.Picture;
-import io.github.todorkrastev.pathfinder.model.entity.User;
-import io.github.todorkrastev.pathfinder.model.entity.enums.CategoryName;
 import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 
 import java.util.Set;
 
-public class RouteServiceModel {
+public class RouteDetailsViewModel {
 
-    private Long id;
     private String gpxCoordinates;
     private String description;
     private LevelName levelName;
     private String name;
-    private User author;
     private String videoUrl;
     private Set<Picture> pictures;
-    private Set<CategoryName> categories;
 
-
-    public RouteServiceModel() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public RouteDetailsViewModel() {
     }
 
     public String getGpxCoordinates() {
@@ -47,12 +33,12 @@ public class RouteServiceModel {
         this.description = description;
     }
 
-    public LevelName getLevel() {
+    public LevelName getLevelName() {
         return levelName;
     }
 
-    public void setLevel(LevelName level) {
-        this.levelName = level;
+    public void setLevelName(LevelName levelName) {
+        this.levelName = levelName;
     }
 
     public String getName() {
@@ -61,14 +47,6 @@ public class RouteServiceModel {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
     }
 
     public String getVideoUrl() {
@@ -85,13 +63,5 @@ public class RouteServiceModel {
 
     public void setPictures(Set<Picture> pictures) {
         this.pictures = pictures;
-    }
-
-    public Set<CategoryName> getCategories() {
-        return categories;
-    }
-
-    public void setCategories(Set<CategoryName> categories) {
-        this.categories = categories;
     }
 }

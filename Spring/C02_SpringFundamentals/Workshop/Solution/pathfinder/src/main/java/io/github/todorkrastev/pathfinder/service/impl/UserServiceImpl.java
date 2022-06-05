@@ -1,7 +1,7 @@
 package io.github.todorkrastev.pathfinder.service.impl;
 
 import io.github.todorkrastev.pathfinder.model.entity.User;
-import io.github.todorkrastev.pathfinder.model.entity.enums.Level;
+import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 import io.github.todorkrastev.pathfinder.model.service.UserServiceModel;
 import io.github.todorkrastev.pathfinder.repository.UserRepository;
 import io.github.todorkrastev.pathfinder.service.UserService;
@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void registerUser(UserServiceModel userServiceModel) {
         User user = modelMapper.map(userServiceModel, User.class);
-        user.setLevel(Level.BEGINNER);
+        user.setLevel(LevelName.BEGINNER);
 
         userRepository.save(user);
     }
@@ -64,5 +64,12 @@ public class UserServiceImpl implements UserService {
         return userRepository
                 .findByUsername(username)
                 .isPresent();
+    }
+
+    @Override
+    public User findCurrentLoginUserEntity() {
+        return this.userRepository
+                .findById(this.currentUser.getId())
+                .orElse(null);
     }
 }

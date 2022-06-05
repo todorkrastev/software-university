@@ -1,7 +1,7 @@
 package io.github.todorkrastev.pathfinder.model.service;
 
 import io.github.todorkrastev.pathfinder.model.entity.Role;
-import io.github.todorkrastev.pathfinder.model.entity.enums.Level;
+import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 
 import java.util.Set;
 
@@ -13,7 +13,7 @@ public class UserServiceModel {
     private String password;
     private String email;
     private Integer age;
-    private Level level;
+    private LevelName level;
     private Set<Role> roles;
 
     public UserServiceModel() {
@@ -67,11 +67,11 @@ public class UserServiceModel {
         this.age = age;
     }
 
-    public Level getLevel() {
+    public LevelName getLevel() {
         return level;
     }
 
-    public void setLevel(Level level) {
+    public void setLevel(LevelName level) {
         this.level = level;
     }
 

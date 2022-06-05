@@ -1,6 +1,6 @@
 package io.github.todorkrastev.pathfinder.model.view;
 
-import io.github.todorkrastev.pathfinder.model.entity.enums.Level;
+import io.github.todorkrastev.pathfinder.model.entity.enums.LevelName;
 
 public class UserViewModel {
 
@@ -8,7 +8,7 @@ public class UserViewModel {
     private String fullName;
     private String username;
     private Integer age;
-    private Level level;
+    private LevelName level;
 
     public UserViewModel() {
     }
@@ -45,11 +45,11 @@ public class UserViewModel {
         this.age = age;
     }
 
-    public Level getLevel() {
+    public LevelName getLevel() {
         return level;
     }
 
-    public void setLevel(Level level) {
+    public void setLevel(LevelName level) {
         this.level = level;
     }
 }
