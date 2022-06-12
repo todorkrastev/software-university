@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shopping list App</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header>
+    <nav th:fragment="navigation" class="navbar navbar-expand-lg bg-nav rounded">
+        <a class="nav-link text-white active h5" href="/">Shopping List App</a>
+        <a th:if="${session.user != null}" class="nav-link text-white active h5" href="/products/add">Add Product</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <th:block th:if="${session.user == null}">
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/">Login</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/">Register</a>
+                    </li>
+                </th:block>
+                <li th:unless="${session.user == null}" class="nav-item col-md-4">
+                    <a class="nav-link text-white active h5" href="/">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<footer th:fragment="footer" class="footer bg-transparent  py-2">
+    <div class="container-fluid text-center">
+        <div class="footer-background h5 text-white">
+            &copy; Spring team 2022. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

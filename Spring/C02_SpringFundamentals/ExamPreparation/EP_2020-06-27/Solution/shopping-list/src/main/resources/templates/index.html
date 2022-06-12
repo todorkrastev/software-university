@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/fragment::head"></head>
+<body>
+<header>
+    <nav th:replace="fragments/fragment::navigation"></nav>
+</header>
+<main>
+    <div class="container bg-blur rounded mt-5 ">
+        <h1>Welcome to Shopping List App</h1>
+        <hr class="my-3 bg-white w-50"/>
+        <p class="h4">The application is here to help us keep in mind our shopping needs.</p>
+        <hr class="my-3 bg-white w-75"/>
+        <h3>
+            <a class="text-primay" href="/">Login</a>
+            if you have an account or
+            <a class="text-primay" href="/">Register</a>
+            now and check our deals.
+        </h3>
+    </div>
+</main>
+<footer th:replace="fragments/fragment::footer"></footer>
+</body>
+</html>
