@@ -7,21 +7,25 @@
 <main>
     <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Login</span></h1>
     <hr class="hr-3 w-25 bg-white"/>
-    <form class="mx-auto w-25 bg-blur" method="POST" action="/users/login">
-        <small class="text-danger">Error message</small>
-        <br/>
-        <small class="text-danger">Incorrect username or password!</small>
+    <form class="mx-auto w-25 bg-blur" th:object="${userLoginBindingModel}" action="/users/login" method="POST">
+        <th:block th:each="e : ${#fields.errors()}" th:object="${e}">
+            <small th:text="${e}" class="text-danger">Error message</small>
+            <br/>
+        </th:block>
+        <small th:if="${notFound}" class="text-danger">Incorrect username or password!</small>
         <div class="form-group">
             <div class="label-holder text-white d-flex justify-content-center">
                 <label for="username" class="h3 mb-2">Username</label>
             </div>
-            <input type="text" class="form-control" id="username" name="username"/>
+            <input th:field="*{username}" th:errorclass="bg-danger" type="text" class="form-control" id="username"
+                   name="username"/>
         </div>
         <div class="form-group">
             <div class="label-holder text-white d-flex justify-content-center">
                 <label for="password" class="h3 mb-2">Password</label>
             </div>
-            <input type="password" class="form-control" id="password" name="password"/>
+            <input th:field="*{password}" th:errorclass="bg-danger" type="password" class="form-control" id="password"
+                   name="password"/>
         </div>
         <div class="button-holder d-flex justify-content-center">
             <button type="submit" class="btn btn-warning  mb-3">Login</button>
