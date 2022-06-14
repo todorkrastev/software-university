@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
-<header>
-    <nav th:fragment="navigation" class="navbar navbar-expand-lg bg-nav rounded">
+<header th:fragment="navigation">
+    <nav class="navbar navbar-expand-lg bg-nav rounded">
         <a class="nav-link text-white active h5" href="/">Shopping List App</a>
         <a th:if="${session.user != null}" class="nav-link text-white active h5" href="/products/add">Add Product</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"

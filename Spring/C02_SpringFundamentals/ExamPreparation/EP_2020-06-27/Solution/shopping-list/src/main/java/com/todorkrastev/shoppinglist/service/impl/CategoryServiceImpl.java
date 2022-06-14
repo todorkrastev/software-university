@@ -29,4 +29,12 @@ public class CategoryServiceImpl implements CategoryService {
                     });
         }
     }
+
+    @Override
+    public Category findByName(CategoryName categoryName) {
+
+        return this.categoryRepository
+                .findByName(categoryName)
+                .orElse(null);
+    }
 }
