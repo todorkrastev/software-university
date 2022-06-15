@@ -10,6 +10,7 @@
     <form class="mx-auto w-25 bg-blur rounded" th:object="${userRegisterBindingModel}" method="POST"
           action="/users/register">
         <div class="form-group">
+            <h5 class="bg-danger rounded" th:if="${doesExist}">User already exists</h5>
             <div class="label-holder textCol d-flex justify-content-center">
                 <label for="username" class="h4 mb-2 text-white">Username</label>
             </div>

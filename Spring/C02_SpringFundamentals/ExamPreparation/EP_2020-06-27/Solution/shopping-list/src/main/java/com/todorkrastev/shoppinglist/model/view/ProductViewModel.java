@@ -1,10 +1,12 @@
 package com.todorkrastev.shoppinglist.model.view;
 
+import java.math.BigDecimal;
+
 public class ProductViewModel {
 
     private String id;
     private String name;
-    private String price;
+    private BigDecimal price;
 
     public ProductViewModel() {
     }
@@ -25,11 +27,12 @@ public class ProductViewModel {
         this.name = name;
     }
 
-    public String getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 }
+
