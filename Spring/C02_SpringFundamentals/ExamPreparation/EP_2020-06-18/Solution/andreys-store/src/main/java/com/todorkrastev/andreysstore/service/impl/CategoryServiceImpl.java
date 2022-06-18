@@ -2,6 +2,7 @@ package com.todorkrastev.andreysstore.service.impl;
 
 import com.todorkrastev.andreysstore.model.entity.Category;
 import com.todorkrastev.andreysstore.model.entity.enums.CategoryName;
+import com.todorkrastev.andreysstore.model.service.CategoryServiceModel;
 import com.todorkrastev.andreysstore.repository.CategoryRepository;
 import com.todorkrastev.andreysstore.service.CategoryService;
 import org.modelmapper.ModelMapper;
@@ -30,5 +31,13 @@ public class CategoryServiceImpl implements CategoryService {
                                     String.format("Description for %s",
                                             categoryName.name()))));
         }
+    }
+
+    @Override
+    public CategoryServiceModel findByCategoryName(CategoryName categoryName) {
+        return this.categoryRepository
+                .findByCategoryName(categoryName)
+                .map(category -> this.modelMapper.map(category, CategoryServiceModel.class))
+                .orElse(null);
     }
 }

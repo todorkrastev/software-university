@@ -1,65 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Andrey's</title>
-        <link rel="stylesheet" href="/css/reset-css.css"/>
-        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="/css/style.css"/>
+    <th:block th:include="~{/fragments/head}"></th:block>
 </head>
 <body>
-   <header>
-      <nav class="navbar bg-dark navbar-expand-lg navbar-background bg-dark ">
-        <a class="nav-link text-white active h5" href="/">Andrey's</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-            <ul class="navbar-nav row">
-
-                <li class="nav-item col-md-4">
-                    <a class="nav-link text-white active h6" href="/">Login</a>
-                </li>
-                <li class="nav-item col-md-4">
-                    <a class="nav-link text-white active h6" href="/" >Register</a>
-                </li>
-            </ul>
-        </div>
+<header>
+    <nav class="navbar bg-dark navbar-expand-lg navbar-background bg-dark ">
+        <th:block th:include="~{/fragments/nav}"></th:block>
     </nav>
-   </header>
-    <main >
-        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark" >Login</span></h1>
-        <hr class="hr-3"/>
-        <form class="mx-auto w-25 bg-dark bg-gray p-3 rounded" action="/" method="">
-            <h4 class="text-center bg-dark text-danger">Wrong username or password</h4>
-			<h6 class="text-center bg-dark text-danger">Wrong username</h6>
-			<h6 class="text-center bg-dark text-danger">Wrong password</h6>
-            <div class="form-group">
-                <div class="label-holder text-white d-flex justify-content-center">
-                    <label for="username" class="h3 mb-2">Username</label>
-                </div>
-                <input type="text" class="form-control" id="username" name="username"/>
+</header>
+<main>
+    <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Login</span></h1>
+    <hr class="hr-3"/>
+    <form class="mx-auto w-25 bg-dark bg-gray p-3 rounded" th:action="@{/users/login}" method="POST">
+        <h4 th:if="${notFound}" class="text-center bg-dark text-danger">Wrong username or password</h4>
+        <h6 class="text-center bg-dark text-danger">Wrong username</h6>
+        <h6 class="text-center bg-dark text-danger">Wrong password</h6>
+        <div class="form-group">
+            <div class="label-holder text-white d-flex justify-content-center">
+                <label for="username" class="h3 mb-2">Username</label>
             </div>
-            <div class="form-group">
-                <div class="label-holder text-white d-flex justify-content-center">
-                    <label for="password" class="h3 mb-2">Password</label>
-                </div>
-                <input type="password" class="form-control"
-                       id="password" name="password" />
+            <input type="text" class="form-control" id="username" name="username"/>
+        </div>
+        <div class="form-group">
+            <div class="label-holder text-white d-flex justify-content-center">
+                <label for="password" class="h3 mb-2">Password</label>
             </div>
-            <div class="button-holder d-flex justify-content-center">
-                <button type="submit" class="btn btn-secondary text-white mb-3">Login</button>
-            </div>
-        </form>
-    </main>
-	<footer class="footer bg-dark  py-2">
-		<div class="container-fluid text-center">
-			<div class="footer-background h5 text-white">
-				Andrey's & Spring Team 2020.
-			</div>
-		</div>
-	</footer>
+            <input type="password" class="form-control"
+                   id="password" name="password"/>
+        </div>
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary text-white mb-3">Login</button>
+        </div>
+    </form>
+</main>
+<footer class="footer bg-dark  py-2">
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</footer>
 </body>
 </html>

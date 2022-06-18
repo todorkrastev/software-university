@@ -1,0 +1,28 @@
+<th:block xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org">
+    <a class="nav-link text-white active h5" href="/">Andrey's</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav row">
+            <th:block th:if="${session.isEmpty()}">
+                <li class="nav-item col-md-4">
+                    <a class="nav-link text-white active h6" href="/users/login">Login</a>
+                </li>
+                <li class="nav-item col-md-4">
+                    <a class="nav-link text-white active h6" href="/users/register">Register</a>
+                </li>
+            </th:block>
+            <th:block th:unless="${session.isEmpty()}">
+                <li class="col-md-4">
+                    <a class="nav-link text-white active h6" href="/items/add">Add Item</a>
+                </li>
+                <li class="col-md-4">
+                    <a class="nav-link text-white active h6" href="/users/logout">Logout</a>
+                </li>
+            </th:block>
+        </ul>
+    </div>
+</th:block>
