@@ -34,10 +34,10 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public CategoryServiceModel findByCategoryName(CategoryName categoryName) {
+    public Category find(CategoryName categoryName) {
+
         return this.categoryRepository
                 .findByCategoryName(categoryName)
-                .map(category -> this.modelMapper.map(category, CategoryServiceModel.class))
                 .orElse(null);
     }
 }

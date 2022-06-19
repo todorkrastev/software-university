@@ -15,35 +15,43 @@
 <main>
     <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Register</span></h1>
     <hr class="hr-3"/>
-    <form class="mx-auto mb-5 text-center w-25 bg-dark p-3 rounded" th:action="@{/users/register}" method="POST">
+    <form class="mx-auto mb-5 text-center w-25 bg-dark p-3 rounded"
+          th:object="${userRegisterBindingModel}" th:action="@{/users/register}" method="POST">
         <div class="form-group">
             <div class="label-holder textCol d-flex justify-content-center">
                 <label for="username" class="h4 mb-2 text-white">Username</label>
             </div>
-            <input type="text" class="form-control" id="username" name="username"/>
-            <small class="text-danger">Incorrect username!</small>
+            <input th:field="*{username}" th:errorclass="bg-danger" type="text" class="form-control" id="username"
+                   name="username"/>
+            <small th:each="e : ${#fields.errors('username')}" th:text="${e}" class="text-danger">Incorrect
+                username!</small>
         </div>
         <div class="form-group">
             <div class="label-holder text-white textCol d-flex justify-content-center">
                 <label for="email" class="h4 mb-2">Email</label>
             </div>
-            <input type="email" class="form-control" id="email" name="email"/>
-            <small class="text-danger">Incorrect email!</small>
+            <input th:field="*{email}" th:errorclass="bg-danger" type="email" class="form-control" id="email"
+                   name="email"/>
+            <small th:each="e : ${#fields.errors('email')}" th:text="${e}" class="text-danger">Incorrect email!</small>
         </div>
         <div class="form-group">
             <div class="label-holder text-white textCol d-flex justify-content-center">
                 <label for="budget" class="h4 mb-2">User budget</label>
             </div>
-            <input type="number" class="form-control" id="budget" name="budget"/>
-            <small class="text-danger">Incorrect budget!</small>
+            <input th:field="*{budget}" th:errorclass="bg-danger" type="number" class="form-control" id="budget"
+                   name="budget"/>
+            <small th:each="e : ${#fields.errors('budget')}" th:text="${e}" class="text-danger">Incorrect
+                budget!</small>
 
         </div>
         <div class="form-group">
             <div class="label-holder text-white textCol d-flex justify-content-center">
                 <label for="password" class="h4 mb-2">Password</label>
             </div>
-            <input type="password" class="form-control" id="password" name="password"/>
-            <small class="text-danger">Incorrect pasword!</small>
+            <input th:field="*{password}" th:errorclass="bg-danger" type="password" class="form-control" id="password"
+                   name="password"/>
+            <small th:each="e : ${#fields.errors('password')}" th:text="${e}" class="text-danger">Incorrect
+                password!</small>
         </div>
         <div class="form-group">
             <div class="label-holder text-white textCol d-flex justify-content-center">

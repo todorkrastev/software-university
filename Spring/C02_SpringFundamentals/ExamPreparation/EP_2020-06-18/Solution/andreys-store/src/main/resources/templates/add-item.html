@@ -13,20 +13,23 @@
 <main>
     <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Add Item</span></h1>
     <hr class="hr-3"/>
-    <form class="mx-auto w-25 bg-dark p-3 rounded text-center" th:action="@{/items/add}" method="POST">
+    <form class="mx-auto w-25 bg-dark p-3 rounded text-center"
+          th:object="${itemAddBindingModel}" th:action="@{/items/add}" method="POST">
         <div class="form-group">
             <div class="text-white label-holder d-flex justify-content-center">
                 <label for="name" class="h4 mb-2">Name</label>
             </div>
-            <input type="text" class="form-control" id="name" name="name"/>
-            <small class="text-danger">Incorrect name!</small>
+            <input th:field="*{name}" th:errorclass="bg-danger" type="text" class="form-control" id="name" name="name"/>
+            <small th:each="e : ${#fields.errors('name')}" th:text="${e}" class="text-danger">Incorrect name!</small>
         </div>
         <div class="form-group">
             <div class="text-white label-holder d-flex justify-content-center">
                 <label for="description" class="h4 mb-2">Description</label>
             </div>
-            <input type="text" class="form-control" id="description" name="description"/>
-            <small class="text-danger">Incorrect description</small>
+            <input th:field="*{description}" th:errorclass="bg-danger" type="text" class="form-control" id="description"
+                   name="description"/>
+            <small th:each="e : ${#fields.errors('description')}" th:text="${e}" class="text-danger">Incorrect
+                description</small>
         </div>
         <div class="form-group">
             <div class="text-white label-holder d-flex justify-content-center">
@@ -53,8 +56,9 @@
             <div class="text-white label-holder d-flex justify-content-center">
                 <label for="price" class="h4 mb-2">Price</label>
             </div>
-            <input type="number" class="form-control" id="price" name="price"/>
-            <small class="text-danger">Incorrect price!</small>
+            <input th:field="*{price}" th:errorclass="bg-danger" type="number" class="form-control" id="price"
+                   name="price"/>
+            <small th:each="e : ${#fields.errors('price')}" th:text="${e}" class="text-danger">Incorrect price!</small>
         </div>
         <div class="button-holder d-flex justify-content-center">
             <button type="submit" class="btn btn-secondary text-white mb-3">Add Item</button>
