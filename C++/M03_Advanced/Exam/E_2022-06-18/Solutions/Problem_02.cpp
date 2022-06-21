@@ -7,8 +7,6 @@ int main() {
 	std::cin >> std::ws >> matrixSize;
 
 	std::string matrix[6][6];
-	
-	int sumOddNums = 0;
 
 	for (size_t currRow = 0; currRow < matrixSize; currRow++) {
 		for (size_t currCol = 0; currCol < matrixSize; currCol++) {
