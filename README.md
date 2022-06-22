@@ -82,35 +82,6 @@
                     </li>
                 </ul>
             </article>
-            <article class="softuni__certifications__js">
-                <h3 class="softuni__certifications__js__title">
-                    JavaScript
-                </h3>
-                <ul class="softuni__certifications__js__list">
-                    <li class="softuni__certifications__js__list__item">
-                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
-                            class="softuni__certifications__js__list__item__github" target="_blank">
-                            JavaScript Advanced
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
-                            class="softuni__certifications__js__list__item__softuni" target="_blank">
-                            See credential
-                        </a>
-                    </li>
-                    <li class="softuni__certifications__js__list__item">
-                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
-                            class="softuni__certifications__js__list__item__github" target="_blank">
-                            JavaScript Applications
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/120840/2416d36d"
-                            class="softuni__certifications__js__list__item__softuni" target="_blank">
-                            See credential
-                        </a>
-                    </li>
-                </ul>
-            </article>
             <article class="softuni__certifications__c++">
                 <h3 class="softuni__certifications__c++__title">
                     C++
@@ -144,7 +115,39 @@
                             C++ Advanced
                         </a>
                         -
-                        Studying now
+                        <a href="https://softuni.bg/certificates/details/135484/28cd8eaf"
+                            class="softuni__certifications__c++__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="softuni__certifications__js">
+                <h3 class="softuni__certifications__js__title">
+                    JavaScript
+                </h3>
+                <ul class="softuni__certifications__js__list">
+                    <li class="softuni__certifications__js__list__item">
+                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
+                            class="softuni__certifications__js__list__item__github" target="_blank">
+                            JavaScript Advanced
+                        </a>
+                        -
+                        <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
+                            class="softuni__certifications__js__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
+                    </li>
+                    <li class="softuni__certifications__js__list__item">
+                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
+                            class="softuni__certifications__js__list__item__github" target="_blank">
+                            JavaScript Applications
+                        </a>
+                        -
+                        <a href="https://softuni.bg/certificates/details/120840/2416d36d"
+                            class="softuni__certifications__js__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
