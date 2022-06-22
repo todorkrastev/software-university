@@ -82,6 +82,32 @@
                     </li>
                 </ul>
             </article>
+            <article class="softuni__certifications__spring">
+                <h3 class="softuni__certifications__spring__title">
+                    Spring
+                </h3>
+                <ul class="softuni__certifications__spring__list">
+                    <li class="softuni__certifications__spring__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData"
+                            class="softuni__certifications__spring__list__item__github" target="_blank">
+                            Spring Data
+                        </a>
+                        -
+                        <a href="https://softuni.bg/certificates/details/130702/6978fb13"
+                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
+                    </li>
+                    <li class="softuni__certifications__spring__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals"
+                            class="softuni__certifications__spring__list__item__github" target="_blank">
+                            Spring Fundamentals
+                        </a>
+                        -
+                        Studying now
+                    </li>
+                </ul>
+            </article>
             <article class="softuni__certifications__c++">
                 <h3 class="softuni__certifications__c++__title">
                     C++
@@ -117,35 +143,6 @@
                         -
                         <a href="https://softuni.bg/certificates/details/135484/28cd8eaf"
                             class="softuni__certifications__c++__list__item__softuni" target="_blank">
-                            See credential
-                        </a>
-                    </li>
-                </ul>
-            </article>
-            <article class="softuni__certifications__js">
-                <h3 class="softuni__certifications__js__title">
-                    JavaScript
-                </h3>
-                <ul class="softuni__certifications__js__list">
-                    <li class="softuni__certifications__js__list__item">
-                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
-                            class="softuni__certifications__js__list__item__github" target="_blank">
-                            JavaScript Advanced
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
-                            class="softuni__certifications__js__list__item__softuni" target="_blank">
-                            See credential
-                        </a>
-                    </li>
-                    <li class="softuni__certifications__js__list__item">
-                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
-                            class="softuni__certifications__js__list__item__github" target="_blank">
-                            JavaScript Applications
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/120840/2416d36d"
-                            class="softuni__certifications__js__list__item__softuni" target="_blank">
                             See credential
                         </a>
                     </li>
@@ -232,29 +229,32 @@
                     </li>
                 </ul>
             </article>
-            <article class="softuni__certifications__spring">
-                <h3 class="softuni__certifications__spring__title">
-                    Spring
+            <article class="softuni__certifications__js">
+                <h3 class="softuni__certifications__js__title">
+                    JavaScript
                 </h3>
-                <ul class="softuni__certifications__spring__list">
-                    <li class="softuni__certifications__spring__list__item">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C01_SpringData"
-                            class="softuni__certifications__spring__list__item__github" target="_blank">
-                            Spring Data
+                <ul class="softuni__certifications__js__list">
+                    <li class="softuni__certifications__js__list__item">
+                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M03_JavaScriptAdvanced"
+                            class="softuni__certifications__js__list__item__github" target="_blank">
+                            JavaScript Advanced
                         </a>
                         -
-                        <a href="https://softuni.bg/certificates/details/130702/6978fb13"
-                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                        <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
+                            class="softuni__certifications__js__list__item__softuni" target="_blank">
                             See credential
                         </a>
                     </li>
-                    <li class="softuni__certifications__spring__list__item">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals"
-                            class="softuni__certifications__spring__list__item__github" target="_blank">
-                            Spring Fundamentals
+                    <li class="softuni__certifications__js__list__item">
+                        <a href="https://github.com/todorkrastev/SoftUni-Software-Engineering/tree/main/JavaScript/M04_JavaScriptApplications"
+                            class="softuni__certifications__js__list__item__github" target="_blank">
+                            JavaScript Applications
                         </a>
                         -
-                        Studying now
+                        <a href="https://softuni.bg/certificates/details/120840/2416d36d"
+                            class="softuni__certifications__js__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
