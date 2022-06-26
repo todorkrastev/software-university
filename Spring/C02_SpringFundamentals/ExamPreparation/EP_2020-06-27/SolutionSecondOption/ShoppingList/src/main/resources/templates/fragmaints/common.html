@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shopping list App</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header th:fragment="nav">
+    <nav class="navbar navbar-expand-lg bg-nav rounded">
+        <a class="nav-link text-white active h5" th:href="@{/}">Shopping List App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ml-2 collapse navbar-collapse d-flex justify-content-start" >
+            <ul class="navbar-nav row">
+                <li class="nav-item" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/products/add}">Add Product</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/login}">Login</a>
+                </li>
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/register}">Register</a>
+                </li>
+                <li class="nav-item col-md-4" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/logout}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <footer th:fragment="footer" class="footer bg-transparent  py-2">
+        <div class="container-fluid text-center">
+            <div class="footer-background h5 text-white">
+                &copy; Spring team 2021. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</header>
+</body>
+</html>
