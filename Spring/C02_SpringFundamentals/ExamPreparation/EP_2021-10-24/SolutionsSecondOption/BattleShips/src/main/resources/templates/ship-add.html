@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/common :: head}"></head>
+<body class="body-main">
+<header th:replace="~{fragments/common :: main-nav}"></header>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container text-light ">
+            <h1 class="display-3 ">
+                <strong class="bg-blur rounded border-white pl-3 font-weight-bold">Add New Ship</strong></h1>
+        </div>
+        <div class="container bg-blur rounded p-5 mt-5 w-75">
+            <form th:action="@{/ships/add}"
+                  th:method="POST"
+                  th:object="${shipModel}"
+                  class=" text-center text-light">
+                <h3 class="mt-5 text-center">
+                    <strong class="rounded  pl-3 text-danger"
+                            th:if="${#fields.hasGlobalErrors()}"
+                            th:each="err : ${#fields.errors('global')}"
+                            th:text="${err}">GLOBAL ERROR MESSAGE</strong>
+                </h3>
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name"
+                               th:field="*{name}"
+                               th:errorclass="bg-danger"
+                               aria-describedby="nameHelpInline" placeholder="Name">
+                        <small id="nameHelpInline"
+                               th:if="${#fields.hasErrors('name')}"
+                               th:errorclass="is-valid"
+                               th:errors="*{name}"
+                               class="bg-danger text-light rounded">
+                            ERROR_MESSAGE
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="power" class="col-sm-2 col-form-label">Power</label>
+                    <div class="col-sm-10">
+                        <input type="number" step="1" class="form-control" id="power"
+                               th:field="*{power}"
+                               th:errorclass="bg-danger"
+                               aria-describedby="powerHelpInline">
+                        <small id="powerHelpInline"
+                               th:if="${#fields.hasErrors('power')}"
+                               th:errorclass="is-valid"
+                               th:errors="*{power}"
+                               class="bg-danger text-light rounded">
+                            ERROR_MESSAGE
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="health" class="col-sm-2 col-form-label">Health</label>
+                    <div class="col-sm-10">
+                        <input type="number" step="1" class="form-control" id="health"
+                               th:field="*{health}"
+                               th:errorclass="bg-danger"
+                               aria-describedby="healthHelpInline">
+                        <small id="healthHelpInline"
+                               th:if="${#fields.hasErrors('health')}"
+                               th:errorclass="is-valid"
+                               th:errors="*{name}"
+                               class="bg-danger text-light rounded">
+                            ERROR_MESSAGE
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="created" class="col-sm-2 col-form-label">Created date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="created"
+                               th:field="*{created}"
+                               th:errorclass="bg-danger"
+                               aria-describedby="createdHelpInline">
+                        <small id="createdTimeHelpInline"
+                               th:if="${#fields.hasErrors('created')}"
+                               th:errorclass="is-valid"
+                               th:errors="*{created}"
+                               class="bg-danger text-light rounded">
+                            ERROR_MESSAGE
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <select id="category" name="category" class="custom-select"
+                                th:field="*{category}"
+                                th:errorclass="bg-danger"
+                                aria-describedby="categoryHelpInline">
+                            <option value="" selected>-- Select a Category --</option>
+                            <option th:each="c : ${T(bg.manhattan.battleships.model.entity.enums.CategoryNameEnum).values()}"
+                                    th:value="${c}"
+                                    th:text="${c}"
+                                    th:selected="${c} == *{category}">CATEGORY
+                            </option>
+                        </select>
+                        <small id="categoryHelpInline"
+                               th:if="${#fields.hasErrors('category')}"
+                               th:errorclass="is-valid"
+                               th:errors="*{category}"
+                               class="bg-danger text-light rounded">
+                            ERROR_MESSAGE
+                        </small>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-50">Add the new Ship</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer th:replace="~{fragments/common :: footer}"></footer>
+</body>
+</html>

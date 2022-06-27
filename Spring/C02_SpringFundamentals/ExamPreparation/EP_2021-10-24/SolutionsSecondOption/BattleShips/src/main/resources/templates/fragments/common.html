@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Battleships Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header th:fragment="main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top rounded">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/}">Home</a>
+                </li>
+                <li class="nav-item" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link" th:href="@{/users/login}">Login</a>
+                </li>
+                <li class="nav-item" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link" th:href="@{/users/register}">Register</a>
+                </li>
+                <li class="nav-item" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link" th:href="@{/ships/add}">Add Ship</a>
+                </li>
+                <li class="nav-item" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link" th:href="@{/users/logout}">Logout</a>
+                </li>
+            </ul>
+            <img width="50px" src="/images/ufo.png" alt="Ufo image">
+        </div>
+    </nav>
+</header>
+
+<footer th:fragment="footer" class="container mt-0 text-white">
+    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+</footer>
+</body>
+</html>
