@@ -1,0 +1,37 @@
+/* .row > div:nth-child(1){
+    background-color: lightgreen;
+}
+.row > div:nth-child(2){
+    background-color: lightsalmon;
+}
+.row > div:nth-child(3){
+    background-color: lightsteelblue;
+} */
+
+.customGrid {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: grid;
+  grid-gap: 15px;
+}
+
+@media screen and (min-width: 560px) {
+  .customGrid {
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.alert {
+  display: none;
+}
+.alert.visible {
+  display: block;
+}
