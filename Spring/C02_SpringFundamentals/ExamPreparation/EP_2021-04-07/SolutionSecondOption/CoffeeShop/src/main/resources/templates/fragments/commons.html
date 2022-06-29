@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+                                                xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coffee Shop Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header th:fragment="nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info rounded"
+    th:object="${@currentUser}">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:unless="*{loggedIn}?:false" th:href="@{/users/login}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:unless="*{loggedIn}?:false" th:href="@{/users/register}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/orders/add}">Add Order</a>
+                </li>
+                <li class="nav-item" th:if="*{loggedIn}?:false">
+                    <a class="nav-link" th:href="@{/users/logout}"><span>Welcome, <span th:text="*{username}">USER</span>!</span></a>
+                </li>
+            </ul>
+            <img width="50px" src="/images/coffee.png" alt="Coffee image">
+        </div>
+    </nav>
+</header>
+<footer th:fragment="footer" class="container">
+    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+</footer>
+</body>
+</html>

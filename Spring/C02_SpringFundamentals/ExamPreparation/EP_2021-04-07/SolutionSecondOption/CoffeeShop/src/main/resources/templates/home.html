@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/commons::head}"></head>
+<body class="bg-secondary">
+<header th:replace="~{fragments/commons::nav}"></header>
+<main role="main" class="bg-secondary">
+
+    <div class="jumbotron text-center">
+        <div class="container text-light text-center">
+            <h1 class="display-3"><strong class="bg-blur rounded">All active</strong></h1>
+            <h1 class="display-3"><strong class="bg-blur rounded">Orders</strong></h1>
+        </div>
+        <div class="row mt-3 mb-3 ">
+            <div class="col-5 bg-blur rounded m-auto pb-3">
+                <h3 class="mySticky bg-gray text-light rounded" th:unless="${totalTime == null}" th:text="|Тime to prepare all orders(in min): ${totalTime}|"> TOTAL TIME</h3>
+                <div th:each="o : ${orders}" th:object="${o}" class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" th:src="*{category}" alt="Cake"
+                         width="50px" height="50px">
+                    <span class="p-3" th:text="*{name}">Name</span>
+                    <span class="p-3" th:text="*{price}">Price</span>
+                    <a class="ml-3 p-3 text-warning" th:href="@{/orders/ready/{id}(id=*{id})}">Ready</a>
+                </div>
+            </div>
+            <div class="col-5 bg-blur rounded m-auto pb-3">
+                <h3 class="mySticky bg-gray text-light rounded">Orders by employee</h3>
+                <div th:each="u : ${usersOrders}" th:object="${u}" class="mt-3 rounded badge-info p-3">
+                    <img class="mr-2" src="/images/employee.png" alt="Employee"
+                         width="50px" height="50px">
+                    <span class="p-3" th:text="|Employee *{username}|"> EMPLOYEE</span>
+                    <span class="p-3" th:text="|Number of orders: *{ordersCount}|">NUMBER OF ORDERS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:replace="~{fragments/commons::footer}"></footer>
+</body>
+</html>
