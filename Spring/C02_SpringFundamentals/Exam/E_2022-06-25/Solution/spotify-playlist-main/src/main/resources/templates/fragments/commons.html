@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spotify playlist App</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-nav rounded">
+        <a class="nav-link text-white active h5" href="/">Spotify Playlist App</a>
+        <a th:if="${@loggedUser.isLogged()}" class="nav-link text-white active h5" href="/songs/add-song">Add Song</a>
+<!--        <button class="navbar" type="button" data-toggle="collapse" data-target="#navbarNav"-->
+<!--                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggle-icon"></span>-->
+<!--        </button>-->
+
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <li th:if="${!@loggedUser.isLogged()}" class="nav-item col-md-4">
+                    <a class="nav-link text-white active h5" href="/users/login">Login</a>
+                </li>
+
+                <li th:if="${!@loggedUser.isLogged()}" class="nav-item col-md-4">
+                    <a class="nav-link text-white active h5" href="/users/register">Register</a>
+                </li>
+
+                <li th:if="${@loggedUser.isLogged()}" class="nav-item col-md-4">
+                    <form action="/users/logout" method="post">
+                        <button type="submit" name="logout" class="btn btn-secondary btn-sm">Logout</button>
+                    </form>
+<!--                 <a class="nav-link text-white active h5" href="/users/logout">Logout</a>-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<footer class="footer bg-transparent  py-2">
+    <div class="container-fluid text-center">
+        <div class="footer-background h5 text-white fixed-bottom">
+            &copy; Spring team 2022. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
