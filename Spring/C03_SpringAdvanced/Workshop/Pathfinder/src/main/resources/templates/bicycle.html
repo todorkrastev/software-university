@@ -1,0 +1,23 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head"></head>
+
+<body>
+<div class="wrapper">
+    <!-- Navigation -->
+    <header th:replace="fragments/header"></header>
+
+    <section class="road">
+        <div>
+            <h2>Title</h2>
+            <p>Very long description</p>
+            <a href="/" class="btn">Learn More</a>
+        </div>
+        <img class="rounded-circle w-75 ml-5" src="/images/pic1.jpg" alt="Title image">
+    </section>
+</div>
+<!-- Wrapper Ends -->
+</body>
+<footer th:replace="fragments/footer"></footer>
+</html>

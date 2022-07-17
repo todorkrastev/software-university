@@ -1,0 +1,52 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head"></head>
+
+<body>
+<main class="p-5 align-content-center bg-blur my-register-div">
+
+    <h1 class="border-bottom mb-5">Login</h1>
+    <div class="d-flex justify-content-center">
+
+        <div class="row g-3 align-items-center">
+            <form
+                    th:action="@{/users/login}"
+                    method="post">
+                <div>
+                    <div class="col-auto">
+                        <label for="inputUsername" class="col-form-label ">Username</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"
+                               name="username"
+                               required minlength="4" maxlength="20"
+                               id="inputUsername"
+                               class="form-control"
+                               aria-describedby="usernameHelpInline">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-auto">
+                        <label for="inputPassword" class="col-form-label ">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password"
+                               name="password"
+                               required minlength="4" maxlength="20"
+                               id="inputPassword" class="form-control"
+                               aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-2">
+                    <button class="btn btn-primary btn-block w-50" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer th:replace="fragments/footer"></footer>
+</body>
+</html>
