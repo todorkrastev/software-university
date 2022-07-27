@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common::head}"></head>
+<body>
+<header th:replace="/fragments/common::main-nav"></header>
+    <main>
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Details</span></h1>
+        <hr class="my-3"/>
+        <div class="container-fluid bg-blur w-50" >
+            <div class="row justify-content-center">
+                <form class="w-50 justify-content-center"
+                      th:object="${productDetailModel}"
+                      th:method="delete"
+                      th:action="@{/products/delete/{id}(id=*{id})}">
+                    <div class="label mt-2">
+                        <h2 class="text-white text-center" th:text="*{name}">Buzzer</h2>
+                    </div>
+                    <div class="label mt-4">
+                        <img library="img" th:src="*{picture}" class="img-thumbnail" width="200" height="200"/>
+                        <h3 class="text-white text-center" th:text="*{description}">80% silk</h3>
+                    </div>
+                    <div class="label mt-4">
+                        <h3 class="text-white text-center mb-3" th:text="*{price}">65.00</h3>
+                    </div>
+                    <div class="button-holder d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger text-white mb-3">Delete Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+<footer th:replace="~{/fragments/common::footer}"></footer>
+</body>
+</html>

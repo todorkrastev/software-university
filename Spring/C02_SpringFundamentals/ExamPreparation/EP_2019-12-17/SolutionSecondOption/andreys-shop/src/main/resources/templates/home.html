@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common::head}"></head>
+<body>
+<header th:replace="~{/fragments/common::main-nav}"></header>
+<main>
+    <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Products</span></h1>
+    <hr class="hr-3"/>
+    <div class="bg-blur container w-50" th:each="p : ${homeModel.products}" th:object="${p}">
+        <div class="row mb-4 d-flex flex-column text-center">
+            <a th:href="@{/products/details/{id}(id=*{id})}"><img alt="img" th:src="*{picture}" class="img-thumbnail"
+                                                    width="200"
+                                                    height="200"/>
+            </a>
+            <h5 class="text-center" th:text="*{name}">Buzzer</h5>
+            <h2 class="text-center" th:text="*{price}">65.00</h2>
+        </div>
+    </div>
+</main>
+<span style="visibility: hidden">...</span>
+<footer th:replace="~{/fragments/common::footer}"></footer>
+</body>
+</html>

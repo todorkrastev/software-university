@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common::head}"></head>
+<body>
+<header th:replace="/fragments/common::main-nav"></header>
+<main>
+    <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Add Product</span></h1>
+    <hr class="hr-3"/>
+    <form class="mx-auto w-25 bg-blur"
+          th:action="@{/products/add}"
+          th:method="POST"
+          th:object="${productModel}">
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="name" class="h4 mb-2">Name</label>
+            </div>
+            <input type="text" class="form-control" id="name"
+                   th:field="*{name}"
+                   th:errorclass="bg-danger"/>
+            <small class="text-danger"
+                   th:if="${#fields.hasErrors('name')}"
+                   th:errorclass="is-valid"
+                   th:errors="*{name}">Name error message</small>
+        </div>
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="description" class="h4 mb-2">Description</label>
+            </div>
+            <input type="text" class="form-control" id="description"
+                   th:field="*{description}"
+                   th:errorclass="bg-danger"/>
+            <small class="text-danger"
+                   th:if="${#fields.hasErrors('description')}"
+                   th:errorclass="is-valid"
+                   th:errors="*{description}">Description error message</small>
+        </div>
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="category" class="h4 mb-2">Category</label>
+            </div>
+            <select class="form-control" id="category"
+                    th:field="*{category}"
+                    th:errorclass="bg-danger">
+                <option value="">-- Please select a category --</option>
+                <option th:each="c : ${T(bg.manhattan.andreysshop.model.entity.enums.Category).values()}"
+                        th:text="${c}"
+                        th:value="${c}"
+                th:selected="${c} == *{category}">CATEGORY
+                </option>
+            </select>
+            <small class="text-danger"
+                   th:if="${#fields.hasErrors('category')}"
+                   th:errorclass="is-valid"
+                   th:errors="*{category}">Category error message</small>
+        </div>
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="sex" class="h4 mb-2">Sex</label>
+            </div>
+            <select class="form-control" id="sex"
+                    th:field="*{sex}"
+                    th:errorclass="bg-danger">
+                <option value="">-- Please select a sex --</option>
+                <option th:each="s : ${T(bg.manhattan.andreysshop.model.entity.enums.Sex).values()}"
+                        th:text="${s}"
+                        th:value="${s}"
+                        th:selected="${s} == *{sex}">SEX
+                </option>
+            </select>
+            <small class="text-danger"
+                   th:if="${#fields.hasErrors('sex')}"
+                   th:errorclass="is-valid"
+                   th:errors="*{sex}">Sex error message</small>
+        </div>
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="price" class="h4 mb-2">Price</label>
+            </div>
+            <input type="number" class="form-control" id="price"
+                   th:field="*{price}"
+                   th:errorclass="bg-danger"/>
+            <small class="text-danger"
+                   th:if="${#fields.hasErrors('price')}"
+                   th:errorclass="is-valid"
+                   th:errors="*{price}">Price error message</small>
+        </div>
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary text-white mb-3">Add Product</button>
+        </div>
+    </form>
+</main>
+<footer th:replace="~{/fragments/common::footer}"></footer>
+</body>
+</html>
