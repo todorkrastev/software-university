@@ -4,8 +4,11 @@ import bg.softuni.mobilele.model.enums.EngineEnum;
 import bg.softuni.mobilele.model.enums.TransmissionEnum;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 public class OfferDetailDTO {
+
+    private UUID id;
     private String imageUrl;
     private Integer year;
     private String brand;
@@ -14,6 +17,32 @@ public class OfferDetailDTO {
     private BigDecimal price;
     private EngineEnum engine;
     private TransmissionEnum transmission;
+
+    private String sellerFirstName;
+
+    private String sellerLastName;
+
+    public String getSellerFirstName() {
+        return sellerFirstName;
+    }
+
+    public OfferDetailDTO setSellerFirstName(String sellerFirstName) {
+        this.sellerFirstName = sellerFirstName;
+        return this;
+    }
+
+    public String getSellerFullName() {
+        return sellerFirstName + " " + sellerLastName;
+    }
+
+    public String getSellerLastName() {
+        return sellerLastName;
+    }
+
+    public OfferDetailDTO setSellerLastName(String sellerLastName) {
+        this.sellerLastName = sellerLastName;
+        return this;
+    }
 
     public OfferDetailDTO() {
     }
@@ -84,5 +113,14 @@ public class OfferDetailDTO {
 
     public String getOfferHighlight() {
         return this.year + " " + this.brand + " " + this.model;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public OfferDetailDTO setId(UUID id) {
+        this.id = id;
+        return this;
     }
 }
