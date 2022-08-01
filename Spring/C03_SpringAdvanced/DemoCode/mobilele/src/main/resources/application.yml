@@ -9,9 +9,26 @@ spring:
     hibernate:
       ddl-auto: create-drop
     defer-datasource-initialization: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: 412887257605774
+            client-secret: todo
   sql:
     init:
       mode: always
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 mail:
   host: "localhost"
