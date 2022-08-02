@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Music DB Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header th:fragment="main-nav">
+    <nav class="navbar navbar-expand-lg bg-nav rounded">
+        <a class="nav-link" th:href="@{/}">
+            <img src="/img/headphones.png" width="40px" alt="HeadPhones picture">
+        </a>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/login}">Login</a>
+                </li>
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/register}">Register</a>
+                </li>
+                <li class="nav-item col-md-4"  th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/albums/add}">Add Album</a>
+                </li>
+                <li class="nav-item col-md-4" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/logout}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<footer th:fragment="footer" class="footer bg-blur">
+    <div class="container-fluid text-center">
+        <div class="h5 text-white">
+            &copy;SoftUni Spring Team 2021. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

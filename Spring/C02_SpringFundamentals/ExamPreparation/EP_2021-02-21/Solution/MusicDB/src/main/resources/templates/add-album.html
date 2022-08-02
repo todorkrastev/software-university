@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common :: head}"></head>
+<body>
+<header th:replace="~{/fragments/common :: main-nav}"></header>
+<main class="p-5 bg-blur text-center my-main">
+    <h1 class="text-light border-bottom">Add Album</h1>
+    <div class="d-flex justify-content-center">
+        <form th:action="@{/albums/add}"
+              th:method="POST"
+              th:object="${albumModel}"
+              class="text-light">
+            <h5 class="text-center text-light form-text bg-danger rounded"
+                th:if="${#fields.hasGlobalErrors()}"
+                th:each="err : ${#fields.errors('global')}"
+                th:text="${err}">Cannot add album</h5>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="name">Album name</label>
+                    <input id="name"
+                           th:field="*{name}"
+                           th:errorclass="bg-danger"
+                           type="text" class="form-control" placeholder="Album name">
+                    <small id="nameError"
+                           class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('name')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{name}">Name must be between 3 and 20 characters</small>
+                </div>
+                <div class="col">
+                    <label for="imgUrl">Image Url</label>
+                    <input id="imgUrl"
+                           th:field="*{imageUrl}"
+                           th:errorclass="bg-danger"
+                           type="text" class="form-control" placeholder="Image Url">
+                    <small id="imageUrlError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('imageUrl')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{imageUrl}">Image url must be more than 5
+                        characters</small>
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="price">Price</label>
+                    <input id="price"
+                           th:field="*{price}"
+                           th:errorclass="bg-danger"
+                           type="number" class="form-control" placeholder="Price">
+                    <small id="priceError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('price')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{price}">Price must be positive</small>
+                </div>
+                <div class="col">
+                    <label for="copies">Copies</label>
+                    <input id="copies"
+                           th:field="*{copies}"
+                           th:errorclass="bg-danger"
+                           type="number" class="form-control" placeholder="Copies">
+                    <small id="copiesError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('copies')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{copies}">Copies must be positive</small>
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="releaseDate">Release date</label>
+                    <input id="releaseDate"
+                           th:field="*{releasedDate}"
+                           th:errorclass="bg-danger"
+                           type="date" class="form-control"
+                           placeholder="Release date">
+                    <small id="releaseDateError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('releasedDate')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{releasedDate}">Release date cannot be in the future</small>
+                </div>
+                <div class="col">
+                    <label for="producer">Producer</label>
+                    <input id="producer"
+                           th:field="*{producer}"
+                           th:errorclass="bg-danger"
+                           type="text" class="form-control" placeholder="Producer">
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="artist">Artist</label>
+                    <select id="artist"
+                            th:field="*{artist}"
+                            th:errorclass="bg-danger"
+                            class="custom-select">
+                        <option value="" selected>Select Artist</option>
+                        <option th:each="a : ${T(bg.manhattan.musicdb.model.entity.enums.ArtistNameEnum).values()}"
+                                th:value="${a}"
+                                th:text="${a}"
+                                th:selected="${a} == *{artist}">Artist
+                        </option>
+                    </select>
+                    <small id="artistError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('artist')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{artist}">You must select artist</small>
+                </div>
+                <div class="col">
+                    <label for="genre">Genre</label>
+                    <select id="genre"
+                            th:field="*{genre}"
+                            th:errorclass="bg-danger"
+                            class="custom-select">
+                        <option value="" selected>Select genre</option>
+                        <option th:each="g : ${T(bg.manhattan.musicdb.model.entity.enums.Genre).values()}"
+                                th:value="${g}"
+                                th:text="${g}"
+                                th:selected="${g} == *{genre}">Select genre
+                        </option>
+                    </select>
+                    <small id="genreError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('genre')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{genre}">You must select genre</small>
+                </div>
+            </div>
+
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="description">Description</label>
+                    <textarea id="description"
+                              th:field="*{description}"
+                              th:errorclass="bg-danger"
+                              type="text" class="form-control"
+                              placeholder="Description"></textarea>
+                    <small id="descriptionError" class="form-text bg-danger rounded"
+                           th:if="${#fields.hasErrors('description')}"
+                           th:errorclass="is-valid"
+                           th:errors="*{description}">Description length must be more than 5 characters</small>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-primary btn-block w-50" type="submit">Add New Album</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer th:replace="~{/fragments/common :: footer}"></footer>
+</body>
+</html>

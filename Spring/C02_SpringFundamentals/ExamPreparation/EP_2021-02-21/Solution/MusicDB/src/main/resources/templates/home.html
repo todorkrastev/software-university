@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common :: head}"></head>
+<body>
+<header th:replace="~{/fragments/common :: main-nav}"></header>
+<main class="p-5 align-content-center bg-blur my-main">
+    <h2 class="text-light border-bottom" th:text="|Total sold copies of all albums: ${homeModel.totalCopies}|">Total
+        sold copies of all albums: 10000</h2>
+    <div class="row">
+        <div class="col-md-3"
+             th:each="album : ${homeModel.albums}" th:object="${album}">
+            <div class="card mb-4 box-shadow">
+                <img th:src="*{imageUrl}" src="/img/metallica.jpg" class="card-img-top" alt="Thumbnail [100%x225]"
+                     data-holder-rendered="true"
+                     style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                    <div class="text-center">
+                        <p class="card-text border-bottom" th:text="|Name: *{name}|">Name: Name of album</p>
+                        <p class="card-text border-bottom" th:text="|Artist: *{artistName}|">Artist: Metallica</p>
+                        <p class="card-text border-bottom" th:text="|Genre: *{genre}|">Genre: Metal</p>
+                        <p class="card-text border-bottom" th:text="|Price: *{#numbers.formatDecimal(price, 1,2)}|">
+                            Price: 19.99</p>
+                        <p class="card-text border-bottom"
+                           th:text="|Release Date: *{#temporals.format(releasedDate,'yyyy-MM-dd')}|">Release Date: </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a th:href="@{/albums/delete/{id}(id=*{id})}" type="button"
+                               class="btn btn-sm btn-outline-secondary">Delete</a>
+                        </div>
+                        <small class="text-muted" th:text="|*{copies} copies|">1000 copies</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:replace="~{/fragments/common :: footer}"></footer>
+</body>
+</html>
