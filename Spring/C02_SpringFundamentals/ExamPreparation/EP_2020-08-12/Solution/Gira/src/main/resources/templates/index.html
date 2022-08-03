@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/common :: head}"></head>
+<body>
+<div class="page-container">
+    <header th:replace="~{fragments/common :: main-nav}"></header>
+    <main class="content-wrap">
+        <div class="center">
+            <h1 class="a">WELCOME TO GIRA</h1>
+            <h3 class="b transition">The #1 software development tool used by agile teams</h3>
+            <p class="b h3 transition">
+                <a class="c" href="/">
+                    Login
+                </a>if you have an acount or
+                <a class="c" href="/">
+                    Register
+                </a>and manage your tasks</p>
+        </div>
+    </main>
+    <footer th:replace="fragments/common :: footer"></footer>
+</div>
+</body>
+</html>
