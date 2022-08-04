@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/fragments/common :: head}"></head>
+<body>
+<header th:replace="~{/fragments/common :: main-nav}"></header>
+<main>
+    <div class="text-center mt-2 mb-4">
+        <h1>Hero Details</h1>
+    </div>
+    <hr class="my-3"/>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6" th:object="${heroDetailModel}">
+                <div class="label mt-2">
+                    <h2 class="text-white text-center">Name</h2>
+                    <h4 class="text-white text-center" th:text="*{name}">SoulTaker</h4>
+                </div>
+                <div class="label mt-4">
+                    <h2 class="text-white text-center">Class</h2>
+                    <h4 class="text-white text-center" th:text="*{heroClass}">Warrior</h4>
+                </div>
+                <div class="label mt-4">
+                    <h2 class="text-white text-center">Level</h2>
+                    <h4 class="text-white text-center mb-3" th:text="*{level}">75</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:replace="~{/fragments/common :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="/css/reset-css.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header th:fragment="main-nav">
+    <nav class="navbar bg-dark navbar-expand-lg navbar-background bg-dark ">
+        <a class="navbar-brand text-white h4" href="/">Heroes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <li class="nav-item col-md-4">
+                    <a class="nav-link text-white active h5" th:href="@{/}">Home</a>
+                </li>
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/login}">Login</a>
+                </li>
+                <li class="nav-item col-md-4" th:unless="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white active h5" th:href="@{/users/register}">Register</a>
+                </li>
+                <li class="nav-item col-md-4" th:if="${@currentUser.isLoggedIn()}">
+                    <a class="nav-link text-white  active h5" th:href="@{/heroes/create}">Create Hero</a>
+                </li>
+                <li class="nav-item col-md-4" th:if="${@currentUser.isLoggedIn()}">
+                    <form>
+                        <a class="nav-link text-white active h5" th:href="@{/users/logout}">Logout</a>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<footer th:fragment="footer" class="footer bg-dark  py-2">
+    <div class="container-fluid text-center">
+        <div class="footer-background h5 text-white">
+            &#169; CopyRight Victorious Arena. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
