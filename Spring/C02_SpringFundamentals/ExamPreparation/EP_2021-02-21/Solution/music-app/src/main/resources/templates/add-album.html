@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/commons :: head">
+</head>
+
+<body>
+
+<header th:replace="/fragments/commons :: nav">
+</header>
+
+<main class="p-5 bg-blur text-center my-main">
+    <h1 class="text-light border-bottom">Add Album</h1>
+    <div class="d-flex justify-content-center">
+        <form th:action="@{/albums/add}" th:object="${albumBindingModel}" method="POST"
+              class="text-light">
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="name">Album name</label>
+                    <input th:field="*{name}" th:errorclass="is-invalid" name="name" id="name" type="text"
+                           class="form-control"
+                           placeholder="Album name">
+                    <small id="nameError" class="invalid-feedback form-text bg-danger rounded">Name must be between 3
+                        and 20
+                        characters</small>
+                </div>
+                <div class="col">
+                    <label for="imgUrl">Image Url</label>
+                    <input th:field="*{imageUrl}" th:errorclass="is-invalid" name="imgUrl" id="imgUrl" type="text"
+                           class="form-control" placeholder="Image Url">
+                    <small id="imageUrlError" class="invalid-feedback form-text bg-danger rounded">Image url must be
+                        more than 5
+                        characters</small>
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="price">Price</label>
+                    <input th:field="*{price}" th:errorclass="is-invalid" name="price" id="price" type="number"
+                           class="form-control" placeholder="Price">
+                    <small id="priceError" class="invalid-feedback form-text bg-danger rounded">Price must be
+                        positive</small>
+                </div>
+                <div class="col">
+                    <label for="copies">Copies</label>
+                    <input th:field="*{copies}" th:errorclass="is-invalid" name="copies" id="copies" type="number"
+                           class="form-control" placeholder="Copies">
+                    <small id="copiesError" class="invalid-feedback form-text bg-danger rounded">Copies must be
+                        positive</small>
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="releaseDate">Release date</label>
+                    <input th:field="*{releaseDate}" th:errorclass="is-invalid" name="releaseDate" id="releaseDate"
+                           type="date" class="form-control"
+                           placeholder="Release date">
+                    <small id="releaseDateError" class="invalid-feedback form-text bg-danger rounded">Release date
+                        cannot be in the
+                        future</small>
+                </div>
+                <div class="col">
+                    <label for="producer">Producer</label>
+                    <input th:field="*{producer}" name="producer" id="producer" type="text" class="form-control"
+                           placeholder="Producer">
+                </div>
+            </div>
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="artist">Artist</label>
+                    <select th:field="*{artist}" th:errorclass="is-invalid"
+                            name="artist" id="artist"
+                            class="custom-select">
+                        <option value="" selected>Select Artist</option>
+                        <option th:each="a : ${T(softuni.exam.model.entity.enums.ArtistNameEnum).values()}"
+                                th:value="${a}" th:text="${a}">
+                            Option
+                        </option>
+                    </select>
+                    <small id="artistError" class="invalid-feedback form-text bg-danger rounded">You must select
+                        artist</small>
+                </div>
+                <div class="col">
+                    <label for="genre">Genre</label>
+                    <select th:field="*{genre}" th:errorclass="is-invalid" name="genre" id="genre"
+                            class="custom-select">
+                        <option value="" selected>Select genre</option>
+                        <option th:each="g : ${T(softuni.exam.model.entity.enums.GenreEnum).values()}"
+                                th:value="${g}" th:text="${g}">Option
+                        </option>
+                    </select>
+                    <small id="genreError" class="invalid-feedback form-text bg-danger rounded">You must select
+                        genre</small>
+                </div>
+            </div>
+
+            <div class="form-row m-5">
+                <div class="col">
+                    <label for="description">Description</label>
+                    <textarea th:field="*{description}" th:errorclass="is-invalid" name="description" id="description"
+                              type="text" class="form-control"
+                              placeholder="Description"></textarea>
+                    <small id="descriptionError" class="invalid-feedback form-text bg-danger rounded">Description length
+                        must be more
+                        than 5 characters</small>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-primary btn-block w-50" type="submit">Add New Album</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer th:replace="/fragments/commons :: footer">
+</footer>
+
+</body>
+</html>

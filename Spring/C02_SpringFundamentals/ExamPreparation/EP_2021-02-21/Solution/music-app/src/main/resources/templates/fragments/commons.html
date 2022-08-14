@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Music DB Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<header th:fragment="nav">
+    <nav class="navbar navbar-expand-lg bg-nav rounded">
+        <a class="nav-link" th:action="@{/}" href="/">
+            <img src="/img/headphones.png" width="40px" alt="HeadPhones picture">
+        </a>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <th:block th:if="${@currentUser.id == null}">
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/users/register">Register</a>
+                    </li>
+                </th:block>
+                <th:block th:unless="${@currentUser.id == null}">
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/albums/add">Add Album</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a class="nav-link text-white active h5" href="/users/logout">Logout</a>
+                    </li>
+                </th:block>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<footer class="footer bg-blur" th:fragment="footer">
+    <div class="container-fluid text-center">
+        <div class="h5 text-white">
+            &copy;SoftUni Spring Team 2021. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
