@@ -109,6 +109,14 @@
                             See credential
                         </a>
                     </li>
+                    <li class="softuni__certifications__spring__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced"
+                            class="softuni__certifications__spring__list__item__github" target="_blank">
+                            Spring Advanced
+                        </a>
+                        -
+                        Studying Now
+                    </li>
                 </ul>
             </article>
             <article class="softuni__certifications__c++">
