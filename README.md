@@ -104,7 +104,10 @@
                             Spring Fundamentals
                         </a>
                         -
-                        Studying now
+                        <a href="https://softuni.bg/certificates/details/136821/cf755437"
+                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
