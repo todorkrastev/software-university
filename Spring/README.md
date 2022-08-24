@@ -37,6 +37,12 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Spring Fundamentals</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring Advanced</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
