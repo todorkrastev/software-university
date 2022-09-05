@@ -157,6 +157,17 @@
                             See credential
                         </a>
                     </li>
+                    <li class="softuni__certifications__c++__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M04_OOP"
+                            class="softuni__certifications__c++__list__item__github" target="_blank">
+                            C++ OOP
+                        </a>
+                        -
+                        <a href="https://softuni.bg/certificates/details/142360/489b014b"
+                            class="softuni__certifications__c++__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
+                    </li>
                 </ul>
             </article>
             <article class="softuni__certifications__python">
