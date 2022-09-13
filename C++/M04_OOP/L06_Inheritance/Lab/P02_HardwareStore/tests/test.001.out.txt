@@ -1,0 +1,3 @@
+Model: Mac, price: 1200.14, monitorSize: 15.6 is being created
+Model: Mac, price: 1200.14, monitorSize: 15.6 is being destroyed
+

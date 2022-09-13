@@ -1,0 +1,9 @@
+CREATE for idx: 0
+INCR_ARRAY_DATA_VALUE for idx: 0, incrValue: 1
+CREATE for idx: 1
+COPY_ASSIGN from idx: 0, to idx: 1
+SUM_ARRAY_DATA for idx: 0, sum: 5
+INCR_ARRAY_DATA_VALUE for idx: 0, incrValue: 2
+COPY_ASSIGN from idx: 0, to idx: 0
+SUM_ARRAY_DATA for idx: 0, sum: 15
+

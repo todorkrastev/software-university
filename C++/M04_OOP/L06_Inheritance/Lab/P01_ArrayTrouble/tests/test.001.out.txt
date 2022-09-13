@@ -1,0 +1,4 @@
+CREATE for idx: 0
+INCR_ARRAY_DATA_VALUE for idx: 0, incrValue: 3
+SUM_ARRAY_DATA for idx: 0, sum: 12
+

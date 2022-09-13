@@ -1,0 +1,4 @@
+Model: Mac, price: 1200.14, monitorSize: 15.6 is being created
+Self-copy prevented for Model: Mac, price: 1200.14, monitorSize: 15.6
+Model: Mac, price: 1200.14, monitorSize: 15.6 is being destroyed
+

@@ -1,0 +1,7 @@
+Model: Acer, price: 1200.14, monitorSize: 15.6 is being created
+Model: Toshiba, price: 902.87, monitorSize: 17.2 is being created
+Copy construction for Model: Acer, price: 1200.14, monitorSize: 15.6
+Model: Acer, price: 1200.14, monitorSize: 15.6 is being destroyed
+Model: Toshiba, price: 902.87, monitorSize: 17.2 is being destroyed
+Model: Acer, price: 1200.14, monitorSize: 15.6 is being destroyed
+

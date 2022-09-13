@@ -1,0 +1,13 @@
+Model: Mac, price: 3000.19, monitorSize: 15.5 is being created
+Model: Toshiba, price: 902.87, monitorSize: 17.2 is being created
+Copy construction for Model: Mac, price: 3000.19, monitorSize: 15.5
+Model: Mac, price: 3000.19, monitorSize: 15.5 is being destroyed
+Model: Acer, price: 1200.14, monitorSize: 15.6 is being created
+Copy construction for Model: Mac, price: 3000.19, monitorSize: 15.5
+Copy construction for Model: Toshiba, price: 902.87, monitorSize: 17.2
+Model: Mac, price: 3000.19, monitorSize: 15.5 is being destroyed
+Model: Toshiba, price: 902.87, monitorSize: 17.2 is being destroyed
+Model: Mac, price: 3000.19, monitorSize: 15.5 is being destroyed
+Model: Toshiba, price: 902.87, monitorSize: 17.2 is being destroyed
+Model: Acer, price: 1200.14, monitorSize: 15.6 is being destroyed
+

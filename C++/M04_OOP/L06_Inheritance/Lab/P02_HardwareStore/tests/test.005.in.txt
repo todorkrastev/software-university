@@ -1,0 +1,5 @@
+3
+buy Mac 3000.19 15.5
+buy Toshiba 902.87 17.2
+buy Acer 1200.14 15.6
+

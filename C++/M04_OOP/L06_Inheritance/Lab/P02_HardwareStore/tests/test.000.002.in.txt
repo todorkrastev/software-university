@@ -1,0 +1,5 @@
+3
+buy Acer 1200.14 15.6
+buy Toshiba 902.87 17.2
+remove 1
+
