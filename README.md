@@ -181,9 +181,10 @@
                             Python
                         </a>
                         -
-                        <span class="softuni__certifications__python__list__item__span">
-                            Studying now
-                        </span>
+                        <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
+                            class="softuni__certifications__java__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
