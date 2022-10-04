@@ -115,7 +115,10 @@
                             Spring Advanced
                         </a>
                         -
-                        Studying Now
+                        <a href="https://github.com/todorkrastev/krastevs-gym"
+                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                            My Final Project (in development)
+                        </a>
                     </li>
                 </ul>
             </article>
