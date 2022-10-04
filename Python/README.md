@@ -32,13 +32,6 @@
                             Python</a>
                     </td>
                 </tr>
-                <tr class="softuni__subjects__table__row">
-                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M02_ProgrammingFundamentals"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Programming Fundamentals
-                            with Python</a>
-                    </td>
-                </tr>
             </table>
         </div>
     </main>
