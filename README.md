@@ -181,7 +181,7 @@
                     <li class="softuni__certifications__python__list__item">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/Python"
                             class="softuni__certifications__python__list__item__github" target="_blank">
-                            Python
+                            Programming Basics with Python
                         </a>
                         -
                         <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
