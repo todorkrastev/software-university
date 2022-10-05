@@ -179,7 +179,7 @@
                 </h3>
                 <ul class="softuni__certifications__python__list">
                     <li class="softuni__certifications__python__list__item">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics"
                             class="softuni__certifications__python__list__item__github" target="_blank">
                             Programming Basics with Python
                         </a>
