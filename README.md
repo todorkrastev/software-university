@@ -115,7 +115,10 @@
                             Spring Advanced
                         </a>
                         -
-                        Studying Now
+                        <a href="https://github.com/todorkrastev/krastevs-gym"
+                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
+                            My Final Project (in development)
+                        </a>
                     </li>
                 </ul>
             </article>
@@ -178,12 +181,13 @@
                     <li class="softuni__certifications__python__list__item">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/Python"
                             class="softuni__certifications__python__list__item__github" target="_blank">
-                            Python
+                            Programming Basics with Python
                         </a>
                         -
-                        <span class="softuni__certifications__python__list__item__span">
-                            Studying now
-                        </span>
+                        <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
+                            class="softuni__certifications__java__list__item__softuni" target="_blank">
+                            See credential
+                        </a>
                     </li>
                 </ul>
             </article>
