@@ -90,7 +90,7 @@
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M04_OOP/L05_RuleOf-3-5-0/Presentation"
-                            class="softuni__subjects__table__row__data__link" target="_blank">Rule of 3 5 0</a>
+                            class="softuni__subjects__table__row__data__link" target="_blank">Rule of 3/5/0</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
                         <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M04_OOP/L05_RuleOf-3-5-0/Lab"
