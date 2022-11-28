@@ -44,6 +44,12 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">C++ Advanced</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/C%2B%2B/M04_OOP"
+                            class="softuni__subjects__table__row__data__link" target="_blank">C++ OOP</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
