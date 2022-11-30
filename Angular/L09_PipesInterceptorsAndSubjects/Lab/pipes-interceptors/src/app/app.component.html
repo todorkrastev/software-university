@@ -1,0 +1,18 @@
+<!-- {{calcScores(obj)}}
+{{obj.scores | reduce : add : 1000 }}
+<button (click)="addProp()">TEST</button> -->
+
+{{$time | async | date : 'HH:mm:ss'}}
+
+<div *ngIf="isLoadingUsers$ | async">Loading...</div>
+<div *ngIf="!(isLoadingUsers$ | async)">{{user$ | async | json}}</div>
+
+
+<button *ngIf="(user$ | async) === null" (click)="reloadUsers()">Load users</button>
+<button *ngIf="(user$ | async) !== null" (click)="reloadUsers()">Reload users</button>
+<!-- 
+<nav>
+  <a routerLink="/">HOME</a>
+  <a routerLink="/lazy">LAZT</a>
+</nav>
+<router-outlet></router-outlet> -->
