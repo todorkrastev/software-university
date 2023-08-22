@@ -44,7 +44,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
                             class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__java__list__item">
@@ -55,7 +55,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/103283/66ce3762"
                             class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__java__list__item">
@@ -66,7 +66,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/108488/cb2a5bef"
                             class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__java__list__item">
@@ -77,7 +77,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/110654/2770fb56"
                             class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -95,7 +95,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/130702/6978fb13"
                             class="softuni__certifications__spring__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__spring__list__item">
@@ -106,7 +106,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/136821/cf755437"
                             class="softuni__certifications__spring__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__spring__list__item">
@@ -115,10 +115,9 @@
                             Spring Advanced
                         </a>
                         -
-                        <a href="https://github.com/todorkrastev/krastevs-gym"
-                            class="softuni__certifications__spring__list__item__softuni" target="_blank">
-                            My Final Project (in development)
-                        </a>
+                        <span>
+                            Studying now
+                        </span>
                     </li>
                 </ul>
             </article>
@@ -135,7 +134,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/126112/ec946831"
                             class="softuni__certifications__c++__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__c++__list__item">
@@ -146,7 +145,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/132766/b57ee79a"
                             class="softuni__certifications__c++__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__c++__list__item">
@@ -157,7 +156,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/135484/28cd8eaf"
                             class="softuni__certifications__c++__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__c++__list__item">
@@ -168,7 +167,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/142360/489b014b"
                             class="softuni__certifications__c++__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -186,7 +185,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
                             class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -204,7 +203,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
                             class="softuni__certifications__c#__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -222,7 +221,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/118885/f561b4c7"
                             class="softuni__certifications__dsa__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__dsa__list__item">
@@ -250,7 +249,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/123238/740e3269"
                             class="softuni__certifications__dbms__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -267,7 +266,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/183054/d37624b6"
                             class="softuni__certifications__angular__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -285,7 +284,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/114737/7fbf7427"
                             class="softuni__certifications__js__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                     <li class="softuni__certifications__js__list__item">
@@ -296,7 +295,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/120840/2416d36d"
                             class="softuni__certifications__js__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
@@ -314,7 +313,7 @@
                         -
                         <a href="https://softuni.bg/certificates/details/127577/88e20f6d"
                             class="softuni__certifications__htmlcss__list__item__softuni" target="_blank">
-                            See credential
+                            Show credential
                         </a>
                     </li>
                 </ul>
