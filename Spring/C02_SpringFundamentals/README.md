@@ -27,7 +27,7 @@
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Angular/angular-03-2022](https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2022-06"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2022-06"
                             class="softuni__subjects__table__row__data__link" target="_blank">Spring Fundamentals June 2022</a>
                     </td>
                 </tr>
