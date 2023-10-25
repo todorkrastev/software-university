@@ -12,23 +12,19 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BrandServiceImpl implements BrandService {
-
-  private final ModelRepository modelRepository;
   private final BrandRepository brandRepository;
 
-  public BrandServiceImpl(ModelRepository modelRepository,
-                          BrandRepository brandRepository) {
-    this.modelRepository = modelRepository;
+  public BrandServiceImpl(BrandRepository brandRepository) {
     this.brandRepository = brandRepository;
   }
 
   @Override
   public List<BrandDTO> getAllBrands() {
 
-    return brandRepository.findAll().stream()
+    return brandRepository.getAllBrands().stream()
             .map(brand -> new BrandDTO(
-                    brand.getBrand(),
-                    modelRepository.findAllByBrandId(brand.getId()).stream()
+                    brand.getName(),
+                    brand.getModels().stream()
                             .map(model -> new ModelDTO(model.getId(), model.getName()))
                             .sorted(Comparator.comparing(ModelDTO::name))
                             .collect(Collectors.toList())
