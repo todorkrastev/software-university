@@ -9,6 +9,9 @@ import org.softuni.mobilele.model.enums.EngineEnum;
 import org.softuni.mobilele.service.BrandService;
 import org.softuni.mobilele.service.OfferService;
 import org.softuni.mobilele.service.exception.ObjectNotFoundException;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -56,7 +59,8 @@ public class OfferController {
   public String add(
       @Valid CreateOfferDTO createOfferDTO,
       BindingResult bindingResult,
-      RedirectAttributes rAtt) {
+      RedirectAttributes rAtt,
+      @AuthenticationPrincipal UserDetails seller) {
 
     if(bindingResult.hasErrors()){
       rAtt.addFlashAttribute("createOfferDTO", createOfferDTO);
@@ -65,16 +69,17 @@ public class OfferController {
     }
 
 
-    UUID newOfferUUID = offerService.createOffer(createOfferDTO);
+    UUID newOfferUUID = offerService.createOffer(createOfferDTO, seller);
 
     return "redirect:/offer/" + newOfferUUID;
   }
 
   @GetMapping("/{uuid}")
-  public String details(@PathVariable("uuid") UUID uuid, Model model) {
+  public String details(@PathVariable("uuid") UUID uuid, Model model,
+      @AuthenticationPrincipal UserDetails viewer) {
 
     OfferDetailDTO offerDetailDTO = offerService
-        .getOfferDetail(uuid)
+        .getOfferDetail(uuid, viewer)
         .orElseThrow(() -> new ObjectNotFoundException("Offer with uuid " + uuid + " not found!"));
 
     model.addAttribute("offer", offerDetailDTO);
@@ -82,8 +87,10 @@ public class OfferController {
     return "details";
   }
 
+  @PreAuthorize("@offerServiceImpl.isOwner(#uuid, #principal.username)")
   @DeleteMapping("/{uuid}")
-  public String delete(@PathVariable("uuid") UUID uuid) {
+  public String delete(@PathVariable("uuid") UUID uuid,
+      @AuthenticationPrincipal UserDetails principal) {
 
     offerService.deleteOffer(uuid);
 
