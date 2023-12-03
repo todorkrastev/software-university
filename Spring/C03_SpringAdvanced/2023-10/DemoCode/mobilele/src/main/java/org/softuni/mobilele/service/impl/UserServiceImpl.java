@@ -6,6 +6,11 @@ import org.softuni.mobilele.model.events.UserRegisteredEvent;
 import org.softuni.mobilele.repository.UserRepository;
 import org.softuni.mobilele.service.UserService;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -16,14 +21,17 @@ public class UserServiceImpl implements UserService {
   private final PasswordEncoder passwordEncoder;
 
   private final ApplicationEventPublisher appEventPublisher;
+  private final UserDetailsService mobileleUserDetailsService;
 
   public UserServiceImpl(
       UserRepository userRepository,
       PasswordEncoder passwordEncoder,
-      ApplicationEventPublisher appEventPublisher) {
+      ApplicationEventPublisher appEventPublisher,
+      UserDetailsService userDetailsService) {
     this.userRepository = userRepository;
     this.passwordEncoder = passwordEncoder;
     this.appEventPublisher = appEventPublisher;
+    this.mobileleUserDetailsService = userDetailsService;
   }
 
   @Override
@@ -39,6 +47,27 @@ public class UserServiceImpl implements UserService {
     ));
   }
 
+  @Override
+  public void createUserIfNotExist(String email, String names) {
+    // Create manually a user in the database
+    // password not necessary
+  }
+
+  @Override
+  public Authentication login(String email) {
+    UserDetails userDetails = mobileleUserDetailsService.loadUserByUsername(email);
+
+    Authentication auth = new UsernamePasswordAuthenticationToken(
+        userDetails,
+        userDetails.getPassword(),
+        userDetails.getAuthorities()
+    );
+
+    SecurityContextHolder.getContext().setAuthentication(auth);
+
+    return auth;
+  }
+
   private UserEntity map(UserRegistrationDTO userRegistrationDTO) {
     return new UserEntity()
         .setActive(false)
@@ -47,4 +76,6 @@ public class UserServiceImpl implements UserService {
         .setEmail(userRegistrationDTO.email())
         .setPassword(passwordEncoder.encode(userRegistrationDTO.password()));
   }
+
+
 }

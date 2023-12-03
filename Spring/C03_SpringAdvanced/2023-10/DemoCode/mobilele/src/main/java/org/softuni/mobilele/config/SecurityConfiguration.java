@@ -3,9 +3,9 @@ package org.softuni.mobilele.config;
 import org.softuni.mobilele.model.enums.UserRoleEnum;
 import org.softuni.mobilele.repository.UserRepository;
 import org.softuni.mobilele.service.impl.MobileleUserDetailsService;
+import org.softuni.mobilele.service.oauth.OAuthSuccessHandler;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
-import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest.EndpointRequestMatcher;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,13 +24,14 @@ public class SecurityConfiguration {
 
   private final String rememberMeKey;
 
-  public SecurityConfiguration(@Value("${mobilele.remember.me.key}")
-    String rememberMeKey) {
+  public SecurityConfiguration(
+      @Value("${mobilele.remember.me.key}") String rememberMeKey) {
     this.rememberMeKey = rememberMeKey;
   }
 
   @Bean
-  public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
+  public SecurityFilterChain filterChain(HttpSecurity httpSecurity,
+      OAuthSuccessHandler oAuthSuccessHandler) throws Exception {
     return httpSecurity.authorizeHttpRequests(
         // Define which urls are visible by which users
         authorizeRequests -> authorizeRequests
@@ -38,6 +39,7 @@ public class SecurityConfiguration {
             .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
             // allow actuator endpoints
             .requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll()
+            .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
             // Allow anyone to see the home page, the registration page and the login form
             .requestMatchers("/", "/users/login", "/users/register", "/users/login-error").permitAll()
             .requestMatchers("/offers/all").permitAll()
@@ -70,12 +72,13 @@ public class SecurityConfiguration {
               .invalidateHttpSession(true);
         }
     ).rememberMe(
-        rememberMe -> {
+        rememberMe ->
           rememberMe
               .key(rememberMeKey)
               .rememberMeParameter("rememberme")
-              .rememberMeCookieName("rememberme");
-        }
+              .rememberMeCookieName("rememberme")
+    ).oauth2Login(
+        oauth -> oauth.successHandler(oAuthSuccessHandler)
     ).build();
   }
 
