@@ -10,7 +10,7 @@
 <body>
     <header class="softuni__header">
         <h1 class="softuni__header__title" align="center" style="text-decoration: none;">
-            <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L00_CourseIntroduction"
+            <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L00_CourseIntroduction"
                 class="softuni__header__title__link">Spring Advanced</a>
         </h1>
     </header>
@@ -37,91 +37,91 @@
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L01_WebApiAndRestControllers/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L01_WebApiAndRestControllers/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Web API and REST Controllers</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L02_SpringSecurity/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L02_SpringSecurity/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Spring Security</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L03_HATEOAS/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L03_HATEOAS/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">HATEOAS</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L04_ErrorHandling/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L04_ErrorHandling/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Error Handling</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L05_Events/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L05_Events/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Events</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L06_AspectOrientedProgramming/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L06_AspectOrientedProgramming/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">AOP</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L07_UnitAndIntegrationTests/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L07_UnitAndIntegrationTests/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Unit and Integration Tests</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L08_ContainerizationAndDocumentation/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L08_ContainerizationAndDocumentation/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Containerization and Documentation</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
                 <tr class="softuni__subjects__table__row">
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/L09_DeploymentHostingAndMonitoring/Presentation"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/L09_DeploymentHostingAndMonitoring/Presentation"
                             class="softuni__subjects__table__row__data__link" target="_blank">Deployment, Hosting and Monitoring</a>
                     </td>
                     <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/Workshop/mobilele"
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2022-06/Workshop/mobilele"
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
