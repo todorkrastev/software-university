@@ -37,6 +37,12 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Spring Fundamentals September 2023</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring Fundamentals May 2024</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
