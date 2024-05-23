@@ -55,6 +55,16 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/L03_SpringMvc/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring MVC</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/DemoCode"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
