@@ -172,42 +172,6 @@
                     </li>
                 </ul>
             </article>
-            <article class="softuni__certifications__python">
-                <h3 class="softuni__certifications__python__title">
-                    Python
-                </h3>
-                <ul class="softuni__certifications__python__list">
-                    <li class="softuni__certifications__python__list__item">
-                        <a href="https://github.com/todorkrastev/software-university/tree/main/Python/M01_ProgrammingBasics"
-                            class="softuni__certifications__python__list__item__github" target="_blank">
-                            Programming Basics with Python
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
-                            class="softuni__certifications__java__list__item__softuni" target="_blank">
-                            Show credential
-                        </a>
-                    </li>
-                </ul>
-            </article>
-            <article class="softuni__certifications__c#">
-                <h3 class="softuni__certifications__c#__title">
-                    C#
-                </h3>
-                <ul class="softuni__certifications__c#__list">
-                    <li class="softuni__certifications__c#__list__item">
-                        <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/C%23/M01C%23ProgrammingBasics"
-                            class="softuni__certifications__c#__list__item__github" target="_blank">
-                            Programming Basics with C#
-                        </a>
-                        -
-                        <a href="https://softuni.bg/certificates/details/91471/9d2877c7"
-                            class="softuni__certifications__c#__list__item__softuni" target="_blank">
-                            Show credential
-                        </a>
-                    </li>
-                </ul>
-            </article>
             <article class="softuni__certifications__dsa">
                 <h3 class="softuni__certifications__dsa__title">
                     Data Structures & Algorithms
