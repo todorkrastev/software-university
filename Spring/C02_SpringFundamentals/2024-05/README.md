@@ -65,6 +65,36 @@
                             class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
                     </td>
                 </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/L04_SpringMvcWithThymeleaf/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Spring MVC with Thymeleaf</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/DemoCode"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/L05_StateManagement/Presentation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">State Management</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/DemoCode"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                    </td>
+                </tr>
+                <tr class="softuni__subjects__table__row">
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/L06_EventsSchedulingTasksAndCaching/Presantation"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Events, Scheduling Tasks and Caching</a>
+                    </td>
+                    <td class="softuni__subjects__table__row__data" style="text-align:center; vertical-align: middle;">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C02_SpringFundamentals/2024-05/DemoCode"
+                            class="softuni__subjects__table__row__data__link" target="_blank">Lab</a>
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
