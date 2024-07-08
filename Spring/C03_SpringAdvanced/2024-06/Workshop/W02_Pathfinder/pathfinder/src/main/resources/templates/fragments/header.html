@@ -1,0 +1,43 @@
+<header th:fragment="header">
+    <nav class="main-nav">
+        <ul>
+            <!--            <th:block th:unless="${@userHelperService.isAuthenticated()}">-->
+            <th:block sec:authorize="!isAuthenticated()">
+                <li>
+                    <a th:href="@{/}">Home</a>
+                </li>
+                <li>
+                    <a th:href="@{/users/login}">Login</a>
+                </li>
+                <li>
+                    <a th:href="@{/users/register}">Register</a>
+                </li>
+                <li>
+                    <a th:href="@{/about}">About</a>
+                </li>
+            </th:block>
+
+            <!--            <th:block th:if="${@userHelperService.isAuthenticated()}">-->
+            <th:block sec:authorize="isAuthenticated()">
+                <li>
+                    <a th:href="@{/add-route}">Add new route</a>
+                </li>
+                <li>
+                    <a th:href="@{/users/profile}">Profile</a>
+                </li>
+<!--                <li th:if="@userHelperService.hasRole('ADMIN')">-->
+                <li sec:authorize="hasRole('ADMIN')">
+                    <a href="/">Admin</a>
+                </li>
+                <li>
+                    <form
+                            th:method="POST"
+                            th:action="@{/users/logout}"
+                    >
+                        <button type="submit">Logout</button>
+                    </form>
+                </li>
+            </th:block>
+        </ul>
+    </nav>
+</header>
