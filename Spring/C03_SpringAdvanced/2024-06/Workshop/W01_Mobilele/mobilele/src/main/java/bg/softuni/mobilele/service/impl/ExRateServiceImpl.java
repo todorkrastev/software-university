@@ -5,7 +5,9 @@ import bg.softuni.mobilele.model.dto.ExRatesDTO;
 import bg.softuni.mobilele.model.entity.ExRateEntity;
 import bg.softuni.mobilele.repository.ExRateRepository;
 import bg.softuni.mobilele.service.ExRateService;
-import bg.softuni.mobilele.service.ObjectNotFoundException;
+import bg.softuni.mobilele.service.exception.ApiObjectNotFoundException;
+import bg.softuni.mobilele.service.exception.ObjectNotFoundException;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
@@ -13,8 +15,12 @@ import java.util.Objects;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestClient;
 
 @Service
@@ -26,7 +32,7 @@ public class ExRateServiceImpl implements ExRateService {
   private final ForexApiConfig forexApiConfig;
 
   public ExRateServiceImpl(ExRateRepository exRateRepository,
-      RestClient restClient,
+      @Qualifier("genericRestClient") RestClient restClient,
       ForexApiConfig forexApiConfig) {
     this.exRateRepository = exRateRepository;
     this.restClient = restClient;
@@ -109,7 +115,7 @@ public class ExRateServiceImpl implements ExRateService {
   @Override
   public BigDecimal convert(String from, String to, BigDecimal amount) {
     return findExRate(from, to)
-        .orElseThrow(() -> new ObjectNotFoundException("Conversion from " + from + " to " + to + " not possible!"))
+        .orElseThrow(() -> new ApiObjectNotFoundException("Conversion from " + from + " to " + to + " not possible!", from + "~" + to))
         .multiply(amount);
   }
 }
