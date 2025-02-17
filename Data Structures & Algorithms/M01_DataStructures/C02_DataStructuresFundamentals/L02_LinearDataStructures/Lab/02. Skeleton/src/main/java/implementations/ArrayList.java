@@ -109,7 +109,7 @@ public class ArrayList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+        return new Iterator<>() {
             private int index = 0;
 
             @Override
