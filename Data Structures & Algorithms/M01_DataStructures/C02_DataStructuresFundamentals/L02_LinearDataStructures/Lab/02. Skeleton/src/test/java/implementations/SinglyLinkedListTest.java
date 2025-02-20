@@ -85,4 +85,12 @@ public class SinglyLinkedListTest {
         assertFalse(list.isEmpty());
         assertTrue(new SinglyLinkedList<>().isEmpty());
     }
+
+    @Test
+    public void testIterator() {
+        int i = 0;
+        for (String s : list) {
+            assertEquals(String.valueOf(i++), s);
+        }
+    }
 }
