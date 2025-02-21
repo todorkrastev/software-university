@@ -64,4 +64,15 @@ public class QueueTest {
             assertEquals(String.valueOf(last++), s);
         }
     }
+
+    @Test
+    public void testNodeChaining() {
+        Queue<Integer> numbers = new Queue<>();
+        for (int i = 0; i < 100; i++) {
+            numbers.offer(i);
+        }
+        for (int i = 0; i < 100; i++) {
+            assertEquals(Integer.valueOf(i), numbers.poll());
+        }
+    }
 }
