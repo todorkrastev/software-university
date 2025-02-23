@@ -5,9 +5,25 @@ import interfaces.Deque;
 import java.util.Iterator;
 
 public class ArrayDeque<E> implements Deque<E> {
+    private static final int DEFAULT_CAPACITY = 7;
+    private int head;
+    private int tail;
+    private int size;
+
+    private Object[] elements;
+
+    public ArrayDeque() {
+        this.elements = new Object[DEFAULT_CAPACITY];
+        this.size = 0;
+    }
+
     @Override
     public void add(E Element) {
-
+        if (this.size == this.elements.length) {
+            grow();
+        }
+        this.elements[this.size] = Element;
+        this.size++;
     }
 
     @Override
@@ -57,7 +73,10 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public E get(int index) {
-        return null;
+        if (index < 0 || index >= this.size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
+        }
+        return (E) this.elements[index];
     }
 
     @Override
@@ -87,7 +106,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public int size() {
-        return 0;
+        return this.size;
     }
 
     @Override
@@ -108,5 +127,11 @@ public class ArrayDeque<E> implements Deque<E> {
     @Override
     public Iterator<E> iterator() {
         return null;
+    }
+
+    private void grow() {
+        Object[] newElements = new Object[this.elements.length * 2];
+        System.arraycopy(this.elements, 0, newElements, 0, this.elements.length);
+        this.elements = newElements;
     }
 }
