@@ -1,26 +1,24 @@
 package implementations;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class ArrayDequeTest {
-    private ArrayDeque<String> arrayDeque;
-
-    @Before
-    public void setUp() {
-        this.arrayDeque = new ArrayDeque<>();
-        for (int i = 0; i < 2; i++) {
-            arrayDeque.add(String.valueOf(i));
-        }
-    }
 
     @Test
-    public void testAddShouldAddAnElementAtTheEnd() {
-        arrayDeque.add("2");
-        assertEquals(3, arrayDeque.size());
-        assertEquals("2", arrayDeque.get(2));
+    public void testAdd() {
+        ArrayDeque<String> arrayDeque = new ArrayDeque<>();
+        arrayDeque.add("element1");
+        assertEquals(1, arrayDeque.size());
+
+        arrayDeque.add("element2");
+        assertEquals(2, arrayDeque.size());
+
+        for (int i = 2; i < 10; i++) {
+            arrayDeque.add("element" + i);
+        }
+        assertEquals(10, arrayDeque.size());
     }
 
     @Test

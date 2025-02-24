@@ -14,15 +14,21 @@ public class ArrayDeque<E> implements Deque<E> {
 
     public ArrayDeque() {
         this.elements = new Object[DEFAULT_CAPACITY];
+        int middle = this.elements.length / 2;
+        this.head = this.tail = middle;
         this.size = 0;
     }
 
     @Override
-    public void add(E Element) {
-        if (this.size == this.elements.length) {
-            grow();
+    public void add(E element) {
+        if (this.size == 0) {
+            this.elements[this.tail] = element;
+        } else {
+            if (this.tail == this.elements.length - 1) {
+                this.elements = this.grow();
+            }
+            this.elements[++this.tail] = element;
         }
-        this.elements[this.size] = Element;
         this.size++;
     }
 
@@ -129,9 +135,19 @@ public class ArrayDeque<E> implements Deque<E> {
         return null;
     }
 
-    private void grow() {
-        Object[] newElements = new Object[this.elements.length * 2];
-        System.arraycopy(this.elements, 0, newElements, 0, this.elements.length);
-        this.elements = newElements;
+    private Object[] grow() {
+        int newCapacity = this.elements.length * 2 + 1;
+        Object[] newElements = new Object[newCapacity];
+        int middle = newCapacity / 2;
+        int newHead = middle - this.size / 2;
+        int index = this.head;
+        for (int i = newHead; index <= this.tail; i++) {
+            newElements[i] = this.elements[index++];
+        }
+
+        this.head = newHead;
+        this.tail = newHead + this.size - 1;
+
+        return newElements;
     }
 }
