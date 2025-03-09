@@ -21,12 +21,12 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public void add(E element) {
-        addLast(element);
+        this.addLast(element);
     }
 
     @Override
     public void offer(E element) {
-        addLast(element);
+        this.addLast(element);
     }
 
     @Override
@@ -57,17 +57,26 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public void push(E element) {
-        addFirst(element);
+        this.addFirst(element);
     }
 
     @Override
     public void insert(int index, E element) {
+        int realIndex = this.head + index;
+        this.ensureIndex(realIndex);
 
+        if (realIndex - this.head < this.tail - realIndex) {
+            this.insertAndShiftLeft(realIndex - 1, element);
+        } else {
+            this.insertAndShiftRight(realIndex, element);
+        }
     }
 
     @Override
     public void set(int index, E element) {
-
+        int realIndex = this.head + index;
+        this.ensureIndex(realIndex);
+        this.elements[realIndex] = element;
     }
 
     @Override
@@ -80,40 +89,69 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public E poll() {
-        return removeFirst();
+        return this.removeFirst();
     }
 
     @Override
     public E pop() {
-        return null;
+        return this.removeFirst();
     }
 
     @Override
     public E get(int index) {
-        if (index < 0 || index >= this.size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + this.size);
-        }
-        return (E) this.elements[index];
+        int realIndex = this.head + index;
+        this.ensureIndex(realIndex);
+        return this.getAt(realIndex);
     }
 
     @Override
     public E get(Object object) {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        for (int index = this.head; index <= this.tail; index++) {
+            E current = this.getAt(index);
+            if (current.equals(object)) {
+                return current;
+            }
+        }
         return null;
     }
 
     @Override
     public E remove(int index) {
-        return null;
+        int realIndex = this.head + index;
+        this.ensureIndex(realIndex);
+        return this.getAt(realIndex);
     }
 
     @Override
     public E remove(Object object) {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        for (int i = this.head; i <= this.tail; i++) {
+            if (this.elements[i].equals(object)) {
+                E element = this.getAt(i);
+                this.elements[i] = null;
+
+                for (int j = i; j < this.tail; j++) {
+                    this.elements[j] = this.elements[j + 1];
+                }
+                this.removeLast();
+
+                return element;
+            }
+        }
+
         return null;
     }
 
     @Override
     public E removeFirst() {
-        if (!isEmpty()) {
+        if (!this.isEmpty()) {
             E element = this.getAt(this.head);
             this.elements[this.head++] = null;
             this.size--;
@@ -124,7 +162,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public E removeLast() {
-        if (!isEmpty()) {
+        if (!this.isEmpty()) {
             E element = this.getAt(this.tail);
             this.elements[this.tail--] = null;
             this.size--;
@@ -145,7 +183,15 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public void trimToSize() {
+        Object[] newElements = new Object[this.size];
+        int index = 0;
+        for (int i = this.head; i <= this.tail; i++) {
+            newElements[index++] = this.elements[i];
+        }
 
+        this.elements = newElements;
+        this.head = 0;
+        this.tail = this.size - 1;
     }
 
     @Override
@@ -188,5 +234,31 @@ public class ArrayDeque<E> implements Deque<E> {
     @SuppressWarnings("unchecked")
     private E getAt(int index) {
         return (E) this.elements[index];
+    }
+
+    private void ensureIndex(int realIndex) {
+        if (realIndex < this.head || realIndex > this.tail) {
+            throw new IndexOutOfBoundsException("Index: " + realIndex + ", Size: " + this.size);
+        }
+    }
+
+    private void insertAndShiftLeft(int index, E element) {
+        E firstElement = this.getAt(this.head);
+        for (int i = this.head; i < index; i++) {
+            this.elements[i] = this.elements[i + 1];
+        }
+
+        this.elements[index] = element;
+        this.addFirst(firstElement);
+    }
+
+    private void insertAndShiftRight(int index, E element) {
+        E lastElement = this.getAt(this.tail);
+        for (int i = this.tail; i > index; i--) {
+            this.elements[i] = this.elements[i - 1];
+        }
+
+        this.elements[index] = element;
+        this.addLast(lastElement);
     }
 }
