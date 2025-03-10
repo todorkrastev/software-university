@@ -94,7 +94,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
     @Override
     public E pop() {
-        return this.removeFirst();
+        return this.removeLast();
     }
 
     @Override
@@ -123,7 +123,16 @@ public class ArrayDeque<E> implements Deque<E> {
     public E remove(int index) {
         int realIndex = this.head + index;
         this.ensureIndex(realIndex);
-        return this.getAt(realIndex);
+        E element = this.getAt(realIndex);
+
+        for (int i = realIndex; i < this.tail; i++) {
+            this.elements[i] = this.elements[i + 1];
+        }
+        this.elements[tail] = null;
+        this.tail--;
+        this.size--;
+
+        return element;
     }
 
     @Override
@@ -243,22 +252,30 @@ public class ArrayDeque<E> implements Deque<E> {
     }
 
     private void insertAndShiftLeft(int index, E element) {
-        E firstElement = this.getAt(this.head);
-        for (int i = this.head; i < index; i++) {
-            this.elements[i] = this.elements[i + 1];
+        if (head == 0) {
+            elements = grow();
+            index = head + index;
         }
 
-        this.elements[index] = element;
-        this.addFirst(firstElement);
+        for (int i = head - 1; i >= index; i--) {
+            elements[i] = elements[i - 1];
+        }
+
+        elements[index] = element;
+        head--;
+        size++;
     }
 
     private void insertAndShiftRight(int index, E element) {
-        E lastElement = this.getAt(this.tail);
-        for (int i = this.tail; i > index; i--) {
-            this.elements[i] = this.elements[i - 1];
+        if (tail == elements.length - 1) {
+            elements = grow();
         }
 
-        this.elements[index] = element;
-        this.addLast(lastElement);
+        for (int i = tail; i > index; i--) {
+            elements[i] = elements[i - 1];
+        }
+        elements[index] = element;
+        tail++;
+        size++;
     }
 }
