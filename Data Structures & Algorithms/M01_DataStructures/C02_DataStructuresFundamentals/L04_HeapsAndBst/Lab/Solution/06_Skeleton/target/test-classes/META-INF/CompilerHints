@@ -1,0 +1,12 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,benchmark/BenchmarkTests.setup
+inline,benchmark/BenchmarkTests.testAddInArrayList
+inline,benchmark/BenchmarkTests.testAddInBST
+inline,benchmark/BenchmarkTests.testAddInPriorityQueue
+inline,benchmark/BenchmarkTests.testFindInArrayListWorstCase
+inline,benchmark/BenchmarkTests.testFindInBinarySearchTreeWorstCase
+inline,benchmark/BenchmarkTests.testFindInPriorityQueueWorstCase
