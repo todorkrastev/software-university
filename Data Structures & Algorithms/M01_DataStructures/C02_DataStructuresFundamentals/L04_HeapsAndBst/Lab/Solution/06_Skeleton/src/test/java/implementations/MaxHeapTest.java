@@ -16,7 +16,7 @@ public class MaxHeapTest {
         this.maxHeap = new MaxHeap<>();
         List<Integer> elements = new ArrayList<>(List.of(15, 25, 6, 9, 5, 8, 17, 16));
         for (Integer element : elements) {
-            this.maxHeap.add(element);
+                this.maxHeap.add(element);
         }
     }
 
