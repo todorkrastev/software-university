@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97c26df0-e577-4284-aefe-68d9afc3d7a4" name="Changes" comment="Test">
+      <change beforePath="$PROJECT_DIR$/target/classes/implementations/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/implementations/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/BenchmarkList" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;todorkrastev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/todorkrastev/software-university.git&quot;,
+    &quot;accountId&quot;: &quot;7b85c2e1-20f0-4f68-a2f5-eddb63b3cfee&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2uGx8nOvUVcaZxfkPuaMea9GdOR" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.BinarySearchTreeTest.executor": "Run",
+    "JUnit.BinarySearchTreeTest.testLeftSideBST.executor": "Run",
+    "JUnit.BinarySearchTreeTest.testRightSideBST.executor": "Run",
+    "JUnit.BinarySearchTreeTest.testSearchCheckReturnedTreeStructure.executor": "Run",
+    "JUnit.BinaryTreeTest.executor": "Run",
+    "JUnit.BinaryTreeTest.testAsIndentedPreOrder.executor": "Debug",
+    "JUnit.BinaryTreeTest.testForEachInOrder.executor": "Debug",
+    "JUnit.BinaryTreeTest.testInOrder.executor": "Run",
+    "JUnit.BinaryTreeTest.testPostOrder.executor": "Debug",
+    "JUnit.BinaryTreeTest.testPreOrder.executor": "Debug",
+    "JUnit.MaxHeapTest.executor": "Debug",
+    "JUnit.MaxHeapTest.testHeapifyUpAddMany.executor": "Debug",
+    "JUnit.MaxHeapTest.testHeapifyUpAddOne.executor": "Debug",
+    "JUnit.PriorityQueueTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/software-university/Data Structures & Algorithms/M01_DataStructures/C02_DataStructuresFundamentals/L04_HeapsAndBst/Exercises/Solution/07_Skeleton",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest">
+    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="implementations" />
+      <option name="MAIN_CLASS_NAME" value="implementations.BinarySearchTreeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testLeftSideBST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="implementations" />
+      <option name="MAIN_CLASS_NAME" value="implementations.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testLeftSideBST" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testRightSideBST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="implementations" />
+      <option name="MAIN_CLASS_NAME" value="implementations.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testRightSideBST" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testSearchCheckReturnedTreeStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="implementations" />
+      <option name="MAIN_CLASS_NAME" value="implementations.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testSearchCheckReturnedTreeStructure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="implementations" />
+      <option name="MAIN_CLASS_NAME" value="implementations.PriorityQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testSearchCheckReturnedTreeStructure" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testRightSideBST" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testLeftSideBST" />
+        <item itemvalue="JUnit.PriorityQueueTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97c26df0-e577-4284-aefe-68d9afc3d7a4" name="Changes" comment="" />
+      <created>1741888556577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741888556577</updated>
+      <workItem from="1741888558482" duration="7348000" />
+      <workItem from="1741907894394" duration="2968000" />
+      <workItem from="1741962072507" duration="4290000" />
+      <workItem from="1741973131590" duration="47000" />
+      <workItem from="1741973531870" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add `01. Binary Tree`">
+      <option name="closed" value="true" />
+      <created>1741906458744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741906458744</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add `01. Binary Tree`">
+      <option name="closed" value="true" />
+      <created>1741906545261</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741906545261</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add `02. MaxHeap`">
+      <option name="closed" value="true" />
+      <created>1741910838613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741910838614</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add `03. PriorityQueue`">
+      <option name="closed" value="true" />
+      <created>1741963028348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741963028348</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update `.gitignore`">
+      <option name="closed" value="true" />
+      <created>1741963894258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741963894258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add `01. Binary Tree`" />
+    <MESSAGE value="Add `02. MaxHeap`" />
+    <MESSAGE value="Add `03. PriorityQueue`" />
+    <MESSAGE value="Update `.gitignore`" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/implementations/BinaryTreeTest.java</url>
+          <line>71</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/implementations/MaxHeapTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
