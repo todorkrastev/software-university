@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b9d74f-b117-428f-ac45-1a4957ed713b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BinarySearchTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab/Solution/06_Skeleton/target/classes/implementations/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab/Solution/06_Skeleton/target/classes/implementations/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab/Solution/06_Skeleton/target/test-classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab/Solution/06_Skeleton/target/test-classes/META-INF/BenchmarkList" afterDir="false" />
-    </list>
+    <list default="true" id="73b9d74f-b117-428f-ac45-1a4957ed713b" name="Changes" comment="Add `01. BST Operations`" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTest">
+  <component name="RunManager" selected="JUnit.LowestCommonAncestorTest">
     <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Heaps-BST-Exercises" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,16 +80,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinarySearchTreeTest" />
       <option name="METHOD_NAME" value="testCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTest.testDeleteMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Heaps-BST-Exercises" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="testDeleteMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,13 +105,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LowestCommonAncestorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Heaps-BST-Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="solutions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="solutions" />
+      <option name="MAIN_CLASS_NAME" value="solutions.LowestCommonAncestorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LowestCommonAncestorTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testRange" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testRank" />
         <item itemvalue="JUnit.BinarySearchTreeTest.testCount" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.testDeleteMax" />
       </list>
     </recent_temporary>
   </component>
@@ -148,11 +149,24 @@
       <workItem from="1741973557264" duration="6100000" />
       <workItem from="1741984415988" duration="6034000" />
       <workItem from="1741992761308" duration="1995000" />
-      <workItem from="1741995046805" duration="368000" />
+      <workItem from="1741995046805" duration="877000" />
     </task>
+    <task id="LOCAL-00001" summary="Add `01. BST Operations`">
+      <option name="closed" value="true" />
+      <created>1741995545478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741995545478</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add `01. BST Operations`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `01. BST Operations`" />
   </component>
 </project>
