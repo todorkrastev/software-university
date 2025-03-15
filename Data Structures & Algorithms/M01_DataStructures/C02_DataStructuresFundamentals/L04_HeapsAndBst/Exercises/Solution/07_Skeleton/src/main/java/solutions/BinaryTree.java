@@ -1,27 +1,23 @@
 package solutions;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class BinaryTree {
-    private final int key;
-    private final BinaryTree left;
-    private final BinaryTree right;
-    private static Map<Integer, Pair<Integer,Integer>> horizontalDistances = new TreeMap<>();
+    private int value;
+    private BinaryTree left;
+    private BinaryTree right;
 
 
     public BinaryTree(int key, BinaryTree first, BinaryTree second) {
-        this.key = key;
+        this.value = key;
         this.left = first;
         this.right = second;
     }
 
     public Integer findLowestCommonAncestor(int first, int second) {
-        List<Integer> firstPath = findPath(this, first);
-        List<Integer> secondPath = findPath(this, second);
+        List<Integer> firstPath = findPath(first);
+        List<Integer> secondPath = findPath(second);
 
         int smallerSize = Math.min(firstPath.size(), secondPath.size());
 
@@ -31,90 +27,67 @@ public class BinaryTree {
                 break;
             }
         }
-
         return firstPath.get(i - 1);
     }
 
-    private List<Integer> findPath(BinaryTree binaryTree, int element) {
-        List<Integer> path = new ArrayList<>();
-        findNodePath(binaryTree, element, path);
-        return path;
+    private List<Integer> findPath(int element) {
+        List<Integer> result = new ArrayList<>();
+        findNodePath(this, element, result);
+
+        return result;
     }
 
-    private boolean findNodePath(BinaryTree binaryTree, int element, List<Integer> path) {
-        if (binaryTree == null) return false;
-        if (binaryTree.key == element) return true;
-        path.add(binaryTree.key);
-        boolean leftResult = findNodePath(binaryTree.left, element, path);
+    private boolean findNodePath(BinaryTree binaryTree, int element, List<Integer> currentPath) {
+        if (binaryTree == null) {
+            return false;
+        }
+
+        if (binaryTree.value == element) {
+            return true;
+        }
+
+        currentPath.add(binaryTree.value);
+
+        boolean leftResult = findNodePath(binaryTree.left, element, currentPath);
         if (leftResult) {
             return true;
         }
 
-        boolean rightResult = findNodePath(binaryTree.right, element, path);
+        boolean rightResult = findNodePath(binaryTree.right, element, currentPath);
         if (rightResult) {
             return true;
         }
-        path.remove(Integer.valueOf(binaryTree.key));
+
+        currentPath.remove(Integer.valueOf(binaryTree.value));
         return false;
     }
 
     public List<Integer> topView() {
-        // create a `TreeMap` where
-        // key —> relative horizontal distance of the node from the root node, and
-        // value —> pair containing the node's value and its level
-        Map<Integer, Pair<Integer, Integer>> map = new TreeMap<>();
+        Map<Integer, Pair<Integer, Integer>> offsetToValueLevel = new TreeMap<>();
 
-        // perform preorder traversal on the tree and fill the map
-        buildMap(this, 0, 0, map);
+        traverseTree(this, 0, 1, offsetToValueLevel);
 
-        return map.entrySet().stream().map(x->x.getValue().first).collect(Collectors.toList());
+        return  offsetToValueLevel
+                .values()
+                .stream()
+                .map(Pair::getKey)
+                .collect(Collectors.toList());
     }
 
-    // Recursive function to perform preorder traversal on the tree and fill the map.
-    // Here, the node has `dist` horizontal distance from the tree's root,
-    // and the level represents the node's level.
-    public void buildMap(BinaryTree root, int dist, int level,
-                         Map<Integer, Pair<Integer, Integer>> map)
-    {
-        // base case: empty tree
-        if (root == null) {
+    private void traverseTree(BinaryTree binaryTree, int offset, int level, Map<Integer,
+            Pair<Integer, Integer>> offsetToValueLevel) {
+
+        if (binaryTree == null) {
             return;
         }
-        // if the current level is less than the maximum level seen so far
-        // for the same horizontal distance, or if the horizontal distance
-        // is seen for the first time, update the map
-        if (!map.containsKey(dist) || level < map.get(dist).second)
-        {
-            // update value and level for current distance
-            map.put(dist, Pair.of(root.key, level));
+
+        Pair<Integer, Integer> currentValueLevel = offsetToValueLevel.get(offset);
+
+        if (currentValueLevel == null || level < currentValueLevel.getValue()) {
+            offsetToValueLevel.put(offset, new Pair<>(binaryTree.value, level));
         }
 
-        // recur for the left subtree by decreasing horizontal distance and
-        // increasing level by 1
-        buildMap(root.left, dist - 1, level + 1, map);
-
-        // recur for the right subtree by increasing both level and
-        // horizontal distance by 1
-        buildMap(root.right, dist + 1, level + 1, map);
-    }
-}
-
-class Pair<U, V>
-{
-    public final U first;       // first field of a pair
-    public final V second;      // second field of a pair
-
-    // Constructs a new Pair with specified values
-    private Pair(U first, V second)
-    {
-        this.first = first;
-        this.second = second;
-    }
-
-    // Factory method for creating a Typed Pair immutable instance
-    public static <U, V> Pair <U, V> of(U a, V b)
-    {
-        // calls private constructor
-        return new Pair<>(a, b);
+        traverseTree(binaryTree.left, offset - 1, level + 1, offsetToValueLevel);
+        traverseTree(binaryTree.right, offset + 1, level + 1, offsetToValueLevel);
     }
 }
