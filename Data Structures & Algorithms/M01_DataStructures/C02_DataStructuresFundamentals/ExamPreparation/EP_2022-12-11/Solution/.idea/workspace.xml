@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac16a82b-68b4-4de8-a0b3-b0bf05eaa097" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../L04_HeapsAndBst/Exercises/Solution/07_Skeleton/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L04_HeapsAndBst/Exercises/Solution/07_Skeleton/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ac16a82b-68b4-4de8-a0b3-b0bf05eaa097" name="Changes" comment="Add `01. Delivery System`, `02. Airlines`" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +34,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
     "JUnit.AirlinesManagerTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -103,11 +103,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742039974157</updated>
-      <workItem from="1742039975673" duration="9176000" />
+      <workItem from="1742039975673" duration="10065000" />
     </task>
+    <task id="LOCAL-00001" summary="Add `01. Delivery System`, `02. Airlines`">
+      <option name="closed" value="true" />
+      <created>1742068303988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742068303988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add `01. Delivery System`, `02. Airlines`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `01. Delivery System`, `02. Airlines`" />
   </component>
 </project>
