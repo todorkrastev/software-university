@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b9d74f-b117-428f-ac45-1a4957ed713b" name="Changes" comment="Add `02. Lowest Common Ancestor`">
-      <change afterPath="$PROJECT_DIR$/src/main/java/solutions/Pair.java" afterDir="false" />
+    <list default="true" id="73b9d74f-b117-428f-ac45-1a4957ed713b" name="Changes" comment="Add `03. Min Heap`, `04. Decrease Key`, `05. Cookies`, `06. Top View`">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/solutions/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solutions/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/solutions/CookiesProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solutions/CookiesProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/solutions/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solutions/MinHeap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +42,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.BinarySearchTreeTest.executor": "Run",
-    "JUnit.BinarySearchTreeTest.testCount.executor": "Run",
-    "JUnit.BinarySearchTreeTest.testRange.executor": "Run",
-    "JUnit.BinarySearchTreeTest.testRank.executor": "Run",
-    "JUnit.LowestCommonAncestorTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BinarySearchTreeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTreeTest.testCount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTreeTest.testRange.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTreeTest.testRank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LowestCommonAncestorTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -160,7 +155,8 @@
       <workItem from="1741984415988" duration="6034000" />
       <workItem from="1741992761308" duration="1995000" />
       <workItem from="1741995046805" duration="1120000" />
-      <workItem from="1742035309905" duration="1736000" />
+      <workItem from="1742035309905" duration="2436000" />
+      <workItem from="1742039803649" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="Add `01. BST Operations`">
       <option name="closed" value="true" />
@@ -178,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741996146070</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add `03. Min Heap`, `04. Decrease Key`, `05. Cookies`, `06. Top View`">
+      <option name="closed" value="true" />
+      <created>1742039016193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742039016193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +191,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add `01. BST Operations`" />
     <MESSAGE value="Add `02. Lowest Common Ancestor`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `02. Lowest Common Ancestor`" />
+    <MESSAGE value="Add `03. Min Heap`, `04. Decrease Key`, `05. Cookies`, `06. Top View`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `03. Min Heap`, `04. Decrease Key`, `05. Cookies`, `06. Top View`" />
   </component>
 </project>
