@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8358645-8954-447b-b083-b9e9c53b10fd" name="Changes" comment="Add `E02_TripAdministrator`">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/E02_TripAdministrator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/main/java/tripadministratorjava.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/main/java/tripadministratorjava/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/main/java/tripadministratorjava/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/main/java/tripadministratorjava/Transportation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/main/java/tripadministratorjava/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test005.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test007.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test008.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test009.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/src/test/java/tripadministratorjava/Test010.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/classes/tripadministratorjava/Company.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/classes/tripadministratorjava/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/classes/tripadministratorjava/Trip.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test001.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test002.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test003.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test004.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test005.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test006.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test007.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test008.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test009.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Trip Administrator_Skeleton/�rip �dministrator/target/test-classes/tripadministratorjava/Test010.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemDescription/1. Barber Shop_Problem Description.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="e8358645-8954-447b-b083-b9e9c53b10fd" name="Changes" comment="Add `E02_TripAdministrator`" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,8 +157,17 @@
       <option name="presentableId" value="Default" />
       <updated>1742085522956</updated>
       <workItem from="1742085522981" duration="2916000" />
-      <workItem from="1742088847592" duration="702000" />
+      <workItem from="1742088847592" duration="920000" />
     </task>
+    <task id="LOCAL-00001" summary="Add `E02_TripAdministrator`">
+      <option name="closed" value="true" />
+      <created>1742089736559</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742089736559</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
