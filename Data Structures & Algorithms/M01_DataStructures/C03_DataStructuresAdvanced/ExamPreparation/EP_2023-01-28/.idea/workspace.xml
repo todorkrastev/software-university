@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2a555a-841c-42b1-84b9-64a1684f04a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/EP_2023-01-28.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7d2a555a-841c-42b1-84b9-64a1684f04a8" name="Changes" comment="Add `01. Task Manager`">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/TaskManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/TaskManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/CategorizatorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/CategorizatorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/TaskManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/TaskManagerImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
+    "JUnit.CategorizatorTests.executor": "Run",
     "JUnit.TaskManagerTests.executor": "Run",
     "JUnit.core in exam.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -64,10 +64,25 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TaskManagerTests">
+  <component name="RunManager" selected="JUnit.CategorizatorTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="exam" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategorizatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="core" />
+      <option name="MAIN_CLASS_NAME" value="core.CategorizatorTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategorizatorTests" />
         <item itemvalue="JUnit.TaskManagerTests" />
         <item itemvalue="JUnit.core in exam" />
         <item itemvalue="Application.Main" />
@@ -125,8 +141,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742228589090</updated>
-      <workItem from="1742228590538" duration="8379000" />
+      <workItem from="1742228590538" duration="10757000" />
     </task>
+    <task id="LOCAL-00001" summary="Add `01. Task Manager`">
+      <option name="closed" value="true" />
+      <created>1742251841507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742251841507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +167,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add `01. Task Manager`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `01. Task Manager`" />
   </component>
 </project>

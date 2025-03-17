@@ -25,7 +25,7 @@ public class TaskManagerImpl implements TaskManager {
 
     @Override
     public boolean contains(Task task) {
-        return tryGetTask(task.getId()) != null;
+        return this.tasksById.containsKey(task.getId());
     }
 
     @Override
@@ -35,25 +35,25 @@ public class TaskManagerImpl implements TaskManager {
 
     @Override
     public Task getTask(String taskId) {
-        Task searchTask = tryGetTask(taskId);
+        Task searchTask = tasksById.get(taskId);
+
         if (searchTask == null) {
             throw new IllegalArgumentException("Task not found");
         }
-        return searchTask;
-    }
 
-    private Task tryGetTask(String taskId) {
-        return tasksById.get(taskId);
+        return searchTask;
     }
 
     @Override
     public void deleteTask(String taskId) {
         Task removed = tasksById.remove(taskId);
+
         if (removed == null) {
             throw new IllegalArgumentException("Task not found");
         }
+
         pendingTasks.remove(removed);
-        executedTasks.remove(removed.getId());
+        executedTasks.remove(taskId);
     }
 
     @Override
@@ -61,27 +61,37 @@ public class TaskManagerImpl implements TaskManager {
         if (pendingTasks.isEmpty()) {
             throw new IllegalArgumentException("No tasks to execute");
         }
+
         Iterator<Task> iterator = pendingTasks.iterator();
         Task firstTask = iterator.next();
         iterator.remove();
         executedTasks.put(firstTask.getId(), firstTask);
+
         return firstTask;
     }
 
     @Override
     public void rescheduleTask(String taskId) {
         Task executed = executedTasks.remove(taskId);
+
         if (executed == null) {
             throw new IllegalArgumentException("Task not found");
         }
+
         pendingTasks.add(executed);
     }
 
     @Override
     public Iterable<Task> getDomainTasks(String domain) {
-        return this.pendingTasks.stream()
+        List<Task> result = this.pendingTasks.stream()
                 .filter(t -> t.getDomain().equals(domain))
                 .collect(Collectors.toList());
+
+        if (result.isEmpty()) {
+            throw new IllegalArgumentException("No tasks with domain " + domain);
+        }
+
+        return result;
     }
 
     @Override
