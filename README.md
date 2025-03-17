@@ -195,9 +195,10 @@
                             Data Structures Fundamentals
                         </a>
                         -
-                        <span class="softuni__certifications__dsa__list__item__span">
-                            Studying now
-                        </span>
+                        <a href="https://softuni.bg/certificates/details/239071/dada427e"
+                            class="softuni__certifications__dsa__list__item__softuni" target="_blank">
+                            Show credential
+                        </a>
                     </li>
                 </ul>
             </article>
