@@ -3,89 +3,96 @@ package raceManager.core;
 import raceManager.models.Athlete;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class RaceMangerImpl implements RaceManger {
+    private final List<Athlete> allAthletes = new ArrayList<>();
+    private final List<Athlete> running = new ArrayList<>();
+    private final List<Athlete> retired = new ArrayList<>();
+    private final Deque<Athlete> startLine = new ArrayDeque<>();
+    private final Deque<Athlete> finished = new ArrayDeque<>();
 
-    private Deque<Athlete> enrolledAthletes = new ArrayDeque<>();
-    private List<Athlete> startedAthletes = new ArrayList<>();
-    private List<Athlete> finishedAthletes = new LinkedList<>();
-    private List<Athlete> allEnrolledAthletes = new ArrayList<>();
 
     @Override
     public void enroll(Athlete athlete) {
-        if (isEnrolled(athlete)) {
-            throw new IllegalArgumentException("Athlete is already enrolled.");
+        if (allAthletes.contains(athlete)) {
+            throw new IllegalArgumentException();
         }
-        enrolledAthletes.offer(athlete);
-        allEnrolledAthletes.add(athlete);
+
+        allAthletes.add(athlete);
+        startLine.offer(athlete);
     }
 
     @Override
     public boolean isEnrolled(Athlete athlete) {
-        return allEnrolledAthletes.contains(athlete);
+        return allAthletes.contains(athlete);
     }
 
     @Override
     public void start() {
-        if (enrolledAthletes.isEmpty()) {
-            throw new IllegalArgumentException("There are no athletes waiting to start.");
+        Athlete starting = startLine.poll();
+
+        if (starting == null) {
+            throw new IllegalArgumentException();
         }
-        Athlete athlete = enrolledAthletes.poll();
-        startedAthletes.add(athlete);
+
+        running.add(starting);
     }
 
     @Override
     public void retire(Athlete athlete) {
-        if (!startedAthletes.contains(athlete)) {
-            throw new IllegalArgumentException("The athlete never started the race.");
+        if (!running.contains(athlete)) {
+            throw new IllegalArgumentException();
         }
-        startedAthletes.remove(athlete);
+
+        running.remove(athlete);
+        retired.add(athlete);
     }
 
     @Override
     public void finish(Athlete athlete) {
-        if (!startedAthletes.contains(athlete)) {
-            throw new IllegalArgumentException("The athlete has not started the race.");
+        if (!running.contains(athlete)) {
+            throw new IllegalArgumentException();
         }
-        startedAthletes.remove(athlete);
-        finishedAthletes.add(athlete);
+
+        running.remove(athlete);
+        finished.push(athlete);
     }
 
     @Override
     public Athlete getLastFinishedAthlete() {
-        if (finishedAthletes.isEmpty()) {
-            throw new IllegalArgumentException("There are no finished athletes.");
+        if (finished.isEmpty()) {
+            throw new IllegalArgumentException();
         }
-        return finishedAthletes.get(finishedAthletes.size() - 1);
+
+        return finished.peek();
     }
 
     @Override
     public int currentRacingCount() {
-        return startedAthletes.size();
+        return running.size();
     }
 
     @Override
     public Collection<Athlete> getAllAthletesByAge() {
-        List<Athlete> allAthletes = new ArrayList<>(allEnrolledAthletes);
-        allAthletes.sort(Comparator.comparingInt(Athlete::getAge));
-        return allAthletes;
+        return allAthletes.stream()
+                .sorted(Comparator.comparingInt(l -> l.age))
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Athlete> getAllNotFinishedAthletes() {
-        Set<Athlete> notFinishedAthletes = new HashSet<>(enrolledAthletes);
-        notFinishedAthletes.addAll(startedAthletes);
-        notFinishedAthletes.addAll(allEnrolledAthletes);
-        notFinishedAthletes.removeAll(finishedAthletes);
-        List<Athlete> sortedNotFinishedAthletes = new ArrayList<>(notFinishedAthletes);
-        sortedNotFinishedAthletes.sort(Comparator.comparing(Athlete::getName));
-        return sortedNotFinishedAthletes;
+        ArrayList<Athlete> notFinished = new ArrayList<>();
+        notFinished.addAll(startLine);
+        notFinished.addAll(retired);
+
+        return notFinished.stream()
+                .sorted(Comparator.comparing(l -> l.name))
+                .collect(Collectors.toList());
     }
 
     @Override
     public Iterator<Athlete> getScoreBoard() {
-        List<Athlete> scoreboard = new ArrayList<>(finishedAthletes);
-        Collections.reverse(scoreboard);
-        return scoreboard.iterator();
+        return finished.iterator();
     }
 }

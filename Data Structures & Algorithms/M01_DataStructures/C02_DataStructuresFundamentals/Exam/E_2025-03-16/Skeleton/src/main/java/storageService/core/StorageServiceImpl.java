@@ -4,102 +4,135 @@ import storageService.models.Box;
 import storageService.models.StorageUnit;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class StorageServiceImpl implements StorageService {
-    private final Map<String, StorageUnit> storageUnits = new TreeMap<>();
-    private final Map<String, Box> storedBoxes = new TreeMap<>();
-    private final PriorityQueue<StorageUnit> availableSpaceQueue = new PriorityQueue<>(Comparator.comparingInt(StorageUnit::getFreeSpace).reversed());
+    private final PriorityQueue<StorageUnit> unitsBySpace = new PriorityQueue<>((l, r) -> (r.totalAvailableSpace - r.totalUsedSpace) - (l.totalAvailableSpace - l.totalUsedSpace));
+
+    private final Map<String, Box> boxes = new HashMap<>();
+    private final Map<String, StorageUnit> units = new HashMap<>();
+    private final Map<String, StorageUnit> boxIdToUnit = new HashMap<>();
+
+    int totalUsableSpace = 0;
 
     @Override
     public void rentStorage(StorageUnit unit) {
-        if (storageUnits.containsKey(unit.getId())) {
-            throw new IllegalArgumentException("Storage unit with the same ID already exists.");
+        if (units.containsKey(unit.id)) {
+            throw new IllegalArgumentException();
         }
-        storageUnits.put(unit.getId(), unit);
-        availableSpaceQueue.add(unit);
+
+        units.put(unit.id, unit);
+        unitsBySpace.offer(unit);
+
+        totalUsableSpace += unit.totalAvailableSpace;
     }
 
     @Override
     public void storeBox(Box box) {
-        if (storedBoxes.containsKey(box.getId())) {
-            throw new IllegalArgumentException("Box is already stored.");
-        }
-        if (availableSpaceQueue.isEmpty()) {
-            throw new IllegalArgumentException("No storage units available.");
+        if (boxes.containsKey(box.id)) {
+            throw new IllegalArgumentException();
         }
 
-        StorageUnit bestUnit = availableSpaceQueue.peek();
-        if (bestUnit.getFreeSpace() < box.getVolume()) {
-            throw new IllegalArgumentException("No storage unit has enough room for the box.");
+        if (unitsBySpace.isEmpty()) {
+            throw new IllegalArgumentException();
         }
 
-        bestUnit.storeBox(box);
-        storedBoxes.put(box.getId(), box);
-        availableSpaceQueue.remove(bestUnit);
-        availableSpaceQueue.add(bestUnit);
+        StorageUnit unit = unitsBySpace.poll();
+        int volume = box.width * box.height * box.depth;
+
+        if (unit.totalAvailableSpace - unit.totalUsedSpace < volume) {
+            throw new IllegalArgumentException();
+        }
+
+        unit.totalUsedSpace += volume;
+        totalUsableSpace -= volume;
+
+        unitsBySpace.offer(unit);
+        boxes.put(box.id, box);
+        boxIdToUnit.put(box.id, unit);
     }
 
     @Override
     public boolean isStored(Box box) {
-        return storedBoxes.containsKey(box.getId());
+        return boxes.containsKey(box.id);
     }
 
     @Override
     public boolean isRented(StorageUnit unit) {
-        return storageUnits.containsKey(unit.getId());
+        return units.containsKey(unit.id);
     }
 
     @Override
     public boolean contains(StorageUnit unit, String boxId) {
-        if (!storageUnits.containsKey(unit.getId())) {
+        StorageUnit actualUnit = boxIdToUnit.get(boxId);
+
+        if (actualUnit == null) {
             return false;
         }
-        return unit.containsBox(boxId);
+
+        return actualUnit.id.equals(unit.id);
     }
 
     @Override
     public Box retrieve(StorageUnit unit, String boxId) {
-        if (!storageUnits.containsKey(unit.getId())) {
-            throw new IllegalArgumentException("Storage unit not found.");
+        if (!contains(unit, boxId)) {
+            throw new IllegalArgumentException();
         }
-        Box box = unit.retrieveBox(boxId);
-        if (box == null) {
-            throw new IllegalArgumentException("Box not found in the storage unit.");
-        }
-        storedBoxes.remove(boxId);
-        availableSpaceQueue.remove(unit);
-        availableSpaceQueue.add(unit);
-        return box;
+
+        Box box = boxes.get(boxId);
+        int volume = box.width * box.height * box.depth;
+
+        unit.totalUsedSpace -= volume;
+        totalUsableSpace += volume;
+
+        return boxes.remove(boxId);
     }
 
     @Override
     public int getTotalFreeSpace() {
-        return storageUnits.values().stream().mapToInt(StorageUnit::getFreeSpace).sum();
+        return totalUsableSpace;
     }
 
     @Override
     public StorageUnit getMostAvailableSpaceUnit() {
-        if (availableSpaceQueue.isEmpty()) {
-            throw new IllegalArgumentException("No storage units available.");
+        if (unitsBySpace.isEmpty()) {
+            throw new IllegalArgumentException();
         }
-        return availableSpaceQueue.peek();
+
+        return unitsBySpace.peek();
     }
 
     @Override
     public Collection<Box> getAllBoxesByVolume() {
-        List<Box> boxes = new ArrayList<>(storedBoxes.values());
-        boxes.sort(Comparator.comparingInt(Box::getVolume)
-                .thenComparing(Comparator.comparingInt(Box::getHeight).reversed()));
-        return boxes;
+        return boxes.values()
+                .stream()
+                .sorted((l, r) -> {
+                    int lVolume = l.width * l.height * l.depth;
+                    int rVolume = r.width * r.height * r.depth;
+
+                    if (lVolume == rVolume) {
+                        return r.height - l.height;
+                    }
+
+                    return lVolume - rVolume;
+                })
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<StorageUnit> getAllUnitsByFillRate() {
-        List<StorageUnit> units = new ArrayList<>(storageUnits.values());
-        units.sort(Comparator.comparingInt((StorageUnit unit) -> (unit.getFreeSpace() * 100) / unit.getTotalSpace())
-                .reversed()
-                .thenComparingInt(StorageUnit::getTotalSpace)
-                .reversed());
-        return units;
+        return units.values()
+                .stream()
+                .sorted((l, r) -> {
+                    int lFillRate = (l.totalAvailableSpace - l.totalUsedSpace) / l.totalAvailableSpace;
+                    int rFillRate = (r.totalAvailableSpace - r.totalUsedSpace) / r.totalAvailableSpace;
+
+                    if (lFillRate == rFillRate) {
+                        return r.totalAvailableSpace - l.totalAvailableSpace;
+                    }
+
+                    return rFillRate - lFillRate;
+                })
+                .collect(Collectors.toList());
     }
 }
