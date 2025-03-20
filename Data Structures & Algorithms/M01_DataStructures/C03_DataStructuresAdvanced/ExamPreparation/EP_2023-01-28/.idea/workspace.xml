@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2a555a-841c-42b1-84b9-64a1684f04a8" name="Changes" comment="Add `01. Task Manager`">
+    <list default="true" id="7d2a555a-841c-42b1-84b9-64a1684f04a8" name="Changes" comment="Add `02. Categorization`">
+      <change afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizationImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/TaskManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/TaskManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/CategorizatorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/CategorizatorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/TaskManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/TaskManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/Categorizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/Categorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/main/java/core/CategorizatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/src/test/java/core/CategorizatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/Exam/src/test/java/core/CategorizationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/Categorizator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/classes/core/CategorizatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/test-classes/core/CategorizatorTests$InternalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/Exam/target/test-classes/core/CategorizatorTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,25 +23,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "todorkrastev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;todorkrastev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/todorkrastev/software-university.git",
-    "accountId": "7b85c2e1-20f0-4f68-a2f5-eddb63b3cfee"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/todorkrastev/software-university.git&quot;,
+    &quot;accountId&quot;: &quot;7b85c2e1-20f0-4f68-a2f5-eddb63b3cfee&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2uS4LszywCVnSwgc3cZlhFvhORI" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -47,10 +50,12 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
+    "JUnit.CategorizationTests.executor": "Run",
     "JUnit.CategorizatorTests.executor": "Run",
     "JUnit.TaskManagerTests.executor": "Run",
     "JUnit.core in exam.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -64,7 +69,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CategorizatorTests">
+  <component name="RunManager" selected="JUnit.TaskManagerTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="exam" />
@@ -72,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategorizatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategorizationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +86,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="core" />
-      <option name="MAIN_CLASS_NAME" value="core.CategorizatorTests" />
+      <option name="MAIN_CLASS_NAME" value="core.CategorizationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategorizatorTests" />
         <item itemvalue="JUnit.TaskManagerTests" />
+        <item itemvalue="JUnit.CategorizationTests" />
         <item itemvalue="JUnit.core in exam" />
         <item itemvalue="Application.Main" />
       </list>
@@ -141,7 +146,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742228589090</updated>
-      <workItem from="1742228590538" duration="10757000" />
+      <workItem from="1742228590538" duration="15322000" />
+      <workItem from="1742316004708" duration="713000" />
+      <workItem from="1742383011800" duration="11103000" />
     </task>
     <task id="LOCAL-00001" summary="Add `01. Task Manager`">
       <option name="closed" value="true" />
@@ -151,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742251841507</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add `02. Categorization`">
+      <option name="closed" value="true" />
+      <created>1742254460086</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742254460086</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +185,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add `01. Task Manager`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `01. Task Manager`" />
+    <MESSAGE value="Add `02. Categorization`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `02. Categorization`" />
   </component>
 </project>

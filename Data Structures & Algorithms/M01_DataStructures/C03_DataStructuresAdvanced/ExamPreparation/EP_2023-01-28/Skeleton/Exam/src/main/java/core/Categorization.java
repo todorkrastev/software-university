@@ -2,9 +2,7 @@ package core;
 
 import models.Category;
 
-import java.util.List;
-
-public interface Categorizator {
+public interface Categorization {
     void addCategory(Category category);
 
     void assignParent(String childCategoryId, String parentCategoryId);

@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class TaskManagerImpl implements TaskManager {
 
-    private LinkedHashMap<String, Task> tasksById;
-    private LinkedHashSet<Task> pendingTasks;
-    private Map<String, Task> executedTasks;
+    private final LinkedHashMap<String, Task> tasksById;
+    private final LinkedHashSet<Task> pendingTasks;
+    private final Map<String, Task> executedTasks;
 
     public TaskManagerImpl() {
         this.tasksById = new LinkedHashMap<>();

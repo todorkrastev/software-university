@@ -169,4 +169,114 @@ public class TaskManagerTests {
 
         assertTrue(elapsedTime <= 15);
     }
+
+    @Test
+    public void testDeleteTask_WithExistentTask_ShouldRemoveTask() {
+        Task task = getRandomTask();
+        this.taskManager.addTask(task);
+
+        this.taskManager.deleteTask(task.getId());
+
+        assertFalse(this.taskManager.contains(task));
+    }
+
+    @Test
+    public void testDeleteTask_WithNonExistentTask_ShouldThrowException() {
+        try {
+            this.taskManager.deleteTask(UUID.randomUUID().toString());
+        } catch (IllegalArgumentException e) {
+            assertTrue(true);
+            return;
+        }
+
+        assertTrue(false);
+    }
+
+    @Test
+    public void testDeleteTask_ShouldDecreaseSize() {
+        Task task1 = getRandomTask();
+        Task task2 = getRandomTask();
+        this.taskManager.addTask(task1);
+        this.taskManager.addTask(task2);
+
+        this.taskManager.deleteTask(task1.getId());
+
+        assertEquals(1, this.taskManager.size());
+    }
+
+    @Test
+    public void testGetDomainTasks_WithValidDomain_ShouldReturnCorrectTasks() {
+        Task task1 = new Task(UUID.randomUUID().toString(), "Task1", 10, "domain1");
+        Task task2 = new Task(UUID.randomUUID().toString(), "Task2", 20, "domain1");
+        Task task3 = new Task(UUID.randomUUID().toString(), "Task3", 30, "domain2");
+        this.taskManager.addTask(task1);
+        this.taskManager.addTask(task2);
+        this.taskManager.addTask(task3);
+
+        Iterable<Task> domainTasks = this.taskManager.getDomainTasks("domain1");
+        List<Task> domainTaskList = StreamSupport.stream(domainTasks.spliterator(), false).collect(Collectors.toList());
+
+        assertEquals(2, domainTaskList.size());
+        assertTrue(domainTaskList.contains(task1));
+        assertTrue(domainTaskList.contains(task2));
+    }
+
+    @Test
+    public void testGetDomainTasks_WithInvalidDomain_ShouldThrowException() {
+        try {
+            this.taskManager.getDomainTasks("invalidDomain");
+        } catch (IllegalArgumentException e) {
+            assertTrue(true);
+            return;
+        }
+
+        assertTrue(false);
+    }
+
+    @Test
+    public void testGetTasksInEETRange_WithValidRange_ShouldReturnCorrectTasks() {
+        Task task1 = new Task(UUID.randomUUID().toString(), "Task1", 10, "domain1");
+        Task task2 = new Task(UUID.randomUUID().toString(), "Task2", 20, "domain1");
+        Task task3 = new Task(UUID.randomUUID().toString(), "Task3", 30, "domain2");
+        this.taskManager.addTask(task1);
+        this.taskManager.addTask(task2);
+        this.taskManager.addTask(task3);
+
+        Iterable<Task> tasksInRange = this.taskManager.getTasksInEETRange(15, 25);
+        List<Task> tasksInRangeList = StreamSupport.stream(tasksInRange.spliterator(), false).collect(Collectors.toList());
+
+        assertEquals(1, tasksInRangeList.size());
+        assertTrue(tasksInRangeList.contains(task2));
+    }
+
+    @Test
+    public void testGetTasksInEETRange_WithInvalidRange_ShouldReturnEmpty() {
+        Task task1 = new Task(UUID.randomUUID().toString(), "Task1", 10, "domain1");
+        Task task2 = new Task(UUID.randomUUID().toString(), "Task2", 20, "domain1");
+        this.taskManager.addTask(task1);
+        this.taskManager.addTask(task2);
+
+        Iterable<Task> tasksInRange = this.taskManager.getTasksInEETRange(30, 40);
+        List<Task> tasksInRangeList = StreamSupport.stream(tasksInRange.spliterator(), false).collect(Collectors.toList());
+
+        assertTrue(tasksInRangeList.isEmpty());
+    }
+
+    @Test
+    public void testGetAllTasksOrderedByEETThenByName_ShouldReturnCorrectOrder() {
+        Task task1 = new Task(UUID.randomUUID().toString(), "A", 20, "domain1");
+        Task task2 = new Task(UUID.randomUUID().toString(), "B", 10, "domain1");
+        Task task3 = new Task(UUID.randomUUID().toString(), "C", 20, "domain2");
+        this.taskManager.addTask(task1);
+        this.taskManager.addTask(task2);
+        this.taskManager.addTask(task3);
+
+        Iterable<Task> orderedTasks = this.taskManager.getAllTasksOrderedByEETThenByName();
+        List<Task> orderedTaskList = StreamSupport.stream(orderedTasks.spliterator(), false).collect(Collectors.toList());
+
+        assertEquals(3, orderedTaskList.size());
+        assertEquals(task1, orderedTaskList.get(0));
+        assertEquals(task3, orderedTaskList.get(1));
+        assertEquals(task2, orderedTaskList.get(2));
+    }
 }
