@@ -3,139 +3,126 @@ package mlm.core;
 import mlm.models.Seller;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MLMServiceImpl implements MLMService {
-    private final Map<String, Seller> sellers;
-    private final Map<String, Set<String>> hireMap;
-    private final Map<String, Integer> salesCount;
-    private final Map<String, String> parentMap;
-    private final Map<String, Integer> totalHiresCache;
+    private final Map<String, Seller> sellerIdToSeller;
+    private final Map<String, Seller> sellerIdToParent;
+    private final Map<String, Set<Seller>> parentIdToHires;
+    private final Map<String, Integer> sellerIdToSalesMade;
 
     public MLMServiceImpl() {
-        sellers = new HashMap<>();
-        hireMap = new HashMap<>();
-        salesCount = new HashMap<>();
-        parentMap = new HashMap<>();
-        totalHiresCache = new HashMap<>();
+        sellerIdToSeller = new LinkedHashMap<>();
+        sellerIdToParent = new HashMap<>();
+        parentIdToHires = new HashMap<>();
+        sellerIdToSalesMade = new HashMap<>();
     }
 
     @Override
     public void addSeller(Seller seller) {
-        if (sellers.containsKey(seller.id)) {
-            throw new IllegalArgumentException("Seller already exists");
+        if (exists(seller)) {
+            throw new IllegalArgumentException();
         }
 
-        sellers.put(seller.id, seller);
-        hireMap.put(seller.id, new HashSet<>());
-        salesCount.put(seller.id, 0);
-        totalHiresCache.clear();
+        sellerIdToSeller.put(seller.id, seller);
+        sellerIdToParent.put(seller.id, null);
+        parentIdToHires.put(seller.id, new HashSet<>());
+        sellerIdToSalesMade.put(seller.id, 0);
     }
 
     @Override
     public void hireSeller(Seller parent, Seller newHire) {
-        if (!sellers.containsKey(parent.id) || sellers.containsKey(newHire.id)) {
-            throw new IllegalArgumentException("Invalid parent or newHire");
+        if (!exists(parent)) {
+            throw new IllegalArgumentException();
         }
 
-        sellers.put(newHire.id, newHire);
-        hireMap.get(parent.id).add(newHire.id);
-        parentMap.put(newHire.id, parent.id);
-        hireMap.put(newHire.id, new HashSet<>());
-        salesCount.put(newHire.id, 0);
-        totalHiresCache.clear();
+        addSeller(newHire);
+        sellerIdToParent.put(newHire.id, parent);
+        parentIdToHires.get(parent.id).add(newHire);
     }
 
     @Override
     public boolean exists(Seller seller) {
-        return sellers.containsKey(seller.id);
+        return sellerIdToSeller.containsKey(seller.id);
     }
 
     @Override
     public void fire(Seller seller) {
-        if (!sellers.containsKey(seller.id)) {
-            throw new IllegalArgumentException("Seller does not exist");
+        if (!exists(seller)) {
+            throw new IllegalArgumentException();
         }
 
-        String parentId = parentMap.get(seller.id);
-        if (parentId != null) {
-            Set<String> hires = hireMap.get(seller.id);
-            for (String hireId : hires) {
-                parentMap.put(hireId, parentId);
-                hireMap.get(parentId).add(hireId);
-            }
+        Seller parent = sellerIdToParent.get(seller.id);
+        Set<Seller> hires = parentIdToHires.getOrDefault(seller.id, new HashSet<>());
+
+        if (parent != null) {
+            parentIdToHires.get(parent.id).addAll(hires);
         }
 
-        sellers.remove(seller.id);
-        hireMap.remove(seller.id);
-        parentMap.remove(seller.id);
-        salesCount.remove(seller.id);
-        totalHiresCache.clear();
+        hires.forEach(hire -> sellerIdToParent.put(hire.id, parent));
+
+        sellerIdToSeller.remove(seller.id);
+        sellerIdToSalesMade.remove(seller.id);
     }
 
     @Override
     public void makeSale(Seller seller, int amount) {
-        int commission = amount / 20;
-        int remainingAmount = amount;
-        String currentId = seller.id;
+        int initialAmount = amount;
+        Seller parent = sellerIdToParent.get(seller.id);
 
-        List<String> hierarchyPath = getHierarchyPath(currentId);
-        for (String parentId : hierarchyPath) {
-            sellers.get(parentId).earnings += commission;
-            remainingAmount -= commission;
+        while (parent != null) {
+            parent.earnings += initialAmount * 0.05;
+            amount -= initialAmount * 0.05;
+
+            parent = sellerIdToParent.get(parent.id);
         }
 
-        seller.earnings += remainingAmount;
-        salesCount.put(seller.id, salesCount.get(seller.id) + 1);
-    }
+        seller.earnings += amount;
 
-    private List<String> getHierarchyPath(String sellerId) {
-        List<String> path = new ArrayList<>();
-        String currentId = sellerId;
-        while (parentMap.containsKey(currentId)) {
-            String parentId = parentMap.get(currentId);
-            path.add(parentId);
-            currentId = parentId;
-        }
-        return path;
+        Integer count = sellerIdToSalesMade.get(seller.id);
+        sellerIdToSalesMade.put(seller.id, count == null ? 1 : count + 1);
     }
 
     @Override
     public Collection<Seller> getByProfits() {
-        List<Seller> sortedSellers = new ArrayList<>(sellers.values());
-        sortedSellers.sort(Comparator.comparingInt(s -> -s.earnings));
-
-        return sortedSellers;
+        return sellerIdToSeller.values()
+                .stream()
+                .sorted((l, r) -> r.earnings - l.earnings)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Seller> getByEmployeeCount() {
-        List<Seller> sortedSellers = new ArrayList<>(sellers.values());
-        sortedSellers.sort(Comparator.comparingInt((Seller s) -> getTotalHires(s.id)).reversed()
-                .thenComparing(s -> new ArrayList<>(sellers.keySet()).indexOf(s.id)));
+        return sellerIdToSeller.values()
+                .stream()
+                .sorted((l, r) -> getEmployeeCount(r) - getEmployeeCount(l))
+                .collect(Collectors.toList());
+    }
 
-        return sortedSellers;
+    private int getEmployeeCount(Seller s) {
+        Set<Seller> initial = parentIdToHires.getOrDefault(s.id, new HashSet<>());
+        List<Seller> hires = new ArrayList<>(initial);
+
+        int totalEmployees = 0;
+
+        for (int i = 0; i < hires.size(); i++) {
+            totalEmployees++;
+
+            Set<Seller> orDefault = parentIdToHires.getOrDefault(hires.get(i).id, new HashSet<>());
+
+            hires.addAll(orDefault);
+        }
+
+        return totalEmployees;
     }
 
     @Override
     public Collection<Seller> getByTotalSalesMade() {
-        List<Seller> sortedSellers = new ArrayList<>(sellers.values());
-        sortedSellers.sort(Comparator.comparingInt((Seller s) -> salesCount.get(s.id)).reversed());
-
-        return sortedSellers;
-    }
-
-    private int getTotalHires(String sellerId) {
-        if (totalHiresCache.containsKey(sellerId)) {
-            return totalHiresCache.get(sellerId);
-        }
-
-        Set<String> hires = hireMap.get(sellerId);
-        int totalHires = hires.size();
-        for (String hireId : hires) {
-            totalHires += getTotalHires(hireId);
-        }
-
-        totalHiresCache.put(sellerId, totalHires);
-        return totalHires;
+        return sellerIdToSalesMade.entrySet()
+                .stream()
+                .sorted((l, r) -> Integer.compare(r.getValue(), l.getValue()))
+                .map(Map.Entry::getKey)
+                .map(sellerIdToSeller::get)
+                .collect(Collectors.toList());
     }
 }
