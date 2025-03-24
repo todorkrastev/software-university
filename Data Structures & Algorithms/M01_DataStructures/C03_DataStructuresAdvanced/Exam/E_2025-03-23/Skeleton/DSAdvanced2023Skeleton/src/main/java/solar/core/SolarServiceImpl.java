@@ -4,145 +4,162 @@ import solar.models.Inverter;
 import solar.models.PVModule;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class SolarServiceImpl implements SolarService {
-    private final Map<String, Inverter> inverters;
-    private final Map<String, Set<String>> inverterArrays;
-    private final Map<String, Set<PVModule>> arrayModules;
-    private final Map<PVModule, String> moduleInverterMap;
-    private final Map<PVModule, String> moduleArrayMap;
-
-    private List<Inverter> cachedInvertersByProductionCapacity;
-    private List<Inverter> cachedInvertersByNumberOfPVModulesConnected;
-    private List<PVModule> cachedPVModulesByWattProduction;
-    private boolean isCacheValid;
+    private final Set<PVModule> pvModules;
+    private final Map<String, Inverter> invertersById;
+    private final Map<String, Set<String>> arraysByInverterId;
+    private final Map<String, Set<PVModule>> pvModulesByArrayId;
+    private final Map<PVModule, Inverter> inverterForPvModules;
 
     public SolarServiceImpl() {
-        this.inverters = new HashMap<>();
-        this.inverterArrays = new HashMap<>();
-        this.arrayModules = new HashMap<>();
-        this.moduleInverterMap = new HashMap<>();
-        this.moduleArrayMap = new HashMap<>();
-        this.isCacheValid = false;
+        pvModules = new LinkedHashSet<>();
+        invertersById = new HashMap<>();
+        arraysByInverterId = new HashMap<>();
+        pvModulesByArrayId = new HashMap<>();
+        inverterForPvModules = new HashMap<>();
     }
 
     @Override
     public void addInverter(Inverter inverter) {
-        if (inverters.containsKey(inverter.id)) {
-            throw new IllegalArgumentException("Inverter already exists");
+        if (containsInverter(inverter.id)) {
+            throw new IllegalArgumentException();
         }
 
-        inverters.put(inverter.id, inverter);
-        inverterArrays.put(inverter.id, new HashSet<>());
-        invalidateCache();
+        invertersById.put(inverter.id, inverter);
     }
 
     @Override
     public void addArray(Inverter inverter, String arrayId) {
-        if (!inverters.containsKey(inverter.id) || arrayModules.containsKey(arrayId) || inverterArrays.get(inverter.id).size() >= inverter.maxPvArraysConnected) {
-            throw new IllegalArgumentException("Invalid inverter or arrayId");
+        if (!containsInverter(inverter.id)) {
+            throw new IllegalArgumentException();
         }
 
-        inverterArrays.get(inverter.id).add(arrayId);
-        arrayModules.put(arrayId, new HashSet<>());
-        invalidateCache();
+        Set<String> arrays = arraysByInverterId.get(inverter.id);
+
+        if (arrays != null && arrays.contains(arrayId)) {
+            throw new IllegalArgumentException();
+        }
+
+        if (arrays == null) {
+            arrays = new HashSet<>();
+        }
+
+        if (arrays.size() >= inverter.maxPvArraysConnected) {
+            throw new IllegalArgumentException();
+        }
+
+        arrays.add(arrayId);
+        arraysByInverterId.put(inverter.id, arrays);
     }
 
     @Override
     public void addPanel(Inverter inverter, String arrayId, PVModule pvModule) {
-        if (!inverters.containsKey(inverter.id) || !inverterArrays.get(inverter.id).contains(arrayId) || moduleInverterMap.containsKey(pvModule)) {
-            throw new IllegalArgumentException("Invalid inverter, arrayId or PVModule");
+        if (!containsInverter(inverter.id)) {
+            throw new IllegalArgumentException();
         }
 
-        arrayModules.get(arrayId).add(pvModule);
-        moduleInverterMap.put(pvModule, inverter.id);
-        moduleArrayMap.put(pvModule, arrayId);
-        invalidateCache();
+        Set<String> arrays = arraysByInverterId.get(inverter.id);
+
+        if (arrays == null || !arrays.contains(arrayId)) {
+            throw new IllegalArgumentException();
+        }
+
+        if (pvModules.contains(pvModule)) {
+            throw new IllegalArgumentException();
+        }
+
+        Set<PVModule> modulesForArrayId = pvModulesByArrayId.get(arrayId);
+        if (modulesForArrayId == null) {
+            modulesForArrayId = new HashSet<>();
+        }
+
+        modulesForArrayId.add(pvModule);
+        pvModulesByArrayId.put(arrayId, modulesForArrayId);
+
+        pvModules.add(pvModule);
+        inverterForPvModules.put(pvModule, inverter);
     }
 
     @Override
     public boolean containsInverter(String id) {
-        return inverters.containsKey(id);
+        return invertersById.containsKey(id);
     }
 
     @Override
     public boolean isPanelConnected(PVModule pvModule) {
-        return moduleInverterMap.containsKey(pvModule);
+        return pvModules.contains(pvModule);
     }
 
     @Override
     public Inverter getInverterByPanel(PVModule pvModule) {
-        String inverterId = moduleInverterMap.get(pvModule);
-        return inverterId != null ? inverters.get(inverterId) : null;
+        return inverterForPvModules.get(pvModule);
     }
 
     @Override
     public void replaceModule(PVModule oldModule, PVModule newModule) {
-        if (!moduleInverterMap.containsKey(oldModule) || moduleInverterMap.containsKey(newModule)) {
-            throw new IllegalArgumentException("Invalid oldModule or newModule");
+        Inverter oldInverter = inverterForPvModules.get(oldModule);
+        Inverter newInverter = inverterForPvModules.get(newModule);
+
+        if (oldInverter == null || newInverter != null) {
+            throw new IllegalArgumentException();
         }
 
-        String inverterId = moduleInverterMap.get(oldModule);
-        String arrayId = moduleArrayMap.get(oldModule);
+        inverterForPvModules.remove(oldModule);
+        inverterForPvModules.put(newModule, oldInverter);
 
-        moduleInverterMap.remove(oldModule);
-        moduleInverterMap.put(newModule, inverterId);
-
-        moduleArrayMap.remove(oldModule);
-        moduleArrayMap.put(newModule, arrayId);
-
-        Set<PVModule> modules = arrayModules.get(arrayId);
-        modules.remove(oldModule);
-        modules.add(newModule);
-        invalidateCache();
+        pvModules.remove(oldModule);
+        pvModules.add(newModule);
     }
 
     @Override
     public Collection<Inverter> getByProductionCapacity() {
-        if (!isCacheValid || cachedInvertersByProductionCapacity == null) {
-            cachedInvertersByProductionCapacity = new ArrayList<>(inverters.values());
-            cachedInvertersByProductionCapacity.sort(Comparator.comparingInt(this::calculateTotalProductionCapacity));
-        }
-        return cachedInvertersByProductionCapacity;
+        return invertersById.values()
+                .stream()
+                .sorted((l, r) -> {
+                    int lCapacity = getInverterTotalCapacity(l);
+                    int rCapacity = getInverterTotalCapacity(r);
+
+                    return lCapacity - rCapacity;
+                })
+                .collect(Collectors.toList());
+    }
+
+    private int getInverterTotalCapacity(Inverter inverter) {
+        Set<String> arrays = arraysByInverterId.getOrDefault(inverter.id, new HashSet<>());
+
+        return arrays.stream()
+                .map(arrayId -> pvModulesByArrayId.getOrDefault(arrayId, new HashSet<>()))
+                .mapToInt(modules -> modules.stream().mapToInt(m -> m.maxWattProduction).sum())
+                .sum();
     }
 
     @Override
     public Collection<Inverter> getByNumberOfPVModulesConnected() {
-        if (!isCacheValid || cachedInvertersByNumberOfPVModulesConnected == null) {
-            cachedInvertersByNumberOfPVModulesConnected = new ArrayList<>(inverters.values());
-            cachedInvertersByNumberOfPVModulesConnected.sort(Comparator.comparingInt((Inverter inv) -> getTotalModulesConnected(inv.id))
-                    .thenComparingInt(inv -> inverterArrays.get(inv.id).size()));
-        }
-        return cachedInvertersByNumberOfPVModulesConnected;
+        return invertersById.values()
+                .stream().sorted((l, r) -> {
+                    int lModuleCount = getInverterModuleCount(l);
+                    int rModuleCount = getInverterModuleCount(r);
+
+                    return lModuleCount - rModuleCount;
+                })
+                .collect(Collectors.toList());
+    }
+
+    private int getInverterModuleCount(Inverter inverter) {
+        Set<String> arrays = arraysByInverterId.getOrDefault(inverter.id, new HashSet<>());
+
+        return arrays.stream()
+                .map(arrayId -> pvModulesByArrayId.getOrDefault(arrayId, new HashSet<>()))
+                .mapToInt(Set::size)
+                .sum();
     }
 
     @Override
     public Collection<PVModule> getByWattProduction() {
-        if (!isCacheValid || cachedPVModulesByWattProduction == null) {
-            cachedPVModulesByWattProduction = new ArrayList<>(moduleInverterMap.keySet());
-            cachedPVModulesByWattProduction.sort(Comparator.comparingInt((PVModule pvModule) -> pvModule.maxWattProduction)
-                    .thenComparingInt(pvModule -> new ArrayList<>(moduleInverterMap.keySet()).indexOf(pvModule)));
-        }
-        return cachedPVModulesByWattProduction;
-    }
-
-    private int calculateTotalProductionCapacity(Inverter inverter) {
-        return inverterArrays.get(inverter.id).stream()
-                .flatMap(arrayId -> arrayModules.get(arrayId).stream())
-                .mapToInt(pvModule -> pvModule.maxWattProduction)
-                .sum();
-    }
-
-    private int getTotalModulesConnected(String inverterId) {
-        return inverterArrays.get(inverterId).stream()
-                .mapToInt(arrayId -> arrayModules.get(arrayId).size())
-                .sum();
-    }
-
-    private void invalidateCache() {
-        isCacheValid = false;
-        cachedInvertersByProductionCapacity = null;
-        cachedInvertersByNumberOfPVModulesConnected = null;
-        cachedPVModulesByWattProduction = null;
+        return pvModules.stream()
+                .sorted(Comparator.comparingInt(i -> i.maxWattProduction))
+                .collect(Collectors.toList());
     }
 }
