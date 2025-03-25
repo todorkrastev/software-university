@@ -10,8 +10,8 @@
 <body>
     <header class="softuni__header">
         <h1 class="softuni__header__title" align="center" style="text-decoration: none;">
-            <a href="https://github.com/todorkrastev/software-university/tree/main/Spring/C03_SpringAdvanced/2024-06/L00_CourseIntroduction/Presentation"
-                class="softuni__header__title__link">Spring Advanced</a>
+            <a href="https://github.com/todorkrastev/software-university/blob/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C02_DataStructuresFundamentals/L00_CourseIntroduction/00.%20Course-Introduction.pdf"
+                class="softuni__header__title__link">Data Structures Fundamentals with Java</a>
         </h1>
     </header>
     <main class="softuni">
