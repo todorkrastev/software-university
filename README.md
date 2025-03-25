@@ -27,6 +27,27 @@
         </section>
     </header>
     <main>
+        <section class="softuni__diplomas">
+            <h2 class="softuni__diplomas__title">
+                Diplomas
+            </h2>
+            <article class="softuni__diplomas">
+                <ul class="softuni__diplomas__list">
+                    <li class="softuni__diplomas__list__item">
+                        <a href="https://softuni.bg/certificates/details/225766/8579bff0"
+                            class="softuni__diplomas__list__item__softuni" target="_blank">
+                                    Back-End Software Engineer with Java
+                        </a
+                    </li>
+                    <li class="softuni__diplomas__list__item">
+                        <a href="https://softuni.bg/certificates/details/225813/c1613b49"
+                            class="softuni__diplomas__list__item__softuni" target="_blank">
+                                    Java Full-Stack Developer
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
         <section class="softuni__certifications">
             <h2 class="softuni__certifications__title">
                 Certifications
@@ -192,11 +213,21 @@
                     <li class="softuni__certifications__dsa__list__item">
                         <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C02_DataStructuresFundamentals"
                             class="softuni__certifications__dsa__list__item__github" target="_blank">
-                            Data Structures Fundamentals
+                            Data Structures Fundamentals with Java
                         </a>
                         -
                         <a href="https://softuni.bg/certificates/details/239071/dada427e"
                             class="softuni__certifications__dsa__list__item__softuni" target="_blank">
+                            Show credential
+                        </a>
+                    </li>
+                    <li class="softuni__certifications__dsa__list__item">
+                        <a href="https://github.com/todorkrastev/software-university/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C03_DataStructuresAdvanced"
+                            class="softuni__certifications__dsa__list__item__github" target="_blank">
+                            Data Structures Advanced with Java
+                        </a>
+                        -
+                        <a href="https://softuni.bg/certificates/details/239625/32da3afc" target="_blank">
                             Show credential
                         </a>
                     </li>
