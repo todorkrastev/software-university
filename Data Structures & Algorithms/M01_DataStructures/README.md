@@ -26,10 +26,16 @@
                         target="_blank">Fundamentals in Mathematics</a>
                 </td>
             </tr>
-               <tr>
+            <tr>
                 <td style="text-align:center; vertical-align: middle;">
                     <a href="https://github.com/todorkrastev/softuni-software-engineering/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C02_DataStructuresFundamentals"
-                        target="_blank">Data Structures Fundamentals</a>
+                        target="_blank">Data Structures Fundamentals with Java</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;">
+                    <a href="https://github.com/todorkrastev/software-university/tree/main/Data%20Structures%20%26%20Algorithms/M01_DataStructures/C03_DataStructuresAdvanced"
+                        target="_blank">Data Structures Advanced with Java</a>
                 </td>
             </tr>
         </table>
