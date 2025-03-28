@@ -116,7 +116,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_RootShouldHaveHeightTwo() {
+    public void reBalance_RootShouldHaveHeightTwo() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
         avl.insert(1);
@@ -128,7 +128,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_TestHeightOneNodes() {
+    public void reBalance_TestHeightOneNodes() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
         for (int i = 1; i < 10; i++) {
@@ -144,7 +144,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_TestHeightTwoNodes() {
+    public void reBalance_TestHeightTwoNodes() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
         for (int i = 1; i < 10; i++) {
@@ -157,7 +157,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_TestHeightThreeNodes() {
+    public void reBalance_TestHeightThreeNodes() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
         for (int i = 1; i < 10; i++) {
@@ -169,7 +169,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_TestHeightFourNodes() {
+    public void reBalance_TestHeightFourNodes() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
         for (int i = 1; i < 10; i++) {
@@ -181,7 +181,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_SingleRight() {
+    public void reBalance_SingleRight() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
 
@@ -195,7 +195,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_SingleLeft()
+    public void reBalance_SingleLeft()
     {
         // Arrange
         AVL<Integer> avl = new AVL<>();
@@ -210,7 +210,7 @@ public class AVLTest {
     }
 
     @Test
-    public void rebalance_DoubleLeft() {
+    public void reBalance_DoubleLeft() {
         // Arrange
         AVL<Integer> avl = new AVL<Integer>();
 
