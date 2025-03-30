@@ -10,6 +10,7 @@ import test.helpers.IterableExtensions;
 import test.types.CorrectnessTests;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class GetCommonElements extends BaseTest {
