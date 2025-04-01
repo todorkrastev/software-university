@@ -528,4 +528,107 @@ public class AVLTest {
         int[] expectedNodes = new int[] { };
         Assert.assertArrayEquals(expectedNodes, result);
     }
+
+    @Test
+    public void height_EmptyTree_ShouldReturnZero() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+
+        // Act
+        int height = avl.height();
+
+        // Assert
+        Assert.assertEquals(0, height);
+    }
+
+    @Test
+    public void height_SingleNode_ShouldReturnOne() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+        avl.insert(1);
+
+        // Act
+        int height = avl.height();
+
+        // Assert
+        Assert.assertEquals(1, height);
+    }
+
+    @Test
+    public void height_MultipleNodes_ShouldReturnCorrectHeight() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+        avl.insert(3);
+        avl.insert(2);
+        avl.insert(1);
+
+        // Act
+        int height = avl.height();
+
+        // Assert
+        Assert.assertEquals(2, height);
+    }
+
+    @Test
+    public void deleteMax_EmptyTree_ShouldDoNothing() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+
+        // Act
+        avl.deleteMax();
+        List<Integer> nodes = new ArrayList<>();
+        avl.eachInOrder(nodes::add);
+        int[] result = new int[nodes.size()];
+        for (int i = 0; i < nodes.size(); i++) {
+            result[i] = nodes.get(i);
+        }
+
+        // Assert
+        int[] expectedNodes = new int[] { };
+        Assert.assertArrayEquals(expectedNodes, result);
+    }
+
+    @Test
+    public void deleteMax_SingleNode_ShouldRemoveRoot() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+        avl.insert(1);
+
+        // Act
+        avl.deleteMax();
+        List<Integer> nodes = new ArrayList<>();
+        avl.eachInOrder(nodes::add);
+        int[] result = new int[nodes.size()];
+        for (int i = 0; i < nodes.size(); i++) {
+            result[i] = nodes.get(i);
+        }
+
+        // Assert
+        int[] expectedNodes = new int[] { };
+        Assert.assertArrayEquals(expectedNodes, result);
+    }
+
+    @Test
+    public void deleteMax_MultipleNodes_ShouldRemoveMaxNode() {
+        // Arrange
+        AVL<Integer> avl = new AVL<>();
+        avl.insert(5);
+        avl.insert(3);
+        avl.insert(8);
+        avl.insert(7);
+        avl.insert(9);
+
+        // Act
+        avl.deleteMax();
+        List<Integer> nodes = new ArrayList<>();
+        avl.eachInOrder(nodes::add);
+        int[] result = new int[nodes.size()];
+        for (int i = 0; i < nodes.size(); i++) {
+            result[i] = nodes.get(i);
+        }
+
+        // Assert
+        int[] expectedNodes = new int[] { 3, 5, 7, 8 };
+        Assert.assertArrayEquals(expectedNodes, result);
+    }
 }
