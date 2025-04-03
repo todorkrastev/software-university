@@ -64,6 +64,29 @@ public class RedBlackTreeTests {
             rbt.insert(i);
         }
 
-        Assert.assertEquals(true, rbt.contains(99999));
+        Assert.assertTrue(rbt.contains(99999));
+    }
+
+    @Test
+    public void rotateRight_ShouldRotateCorrectly() throws Exception {
+        RedBlackTree<Integer> rbt = new RedBlackTree<>();
+
+        RedBlackTree.Node<Integer> root = new RedBlackTree.Node<>(10);
+        RedBlackTree.Node<Integer> leftChild = new RedBlackTree.Node<>(5);
+        RedBlackTree.Node<Integer> leftLeftChild = new RedBlackTree.Node<>(2);
+
+        root.setLeft(leftChild);
+        leftChild.setLeft(leftLeftChild);
+
+        java.lang.reflect.Method rotateRightMethod = RedBlackTree.class.getDeclaredMethod("rotateRight", RedBlackTree.Node.class);
+        rotateRightMethod.setAccessible(true);
+        RedBlackTree.Node<Integer> newRoot = (RedBlackTree.Node<Integer>) rotateRightMethod.invoke(rbt, root);
+
+        Assert.assertEquals(5, (int) newRoot.getValue());
+        Assert.assertEquals(2, (int) newRoot.getLeft().getValue());
+        Assert.assertEquals(10, (int) newRoot.getRight().getValue());
+
+        Assert.assertFalse(newRoot.isRed());
+        Assert.assertTrue(newRoot.getRight().isRed());
     }
 }
