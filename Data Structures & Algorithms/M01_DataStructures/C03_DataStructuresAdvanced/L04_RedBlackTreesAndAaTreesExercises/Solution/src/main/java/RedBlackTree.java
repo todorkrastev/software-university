@@ -28,12 +28,18 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
 
     // is node x red; false if x is null ?
     private boolean isRed(Node x) {
-        return false;
+        if (x == null) {
+            return false;
+        }
+        return x.color == RED;
     }
 
     // number of node in subtree rooted at x; 0 if x is null
     private int size(Node x) {
-        return 0;
+        if (x == null) {
+            return 0;
+        }
+        return x.size;
     }
 
 
@@ -43,7 +49,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
-        return 0;
+        return size(this.root);
     }
 
     /**
@@ -52,29 +58,74 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
      * @return {@code true} if this symbol table is empty and {@code false} otherwise
      */
     public boolean isEmpty() {
-        return false;
+        return this.root == null;
     }
 
     public Value get(Key key) {
-        return null;
+        if (key == null) {
+            throw new IllegalArgumentException("argument to get() is null");
+        }
+        return get(this.root, key);
     }
 
     // value associated with the given key in subtree rooted at x; null if no such key
     private Value get(Node x, Key key) {
-        return null;
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+            return get(x.left, key);
+        } else if (cmp > 0) {
+            return get(x.right, key);
+        } else {
+            return x.val;
+        }
     }
 
     public boolean contains(Key key) {
-        return false;
+        if (key == null) {
+            throw new IllegalArgumentException("argument to contains() is null");
+        }
+        return get(key) != null;
     }
 
     public void put(Key key, Value val) {
-
+        if (key == null) {
+            throw new IllegalArgumentException("argument to put() is null");
+        }
+        this.root = put(this.root, key, val);
+        this.root.color = BLACK;
     }
 
     // insert the key-value pair in the subtree rooted at h
     private Node put(Node h, Key key, Value val) {
-        return null;
+        if (h == null) {
+            return new Node(key, val, RED, 1);
+        }
+        int cmp = key.compareTo(h.key);
+        if (cmp < 0) {
+            h.left = put(h.left, key, val);
+        } else if (cmp > 0) {
+            h.right = put(h.right, key, val);
+        } else {
+            h.val = val;
+        }
+
+        // fix-up any right-leaning links
+        if (isRed(h.right) && !isRed(h.left)) {
+            h = rotateLeft(h);
+        }
+        if (isRed(h.left) && isRed(h.left.left)) {
+            h = rotateRight(h);
+        }
+        if (isRed(h.left) && isRed(h.right)) {
+            flipColors(h);
+        }
+
+        h.size = size(h.left) + size(h.right) + 1;
+
+        return h;
     }
 
     public void deleteMin() {
@@ -102,17 +153,33 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     private Node rotateRight(Node h) {
-        return null;
+        Node temp = h.left;
+        h.left = temp.right;
+        temp.right = h;
+        temp.color = h.color;
+        h.color = RED;
+        temp.size = h.size;
+        h.size = size(h.left) + size(h.right) + 1;
+        return temp;
     }
 
     // make a right-leaning link lean to the left
     private Node rotateLeft(Node h) {
-        return null;
+        Node temp = h.right;
+        h.right = temp.left;
+        temp.left = h;
+        temp.color = h.color;
+        h.color = RED;
+        temp.size = h.size;
+        h.size = size(h.left) + size(h.right) + 1;
+        return temp;
     }
 
     // flip the colors of a node and its two children
     private void flipColors(Node h) {
-
+        h.color = RED;
+        h.left.color = BLACK;
+        h.right.color = BLACK;
     }
 
     // Assuming that h is red and both h.left and h.left.left
