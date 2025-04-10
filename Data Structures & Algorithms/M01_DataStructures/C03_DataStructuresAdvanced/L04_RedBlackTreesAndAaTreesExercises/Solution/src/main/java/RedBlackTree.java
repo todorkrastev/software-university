@@ -200,29 +200,40 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public int height() {
-        return 0;
+        return height(this.root);
     }
 
     private int height(Node x) {
-        return 0;
+        if (x == null) {
+            return -1;
+        }
+        return 1 + Math.max(height(x.left), height(x.right));
     }
 
     public Key min() {
-        return null;
+        Node min = min(this.root);
+        return min != null ? min.key : null;
     }
 
     // the smallest key in subtree rooted at x; null if no such key
     private Node min(Node x) {
-        return null;
+        if (x.left == null) {
+            return x;
+        }
+        return min(x.left);
     }
 
     public Key max() {
-        return null;
+        Node max = max(this.root);
+        return max != null ? max.key : null;
     }
 
     // the largest key in the subtree rooted at x; null if no such key
     private Node max(Node x) {
-        return null;
+        if (x.right == null) {
+            return x;
+        }
+        return max(x.right);
     }
 
     public Key floor(Key key) {
