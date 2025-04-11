@@ -147,7 +147,7 @@ public class RedBlackTreeTests {
         assertNotNull(ceiling);
         assertEquals("X", ceiling);
     }
-	
+
     @Test
     public void select() {
         String selected = this.redBlackTree.select(3);

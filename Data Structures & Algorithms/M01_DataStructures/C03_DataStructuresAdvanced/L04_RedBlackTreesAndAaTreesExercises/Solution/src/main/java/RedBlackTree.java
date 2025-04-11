@@ -129,19 +129,45 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public void deleteMin() {
+        if (isEmpty()) {
+            throw new IllegalArgumentException("Tree is empty");
+        }
+
+        this.root = deleteMin(this.root);
     }
 
     // delete the key-value pair with the minimum key rooted at h
     private Node deleteMin(Node h) {
-        return null;
+        if (h.left == null) {
+            return null;
+        }
+        if (!isRed(h.left) && !isRed(h.left.left)) {
+            h = moveRedLeft(h);
+        }
+        h.left = deleteMin(h.left);
+        return balance(h);
     }
 
     public void deleteMax() {
+        if (isEmpty()) {
+            throw new IllegalArgumentException("Tree is empty");
+        }
+        this.root = deleteMax(this.root);
     }
 
     // delete the key-value pair with the maximum key rooted at h
     private Node deleteMax(Node h) {
-        return null;
+        if (isRed(h.left)) {
+            h = rotateRight(h);
+        }
+        if (h.right == null) {
+            return null;
+        }
+        if (!isRed(h.right) && !isRed(h.right.left)) {
+            h = moveRedRight(h);
+        }
+        h.right = deleteMax(h.right);
+        return balance(h);
     }
 
     public void delete(Key key) {
@@ -185,18 +211,53 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     // Assuming that h is red and both h.left and h.left.left
     // are black, make h.left or one of its children red.
     private Node moveRedLeft(Node h) {
-        return null;
+        if (h == null) {
+            return null;
+        }
+        if (isRed(h.left)) {
+            h = rotateRight(h);
+        }
+        if (h.left == null || !isRed(h.left.left)) {
+            return h;
+        }
+        h.left = rotateLeft(h.left);
+        return rotateRight(h);
     }
 
     // Assuming that h is red and both h.right and h.right.left
     // are black, make h.right or one of its children red.
     private Node moveRedRight(Node h) {
-        return null;
+        if (h == null) {
+            return null;
+        }
+        if (isRed(h.right)) {
+            h = rotateLeft(h);
+        }
+        if (h.right == null || !isRed(h.right.left)) {
+            return h;
+        }
+        h.right = rotateRight(h.right);
+        return rotateLeft(h);
     }
 
     // restore red-black tree invariant
     private Node balance(Node h) {
-        return null;
+        if (h == null) {
+            return null;
+        }
+        if (isRed(h.right)) {
+            h = rotateLeft(h);
+        }
+        if (isRed(h.left) && isRed(h.left.left)) {
+            h = rotateRight(h);
+        }
+        if (isRed(h.left) && isRed(h.right)) {
+            flipColors(h);
+        }
+
+        h.size = size(h.left) + size(h.right) + 1;
+
+        return h;
     }
 
     public int height() {
