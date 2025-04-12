@@ -132,7 +132,6 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         if (isEmpty()) {
             throw new IllegalArgumentException("Tree is empty");
         }
-
         this.root = deleteMin(this.root);
     }
 
@@ -171,11 +170,48 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public void delete(Key key) {
+        if (key == null) {
+            throw new IllegalArgumentException("argument to delete() is null");
+        }
+        if (!contains(key)) {
+            return;
+        }
+        if (!isRed(this.root.left) && !isRed(this.root.right)) {
+            this.root.color = RED;
+        }
+        this.root = delete(this.root, key);
+        if (!isEmpty()) {
+            this.root.color = BLACK;
+        }
     }
 
     // delete the key-value pair with the given key rooted at h
     private Node delete(Node h, Key key) {
-        return null;
+        if (key.compareTo(h.key) < 0) {
+            if (!isRed(h.left) && !isRed(h.left.left)) {
+                h = moveRedLeft(h);
+            }
+            h.left = delete(h.left, key);
+        } else {
+            if (isRed(h.left)) {
+                h = rotateRight(h);
+            }
+            if (key.compareTo(h.key) == 0 && (h.right == null)) {
+                return null;
+            }
+            if (!isRed(h.right)) {
+                h = moveRedRight(h);
+            }
+            if (key.compareTo(h.key) == 0) {
+                Node x = min(h.right);
+                h.key = x.key;
+                h.val = x.val;
+                h.right = deleteMin(h.right);
+            } else {
+                h.right = delete(h.right, key);
+            }
+        }
+        return balance(h);
     }
 
     private Node rotateRight(Node h) {
