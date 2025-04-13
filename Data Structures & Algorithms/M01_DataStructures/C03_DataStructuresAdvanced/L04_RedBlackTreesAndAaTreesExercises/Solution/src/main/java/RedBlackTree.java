@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class RedBlackTree<Key extends Comparable<Key>, Value> {
@@ -170,7 +171,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public void delete(Key key) {
-        if (key == null) {
+        if (key == null || isEmpty()) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
         if (!contains(key)) {
@@ -371,16 +372,32 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public Iterable<Key> keys() {
-        return null;
+        return keys(min(), max());
     }
 
     public Iterable<Key> keys(Key lo, Key hi) {
-        return null;
+        Deque<Key> deque = new ArrayDeque<>();
+        keys(this.root, deque, lo, hi);
+        return deque;
     }
 
     // add the keys between lo and hi in the subtree rooted at x
     // to the queue
     private void keys(Node x, Deque<Key> queue, Key lo, Key hi) {
+        if (x == null) {
+            return;
+        }
+        int cmpLo = lo.compareTo(x.key);
+        int cmpHi = hi.compareTo(x.key);
+        if (cmpLo < 0) {
+            keys(x.left, queue, lo, hi);
+        }
+        if (cmpLo <= 0 && cmpHi >= 0) {
+            queue.add(x.key);
+        }
+        if (cmpHi > 0) {
+            keys(x.right, queue, lo, hi);
+        }
     }
 
     public int size(Key lo, Key hi) {
