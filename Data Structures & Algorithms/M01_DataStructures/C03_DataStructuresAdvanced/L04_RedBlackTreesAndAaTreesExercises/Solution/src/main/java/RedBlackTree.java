@@ -335,12 +335,28 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public Key floor(Key key) {
-        return null;
+        Node floor = floor(this.root, key);
+        return floor != null ? floor.key : null;
     }
 
     // the largest key in the subtree rooted at x less than or equal to the given key
     private Node floor(Node x, Key key) {
-        return null;
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp < 0) {
+            return floor(x.left, key);
+        }
+        Node t = floor(x.right, key);
+        if (t != null) {
+            return t;
+        } else {
+            return x;
+        }
     }
 
     public Key ceiling(Key key) {
