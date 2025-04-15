@@ -360,12 +360,28 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public Key ceiling(Key key) {
-        return null;
+        Node ceiling = ceiling(this.root, key);
+        return ceiling != null ? ceiling.key : null;
     }
 
     // the smallest key in the subtree rooted at x greater than or equal to the given key
     private Node ceiling(Node x, Key key) {
-        return null;
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp > 0) {
+            return ceiling(x.right, key);
+        }
+        Node t = ceiling(x.left, key);
+        if (t != null) {
+            return t;
+        } else {
+            return x;
+        }
     }
 
     public Key select(int rank) {
