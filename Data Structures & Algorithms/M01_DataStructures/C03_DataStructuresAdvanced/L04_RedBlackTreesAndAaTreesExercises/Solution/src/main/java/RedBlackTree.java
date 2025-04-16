@@ -385,13 +385,26 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public Key select(int rank) {
-        return null;
+        if (rank < 0 || rank >= size()) {
+            throw new IllegalArgumentException("Rank is out of bounds");
+        }
+        return select(this.root, rank);
     }
 
     // Return key in BST rooted at x of given rank.
     // Precondition: rank is in legal range.
     private Key select(Node x, int rank) {
-        return null;
+        if (x == null) {
+            return null;
+        }
+        int leftSize = size(x.left);
+        if (leftSize > rank) {
+            return select(x.left, rank);
+        } else if (leftSize < rank) {
+            return select(x.right, rank - leftSize - 1);
+        } else {
+            return x.key;
+        }
     }
 
     public int rank(Key key) {
