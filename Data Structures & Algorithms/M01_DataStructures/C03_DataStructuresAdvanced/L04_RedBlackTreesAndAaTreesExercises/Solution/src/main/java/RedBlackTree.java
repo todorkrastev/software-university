@@ -459,56 +459,20 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     public int size(Key lo, Key hi) {
-        return 0;
-    }
+        if (lo == null) {
+            throw new IllegalArgumentException("first argument to size() is null");
+        }
+        if (hi == null) {
+            throw new IllegalArgumentException("second argument to size() is null");
+        }
 
-    private boolean check() {
-        return false;
-    }
-
-    // does this binary tree satisfy symmetric order?
-    // Note: this test also ensures that data structure is a binary tree since order is strict
-    private boolean isBST() {
-        return false;
-    }
-
-    // is the tree rooted at x a BST with all keys strictly between min and max
-    // (if min or max is null, treat as empty constraint)
-    private boolean isBST(Node x, Key min, Key max) {
-        return false;
-    }
-
-    // are the size fields correct?
-    private boolean isSizeConsistent() {
-        return false;
-    }
-
-    private boolean isSizeConsistent(Node x) {
-        return false;
-    }
-
-    // check that ranks are consistent
-    private boolean isRankConsistent() {
-        return false;
-    }
-
-    // Does the tree have no red right links, and at most one (left)
-    // red links in a row on any path?
-    private boolean isTwoThree() {
-        return false;
-    }
-
-    private boolean isTwoThree(Node x) {
-        return false;
-    }
-
-    // do all paths from root to leaf have same number of black edges?
-    private boolean isBalanced() {
-        return false;
-    }
-
-    // does every path from the root to a leaf have the given number of black links?
-    private boolean isBalanced(Node x, int black) {
-        return false;
+        if (lo.compareTo(hi) > 0) {
+            return 0;
+        }
+        if (contains(hi)) {
+            return rank(hi) - rank(lo) + 1;
+        } else {
+            return rank(hi) - rank(lo);
+        }
     }
 }
