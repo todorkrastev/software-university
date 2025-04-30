@@ -1,25 +1,57 @@
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
+    private static final int INITIAL_CAPACITY = 16;
+    private static final double LOAD_FACTOR = 0.80d;
+
+    private LinkedList<KeyValue<K, V>>[] slots;
+
+    private int count;
+    private int capacity;
 
     public HashTable() {
-
+        this(INITIAL_CAPACITY);
     }
 
     public HashTable(int capacity) {
+        this.slots = new LinkedList[capacity];
 
+        this.count = 0;
+        this.capacity = capacity;
     }
 
     public void add(K key, V value) {
-        throw new UnsupportedOperationException();
+        this.growIfNeeded();
+
+        int index = this.findSlotNumber(key);
+
+        LinkedList<KeyValue<K, V>> list = this.slots[index];
+
+        if (list == null) {
+            list = new LinkedList<>();
+        }
+
+        for (KeyValue<K, V> current : list) {
+            if (current.getKey().equals(key)) {
+                throw new IllegalArgumentException("Key already exists " + key);
+            }
+        }
+        KeyValue<K, V> toInsert = new KeyValue<>(key, value);
+        list.addLast(toInsert);
+
+        this.slots[index] = list;
+        this.count++;
     }
 
     private int findSlotNumber(K key) {
-        throw new UnsupportedOperationException();
+        return Math.abs(key.hashCode()) % this.capacity;
     }
 
     private void growIfNeeded() {
-        throw new UnsupportedOperationException();
+        if (false) {
+            this.grow();
+        }
     }
 
     private void grow() {
@@ -27,11 +59,11 @@ public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
     }
 
     public int size() {
-        throw new UnsupportedOperationException();
+        return this.count;
     }
 
     public int capacity() {
-        throw new UnsupportedOperationException();
+        return this.capacity;
     }
 
     public boolean addOrReplace(K key, V value) {
