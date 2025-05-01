@@ -1,3 +1,5 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -100,6 +102,33 @@ public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
 
     @Override
     public Iterator<KeyValue<K, V>> iterator() {
-        throw new UnsupportedOperationException();
+        return new Iterator<KeyValue<K, V>>() {
+            int passedThroughCount = 0;
+            int currentIndex = 0;
+            Deque<KeyValue<K, V>> elements = new ArrayDeque<>();
+
+
+            @Override
+            public boolean hasNext() {
+                return passedThroughCount < count;
+            }
+
+            @Override
+            public KeyValue<K, V> next() {
+                if (!elements.isEmpty()) {
+                    return elements.poll();
+                }
+
+                while (slots[currentIndex] == null) {
+                    currentIndex++;
+                }
+                elements.addAll(slots[currentIndex]);
+
+                passedThroughCount += slots[currentIndex].size();
+                currentIndex++;
+
+                return elements.poll();
+            }
+        };
     }
 }

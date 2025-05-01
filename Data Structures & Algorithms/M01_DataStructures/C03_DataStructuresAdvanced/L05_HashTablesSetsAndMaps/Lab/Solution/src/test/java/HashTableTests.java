@@ -1,9 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class HashTableTests {
 
@@ -272,5 +270,31 @@ public class HashTableTests {
         }
 
         Assert.assertEquals(0, counter);
+    }
+
+    @Test
+    public void iterator_ShouldIterateOverAllElements() {
+        HashTable<String, Integer> hashTable = new HashTable<>();
+        hashTable.add("A", 1);
+        hashTable.add("B", 2);
+        hashTable.add("C", 3);
+
+        Set<String> keys = new HashSet<>();
+        Set<Integer> values = new HashSet<>();
+
+        for (KeyValue<String, Integer> kv : hashTable) {
+            keys.add(kv.getKey());
+            values.add(kv.getValue());
+        }
+
+        Assert.assertEquals(3, keys.size());
+        Assert.assertTrue(keys.contains("A"));
+        Assert.assertTrue(keys.contains("B"));
+        Assert.assertTrue(keys.contains("C"));
+
+        Assert.assertEquals(3, values.size());
+        Assert.assertTrue(values.contains(1));
+        Assert.assertTrue(values.contains(2));
+        Assert.assertTrue(values.contains(3));
     }
 }
