@@ -77,7 +77,21 @@ public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
     }
 
     public KeyValue<K, V> find(K key) {
-        throw new UnsupportedOperationException();
+        int index = this.findSlotNumber(key);
+
+        LinkedList<KeyValue<K, V>> slot = this.slots[index];
+
+        if (slot == null) {
+            return null;
+        }
+
+        for (KeyValue<K, V> current : slot) {
+            if (current.getKey().equals(key)) {
+                return current;
+            }
+        }
+
+        return null;
     }
 
     public boolean containsKey(K key) {
