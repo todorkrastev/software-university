@@ -73,7 +73,13 @@ public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
     }
 
     public V get(K key) {
-        throw new UnsupportedOperationException();
+        KeyValue<K, V> pair = this.find(key);
+
+        if (pair == null) {
+            throw new IllegalArgumentException();
+        }
+
+        return pair.getValue();
     }
 
     public KeyValue<K, V> find(K key) {
@@ -95,7 +101,7 @@ public class HashTable<K, V> implements Iterable<KeyValue<K, V>> {
     }
 
     public boolean containsKey(K key) {
-        throw new UnsupportedOperationException();
+        return this.find(key) != null;
     }
 
     public boolean remove(K key) {
